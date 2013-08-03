@@ -1,0 +1,31 @@
+[marking 1D50D26D <JS Function valueOf (SharedFunctionInfo 0CB15C49)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
+[marking 1D50D8B1 <JS Function toString (SharedFunctionInfo 0CB174F5)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
+[marking 1D50C5C9 <JS Function IsPrimitive (SharedFunctionInfo 0CB23EF9)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[optimizing 1D50D26D <JS Function valueOf (SharedFunctionInfo 0CB15C49)> - took 0.000, 0.000, 0.000 ms]
+[optimizing 1D50C5C9 <JS Function IsPrimitive (SharedFunctionInfo 0CB23EF9)> - took 0.000, 0.000, 0.000 ms]
+[optimizing 1D50D8B1 <JS Function toString (SharedFunctionInfo 0CB174F5)> - took 0.000, 0.000, 0.000 ms]
+[marking 1D50DE41 <JS Function random (SharedFunctionInfo 0CB25BB1)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 1D5175C1 <JS Function d.step (SharedFunctionInfo 1D5172ED)> for recompilation, reason: small function, ICs with typeinfo: 13/13 (100%)]
+[optimizing 1D50DE41 <JS Function random (SharedFunctionInfo 0CB25BB1)> - took 0.000, 0.000, 0.000 ms]
+[marking 1D5174CD <JS Function d (SharedFunctionInfo 1D517199)> for recompilation, reason: small function, ICs with typeinfo: 7/7 (100%)]
+[marking 1D511C21 <JS Function sin (SharedFunctionInfo 0CB25C69)> for recompilation, reason: small function, ICs with typeinfo: 0/1 (0%)]
+[marking 1D50F32D <JS Function cos (SharedFunctionInfo 0CB2592D)> for recompilation, reason: small function, ICs with typeinfo: 0/1 (0%)]
+[optimizing 1D5175C1 <JS Function d.step (SharedFunctionInfo 1D5172ED)> - took 0.000, 0.000, 0.000 ms]
+[optimizing 1D5174CD <JS Function d (SharedFunctionInfo 1D517199)> - took 0.000, 0.000, 0.000 ms]
+[optimizing 1D511C21 <JS Function sin (SharedFunctionInfo 0CB25C69)> - took 0.000, 0.000, 0.000 ms]
+[optimizing 1D50F32D <JS Function cos (SharedFunctionInfo 0CB2592D)> - took 0.000, 0.000, 0.000 ms]
+[marking 1D517609 <JS Function h.step (SharedFunctionInfo 1D5173A5)> for recompilation, reason: hot and stable, ICs with typeinfo: 28/31 (90%)]
+[optimizing 1D517609 <JS Function h.step (SharedFunctionInfo 1D5173A5)> - took 0.000, 0.000, 0.000 ms]
+[3296]       13 ms: Scavenge 1.6 (18.8) -> 0.8 (18.8) MB, 1.0 ms [Runtime::PerformGC].
+[marking 0FF49AB1 <JS Function (SharedFunctionInfo 1D5177E9)> for recompilation, reason: hot and stable, ICs with typeinfo: 47/50 (94%)]
+[marking 0FF735B9 <JS Function (SharedFunctionInfo 1D5177E9)> for recompilation, reason: hot and stable, ICs with typeinfo: 47/50 (94%)]
+[optimizing 0FF735B9 <JS Function (SharedFunctionInfo 1D5177E9)> - took 0.000, 0.000, 0.000 ms]
+[marking 1D50EB55 <JS Function now (SharedFunctionInfo 0CB1958D)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[optimizing 1D50EB55 <JS Function now (SharedFunctionInfo 0CB1958D)> - took 0.000, 0.000, 0.000 ms]
+[3296]       25 ms: Scavenge 1.6 (18.8) -> 1.3 (19.8) MB, 1.0 ms [Runtime::PerformGC].
+[3296]       52 ms: Scavenge 2.0 (19.8) -> 1.8 (19.8) MB, 2.0 ms [Runtime::PerformGC].
+[3296]       93 ms: Scavenge 2.5 (19.8) -> 2.3 (19.8) MB, 1.0 ms [Runtime::PerformGC].
+
+real    0m0.156s
+user    0m0.000s
+sys     0m0.015s
