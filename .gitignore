@@ -1,3 +1,7 @@
 *.iml
 browser/static/d8.exe
 browser/bin/plovr.jar
+runtime/Makefile.win
+runtime/physics.dev
+runtime/physics.layout
+*.o

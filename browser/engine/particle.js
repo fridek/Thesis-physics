@@ -48,12 +48,12 @@ smash.Particle = function() {
 };
 
 /**
- * @param {number} deltaTime
+ *
  */
-smash.Particle.prototype.step = function(deltaTime) {
-  this.positionX += this.velocityX * deltaTime;
-  this.positionY += this.velocityY * deltaTime;
-  this.age += deltaTime;
+smash.Particle.prototype.step = function() {
+  this.positionX += this.velocityX;
+  this.positionY += this.velocityY;
+  this.age ++;
 };
 
 

@@ -22,11 +22,6 @@ smash.ParticleSystem = function() {
    */
   this.emitters = [];
 
-  /**
-   * @type {number}
-   */
-  this.lastStepTime = Date.now();
-
   if (smash.ParticleSystem.DRAWING_ENABLED) {
     /**
      * @type {!Element}
@@ -71,8 +66,6 @@ smash.ParticleSystem.CANVAS_HEIGHT = 400;
 
 
 smash.ParticleSystem.prototype.step = function() {
-  var timeDelta = Date.now() - this.lastStepTime;
-  this.lastStepTime += timeDelta;
   if (smash.ParticleSystem.DRAWING_ENABLED) {
     for (var i = 0; i < smash.ParticleSystem.CANVAS_WIDTH *
         smash.ParticleSystem.CANVAS_HEIGHT * 4; i+=4) {
@@ -83,8 +76,6 @@ smash.ParticleSystem.prototype.step = function() {
     }
   }
 
-  timeDelta *= 0.001;
-
   this.emitters.forEach(function(emitter) {
     this.particles.push.apply(this.particles,
         emitter.getNewParticles());
@@ -92,7 +83,7 @@ smash.ParticleSystem.prototype.step = function() {
 
   var newParticles = [];
   this.particles.forEach(function(p) {
-    p.step(timeDelta);
+    p.step();
     if (p.positionX >= 0 &&
         p.positionX < smash.ParticleSystem.CANVAS_WIDTH &&
         p.positionY >= 0 &&
@@ -117,7 +108,7 @@ smash.ParticleSystem.prototype.step = function() {
   }
 
   this.particles = newParticles;
-
+  window.console.log(this.particles.length);
 };
 
 /**

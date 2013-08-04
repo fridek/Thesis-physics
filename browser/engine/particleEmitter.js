@@ -42,10 +42,10 @@ smash.ParticleEmitter = function() {
   this.spread = Math.PI * 10 / 180;
 
   /**
-   * In seconds.
+   * In ticks.
    * @type {number}
    */
-  this.lifespan = 3;
+  this.lifespan = 50;
 
   /**
    * @type {number}

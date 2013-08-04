@@ -28,11 +28,6 @@ smash.ParticleSystem2 = function() {
    */
   this.emitters = [];
 
-  /**
-   * @type {number}
-   */
-  this.lastStepTime = Date.now();
-
   if (smash.ParticleSystem2.DRAWING_ENABLED) {
     /**
      * @type {!Element}
@@ -63,7 +58,7 @@ smash.ParticleSystem2 = function() {
 /**
  * @const {boolean}
  */
-smash.ParticleSystem2.DRAWING_ENABLED = false;
+smash.ParticleSystem2.DRAWING_ENABLED = true;
 
 /**
  * @const {number}
@@ -77,8 +72,6 @@ smash.ParticleSystem2.CANVAS_HEIGHT = 400;
 
 
 smash.ParticleSystem2.prototype.step = function() {
-  var timeDelta = Date.now() - this.lastStepTime;
-  this.lastStepTime += timeDelta;
   if (smash.ParticleSystem2.DRAWING_ENABLED) {
     for (var i = 0; i < smash.ParticleSystem2.CANVAS_WIDTH *
         smash.ParticleSystem2.CANVAS_HEIGHT * 4; i+=4) {
@@ -88,8 +81,6 @@ smash.ParticleSystem2.prototype.step = function() {
       this.pixels[i + 3] = 0;
     }
   }
-
-  timeDelta *= 0.001;
 
   this.emitters.forEach(function(emitter) {
     for (var i = 0; i < emitter.productionRate; i++) {
@@ -117,7 +108,7 @@ smash.ParticleSystem2.prototype.step = function() {
 
   for (var i = 0; i < this.particles.length; i++) {
     var p = this.particles[i];
-    p.step(timeDelta);
+    p.step();
     if (p.positionX < 0 ||
         p.positionX >= smash.ParticleSystem2.CANVAS_WIDTH ||
         p.positionY < 0 ||
@@ -142,6 +133,7 @@ smash.ParticleSystem2.prototype.step = function() {
   if (smash.ParticleSystem2.DRAWING_ENABLED) {
     this.context.putImageData(this.imageData, 0, 0);
   }
+  window.console.log(this.particles.length, this.deadParticles.length);
 };
 
 /**
