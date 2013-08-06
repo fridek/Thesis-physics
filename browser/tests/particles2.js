@@ -6,7 +6,7 @@
 goog.require('smash.ParticleSystem2');
 goog.require('smash.ParticleEmitter');
 
-window.addEventListener('load', function() {
+//window.addEventListener('load', function() {
   var system = new smash.ParticleSystem2();
 
   var emitter = new smash.ParticleEmitter();
@@ -28,13 +28,13 @@ window.addEventListener('load', function() {
   emitter2.setProductionRate(1000);
   system.addEmitter(emitter2);
 
-  var step = function() {
-    system.step();
-    window.requestAnimationFrame(step);
-  };
-  window.requestAnimationFrame(step);
-}, true);
-//
-//for (var i = 0; i < 1000; i++) {
-//  system.step();
-//}
+//  var step = function() {
+//    system.step();
+//    window.requestAnimationFrame(step);
+//  };
+//  window.requestAnimationFrame(step);
+//}, true);
+
+for (var i = 0; i < 1000; i++) {
+  system.step();
+}

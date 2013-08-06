@@ -12,7 +12,6 @@ namespace smash {
       bool isDead;
 
       Particle(void);
-      ~Particle(void);
       void step();
       void reset();
   };

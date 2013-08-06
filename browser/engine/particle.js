@@ -13,22 +13,22 @@ smash.Particle = function() {
   /**
    * @type {number}
    */
-  this.positionX = 0;
+  this.positionX = 0.1;
 
   /**
    * @type {number}
    */
-  this.positionY = 0;
+  this.positionY = 0.1;
 
   /**
    * @type {number}
    */
-  this.velocityX = 0;
+  this.velocityX = 0.1;
 
   /**
    * @type {number}
    */
-  this.velocityY = 0;
+  this.velocityY = 0.1;
 
   /**
    * @type {number}

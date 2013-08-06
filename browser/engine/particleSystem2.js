@@ -58,7 +58,7 @@ smash.ParticleSystem2 = function() {
 /**
  * @const {boolean}
  */
-smash.ParticleSystem2.DRAWING_ENABLED = true;
+smash.ParticleSystem2.DRAWING_ENABLED = false;
 
 /**
  * @const {number}
@@ -82,7 +82,8 @@ smash.ParticleSystem2.prototype.step = function() {
     }
   }
 
-  this.emitters.forEach(function(emitter) {
+  for (var ei = 0; ei < this.emitters.length; ei++) {
+    var emitter = this.emitters[ei];
     for (var i = 0; i < emitter.productionRate; i++) {
       var pIndex = this.deadParticles.pop();
       if (pIndex !== undefined) {
@@ -104,7 +105,7 @@ smash.ParticleSystem2.prototype.step = function() {
           emitter.velocity *
           (1 + (Math.random() - 0.5) * emitter.velocitySpread);
     }
-  }, this);
+  }
 
   for (var i = 0; i < this.particles.length; i++) {
     var p = this.particles[i];
@@ -133,7 +134,6 @@ smash.ParticleSystem2.prototype.step = function() {
   if (smash.ParticleSystem2.DRAWING_ENABLED) {
     this.context.putImageData(this.imageData, 0, 0);
   }
-  window.console.log(this.particles.length, this.deadParticles.length);
 };
 
 /**

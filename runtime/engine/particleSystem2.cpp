@@ -10,6 +10,18 @@ smash::ParticleSystem2::ParticleSystem2() {
   this->emitters = new std::vector<smash::ParticleEmitter*>;
 };
 
+smash::ParticleSystem2::~ParticleSystem2() {
+  this->particles->erase(this->particles->begin(), this->particles->end());
+  delete this->particles;
+  while (!this->deadParticles->empty()) {
+    delete this->deadParticles->top();
+    this->deadParticles->pop();
+  }
+  delete this->deadParticles;
+  this->emitters->erase(this->emitters->begin(), this->emitters->end());
+  delete this->emitters;
+};
+
 void smash::ParticleSystem2::step() {
   for (std::vector<smash::ParticleEmitter*>::iterator it = this->emitters->begin(); it != this->emitters->end(); it++) {
     smash::ParticleEmitter* emitter = *it;

@@ -1,0 +1,159 @@
+Statistical profiling result from v8.log, (36977 ticks, 985 unaccounted, 0 excluded).
+
+ [Unknown]:
+   ticks  total  nonlib   name
+    985    2.7%
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+  15803   42.7%    0.0%  D:\Dropbox\praca_magisterska\physics\browser\static\d8.exe
+    866    2.3%    0.0%  C:\Windows\SysWOW64\ntdll.dll
+      5    0.0%    0.0%  C:\Windows\syswow64\KERNELBASE.dll
+      3    0.0%    0.0%  C:\Windows\system32\WINMM.dll
+      2    0.0%    0.0%  C:\Windows\syswow64\kernel32.dll
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+   7119   19.3%   35.1%  LazyCompile: ~<anonymous> particles1.js:1
+   2866    7.8%   14.1%  LazyCompile: *forEach native array.js:1188
+   1791    4.8%    8.8%  LazyCompile: *c.step particles1.js:1
+   1185    3.2%    5.8%  Stub: CompareICStub {2}
+   1144    3.1%    5.6%  Stub: CompareICStub
+   1123    3.0%    5.5%  Stub: LoadFieldStub {1}
+    828    2.2%    4.1%  LazyCompile: IN native runtime.js:362
+    758    2.0%    3.7%  Stub: LoadFieldStub {2}
+    751    2.0%    3.7%  Builtin: A builtin from the snapshot
+    688    1.9%    3.4%  Stub: CompareICStub {1}
+    661    1.8%    3.3%  Stub: LoadFieldStub
+    538    1.5%    2.7%  Stub: CEntryStub
+    141    0.4%    0.7%  LazyCompile: *g particles1.js:1
+     95    0.3%    0.5%  LazyCompile: *<anonymous> particles1.js:1
+     94    0.3%    0.5%  Stub: RecordWriteStub
+     90    0.2%    0.4%  Stub: LoadFieldStub {3}
+     87    0.2%    0.4%  Stub: TranscendentalCacheStub {2}
+     76    0.2%    0.4%  Stub: TranscendentalCacheStub {1}
+     13    0.0%    0.1%  Stub: InterruptStub
+      7    0.0%    0.0%  Stub: KeyedLoadElementStub
+      4    0.0%    0.0%  Stub: CEntryStub {1}
+      4    0.0%    0.0%  Builtin: A builtin from the snapshot {1}
+      3    0.0%    0.0%  Stub: a
+      1    0.0%    0.0%  Stub: push {7}
+      1    0.0%    0.0%  Stub: TranscendentalCacheStub
+      1    0.0%    0.0%  Stub: LoadFieldStub {4}
+      1    0.0%    0.0%  Stub: BinaryOpStub_MUL_Alloc_Number+Smi
+      1    0.0%    0.0%  LazyCompile: ~forEach native array.js:1188
+      1    0.0%    0.0%  LazyCompile: *c particles1.js:1
+
+ [C++]:
+   ticks  total  nonlib   name
+
+ [GC]:
+   ticks  total  nonlib   name
+   2148    5.8%
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 2.0% are not shown.
+
+   ticks parent  name
+  15803   42.7%  D:\Dropbox\praca_magisterska\physics\browser\static\d8.exe
+   7966   50.4%    LazyCompile: IN native runtime.js:362
+   7964  100.0%      LazyCompile: *forEach native array.js:1188
+   7270   91.3%        LazyCompile: *h.step particles1.js:1
+   7270  100.0%          Script: ~particles1.js
+    694    8.7%        LazyCompile: ~h.step particles1.js:1
+    694  100.0%          Script: ~particles1.js
+   5833   36.9%    LazyCompile: ~<anonymous> particles1.js:1
+   5823   99.8%      LazyCompile: *forEach native array.js:1188
+   5570   95.7%        LazyCompile: *h.step particles1.js:1
+   5570  100.0%          Script: ~particles1.js
+    253    4.3%        LazyCompile: ~h.step particles1.js:1
+    253  100.0%          Script: ~particles1.js
+
+   7119   19.3%  LazyCompile: ~<anonymous> particles1.js:1
+   7118  100.0%    LazyCompile: *forEach native array.js:1188
+   6848   96.2%      LazyCompile: *h.step particles1.js:1
+   6848  100.0%        Script: ~particles1.js
+    270    3.8%      LazyCompile: ~h.step particles1.js:1
+    270  100.0%        Script: ~particles1.js
+
+   2866    7.8%  LazyCompile: *forEach native array.js:1188
+   2471   86.2%    LazyCompile: *h.step particles1.js:1
+   2471  100.0%      Script: ~particles1.js
+    395   13.8%    LazyCompile: ~h.step particles1.js:1
+    395  100.0%      Script: ~particles1.js
+
+   1791    4.8%  LazyCompile: *c.step particles1.js:1
+   1760   98.3%    LazyCompile: ~<anonymous> particles1.js:1
+   1760  100.0%      LazyCompile: *forEach native array.js:1188
+   1694   96.3%        LazyCompile: *h.step particles1.js:1
+   1694  100.0%          Script: ~particles1.js
+     66    3.8%        LazyCompile: ~h.step particles1.js:1
+     66  100.0%          Script: ~particles1.js
+
+   1185    3.2%  Stub: CompareICStub {2}
+   1185  100.0%    LazyCompile: ~<anonymous> particles1.js:1
+   1185  100.0%      LazyCompile: *forEach native array.js:1188
+   1133   95.6%        LazyCompile: *h.step particles1.js:1
+   1133  100.0%          Script: ~particles1.js
+     52    4.4%        LazyCompile: ~h.step particles1.js:1
+     52  100.0%          Script: ~particles1.js
+
+   1144    3.1%  Stub: CompareICStub
+   1144  100.0%    LazyCompile: ~<anonymous> particles1.js:1
+   1144  100.0%      LazyCompile: *forEach native array.js:1188
+   1101   96.2%        LazyCompile: *h.step particles1.js:1
+   1101  100.0%          Script: ~particles1.js
+     43    3.8%        LazyCompile: ~h.step particles1.js:1
+     43  100.0%          Script: ~particles1.js
+
+   1123    3.0%  Stub: LoadFieldStub {1}
+   1123  100.0%    LazyCompile: ~<anonymous> particles1.js:1
+   1123  100.0%      LazyCompile: *forEach native array.js:1188
+   1083   96.4%        LazyCompile: *h.step particles1.js:1
+   1083  100.0%          Script: ~particles1.js
+     40    3.6%        LazyCompile: ~h.step particles1.js:1
+     40  100.0%          Script: ~particles1.js
+
+    866    2.3%  C:\Windows\SysWOW64\ntdll.dll
+    364   42.0%    LazyCompile: ~<anonymous> particles1.js:1
+    354   97.3%      LazyCompile: *forEach native array.js:1188
+    342   96.6%        LazyCompile: *h.step particles1.js:1
+    342  100.0%          Script: ~particles1.js
+     12    3.4%        LazyCompile: ~h.step particles1.js:1
+     12  100.0%          Script: ~particles1.js
+     10    2.7%      LazyCompile: ~forEach native array.js:1188
+     10  100.0%        LazyCompile: ~h.step particles1.js:1
+     10  100.0%          Script: ~particles1.js
+    354   40.9%    LazyCompile: IN native runtime.js:362
+    354  100.0%      LazyCompile: *forEach native array.js:1188
+    307   86.7%        LazyCompile: *h.step particles1.js:1
+    307  100.0%          Script: ~particles1.js
+     47   13.3%        LazyCompile: ~h.step particles1.js:1
+     47  100.0%          Script: ~particles1.js
+
+    828    2.2%  LazyCompile: IN native runtime.js:362
+    825   99.6%    LazyCompile: *forEach native array.js:1188
+    754   91.4%      LazyCompile: *h.step particles1.js:1
+    754  100.0%        Script: ~particles1.js
+     71    8.6%      LazyCompile: ~h.step particles1.js:1
+     71  100.0%        Script: ~particles1.js
+
+    758    2.0%  Stub: LoadFieldStub {2}
+    757   99.9%    LazyCompile: ~<anonymous> particles1.js:1
+    757  100.0%      LazyCompile: *forEach native array.js:1188
+    725   95.8%        LazyCompile: *h.step particles1.js:1
+    725  100.0%          Script: ~particles1.js
+     32    4.2%        LazyCompile: ~h.step particles1.js:1
+     32  100.0%          Script: ~particles1.js
+
+    751    2.0%  Builtin: A builtin from the snapshot
+    633   84.3%    LazyCompile: *forEach native array.js:1188
+    575   90.8%      LazyCompile: *h.step particles1.js:1
+    575  100.0%        Script: ~particles1.js
+     58    9.2%      LazyCompile: ~h.step particles1.js:1
+     58  100.0%        Script: ~particles1.js
+     63    8.4%    LazyCompile: *h.step particles1.js:1
+     63  100.0%      Script: ~particles1.js
+

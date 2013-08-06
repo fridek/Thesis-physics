@@ -9,6 +9,13 @@ smash::ParticleSystem::ParticleSystem() {
   this->emitters = new std::vector<smash::ParticleEmitter*>;
 };
 
+smash::ParticleSystem::~ParticleSystem() {
+  this->particles->erase(this->particles->begin(), this->particles->end());
+  delete this->particles;
+  this->emitters->erase(this->emitters->begin(), this->emitters->end());
+  delete this->emitters;
+};
+
 void smash::ParticleSystem::step() {
   for (std::vector<smash::ParticleEmitter*>::iterator it = this->emitters->begin(); it != this->emitters->end(); it++) {
     std::vector<smash::Particle*>* particleFromEmitters = (*it)->getNewParticles();

@@ -1,0 +1,48 @@
+Statistical profiling result from v8.log, (4979 ticks, 1 unaccounted, 0 excluded).
+
+ [Unknown]:
+   ticks  total  nonlib   name
+      1    0.0%
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+    112    2.2%    0.0%  D:\Dropbox\praca_magisterska\physics\browser\static\d8.exe
+     14    0.3%    0.0%  C:\Windows\SysWOW64\ntdll.dll
+      2    0.0%    0.0%  C:\Windows\syswow64\KERNELBASE.dll
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+   4651   93.4%   95.9%  LazyCompile: *smash.ParticleSystem2.step particles2.js:26
+     99    2.0%    2.0%  Stub: TranscendentalCacheStub {1}
+     91    1.8%    1.9%  Stub: TranscendentalCacheStub
+      4    0.1%    0.1%  Script: ~particles2.js
+      1    0.0%    0.0%  Stub: ParticleSystem2
+      1    0.0%    0.0%  Stub: BinaryOpStub_MUL_OverwriteLeft_Number+Number
+      1    0.0%    0.0%  LazyCompile: ~smash.ParticleSystem2.step particles2.js:26
+      1    0.0%    0.0%  LazyCompile: ~smash.Particle.step particles2.js:22
+      1    0.0%    0.0%  Builtin: A builtin from the snapshot
+
+ [C++]:
+   ticks  total  nonlib   name
+
+ [GC]:
+   ticks  total  nonlib   name
+     62    1.2%
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 2.0% are not shown.
+
+   ticks parent  name
+   4651   93.4%  LazyCompile: *smash.ParticleSystem2.step particles2.js:26
+   4651  100.0%    Script: ~particles2.js
+
+    112    2.2%  D:\Dropbox\praca_magisterska\physics\browser\static\d8.exe
+     26   23.2%    LazyCompile: *smash.ParticleSystem2.step particles2.js:26
+     26  100.0%      Script: ~particles2.js
+     17   15.2%    LazyCompile: ~smash.ParticleSystem2.step particles2.js:26
+     16   94.1%      Script: ~particles2.js
+      1    5.9%      LazyCompile: ~smash.ParticleSystem2.step particles2.js:26
+      1  100.0%        Script: ~particles2.js
+

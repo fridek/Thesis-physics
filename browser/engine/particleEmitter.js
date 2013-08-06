@@ -14,22 +14,22 @@ smash.ParticleEmitter = function() {
   /**
    * @type {number}
    */
-  this.positionX = 0;
+  this.positionX = 0.1;
 
   /**
    * @type {number}
    */
-  this.positionY = 0;
+  this.positionY = 0.1;
 
   /**
    * @type {number}
    */
-  this.angle = 0;
+  this.angle = 0.1;
 
   /**
    * @type {number}
    */
-  this.velocity = 10;
+  this.velocity = 10.1;
 
   /**
    * @type {number}
