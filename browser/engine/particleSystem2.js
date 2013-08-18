@@ -124,9 +124,9 @@ smash.ParticleSystem2.prototype.step = function() {
           (Math.round(p.positionY) *
               smash.ParticleSystem2.CANVAS_WIDTH +
               Math.round(p.positionX)) * 4;
-      this.pixels[baseIndex] = 255;
-      this.pixels[baseIndex + 1] = 0;
-      this.pixels[baseIndex + 2] = 0;
+      this.pixels[baseIndex] = Math.round(p.velocityX * 80);
+      this.pixels[baseIndex + 1] = Math.round(p.velocityX * 80);
+      this.pixels[baseIndex + 2] = 255 - Math.round(p.age / p.lifespan * 255);
       this.pixels[baseIndex + 3] = 255;
     }
   }

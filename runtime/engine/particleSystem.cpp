@@ -34,6 +34,7 @@ void smash::ParticleSystem::step() {
       newParticles->push_back(p);
     }
   };
+  delete this->particles;
   this->particles = newParticles;
 };
 

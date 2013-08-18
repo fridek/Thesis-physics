@@ -5,3 +5,5 @@ runtime/Makefile.win
 runtime/physics.dev
 runtime/physics.layout
 *.o
+v8.txt
+v8.log

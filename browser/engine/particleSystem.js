@@ -108,7 +108,6 @@ smash.ParticleSystem.prototype.step = function() {
   }
 
   this.particles = newParticles;
-  window.console.log(this.particles.length);
 };
 
 /**
