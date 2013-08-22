@@ -13,12 +13,12 @@ goog.require('smash.ParticleEmitter');
  */
 smash.ParticleSystem = function() {
   /**
-   * @type {!Array.<smash.Particle>}
+   * @type {!Array.<!smash.Particle>}
    */
   this.particles = [];
 
   /**
-   * @type {!Array.<smash.ParticleEmitter>}
+   * @type {!Array.<!smash.ParticleEmitter>}
    */
   this.emitters = [];
 

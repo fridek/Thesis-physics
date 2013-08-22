@@ -3,7 +3,10 @@
   "paths": [
     "../engine"
 	],
-  "inputs": "../tests/particles2.js",
+  "externs": [
+    "../third_party/threejs-exports.js"
+  ],
+  "inputs": "../tests/spheres1.js",
   "mode": "RAW",
   "pretty-print": true,
   "level": "VERBOSE",
