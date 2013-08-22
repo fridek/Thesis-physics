@@ -13,7 +13,7 @@ goog.require('smash.Sphere');
  * @constructor
  */
 smash.SphereSystem = function() {
-  var generalVelocity = 5;
+  var generalVelocity = 1;
   /**
    * @type {!Array.<!smash.Sphere>}
    */
@@ -103,30 +103,90 @@ smash.SphereSystem.CANVAS_WIDTH = 1200;
  */
 smash.SphereSystem.CANVAS_HEIGHT = 400;
 
+
+/**
+ * @param {number} x
+ * @return {number}
+ */
 smash.SphereSystem.square = function(x) {
   return x*x;
 };
 
+/**
+ * @param {number} x1
+ * @param {number} y1
+ * @param {number} z1
+ * @param {number} x2
+ * @param {number} y2
+ * @param {number} z2
+ * @return {number}
+ */
+smash.SphereSystem.vectorDistance = function(x1, y1, z1, x2, y2, z2) {
+  return Math.sqrt(smash.SphereSystem.square(x1 - x2) +
+      smash.SphereSystem.square(y1 - y2) +
+      smash.SphereSystem.square(z1 - z2));
+};
+
+/**
+ * @param {number} x
+ * @param {number} y
+ * @param {number} z
+ * @return {number}
+ */
+smash.SphereSystem.vectorLength = function(x, y, z) {
+  return Math.sqrt(smash.SphereSystem.square(x) +
+      smash.SphereSystem.square(y) +
+      smash.SphereSystem.square(z));
+};
+
+/**
+ * @param {!smash.Sphere} sphere1
+ * @param {!smash.Sphere} sphere2
+ * @return {boolean}
+ */
+smash.SphereSystem.checkColliding = function(sphere1, sphere2) {
+  return smash.SphereSystem.vectorDistance(
+      sphere1.positionX, sphere1.positionY, sphere1.positionZ,
+      sphere2.positionX, sphere2.positionY, sphere2.positionZ) <
+      sphere1.radius + sphere2.radius;
+};
+
+/**
+ * @param {!smash.Sphere} sphere1
+ * @param {!smash.Sphere} sphere2
+ */
+smash.SphereSystem.collide = function(sphere1, sphere2) {
+  var sumVelocitiesLength = smash.SphereSystem.vectorLength(
+      sphere1.velocityX, sphere1.velocityY, sphere1.velocityZ) +
+      smash.SphereSystem.vectorLength(
+          sphere2.velocityX, sphere2.velocityY, sphere2.velocityZ);
+
+  var centerDiffX = sphere1.positionX - sphere2.positionX;
+  var centerDiffY = sphere1.positionY - sphere2.positionY;
+  var centerDiffZ = sphere1.positionZ - sphere2.positionZ;
+  var centerLength = smash.SphereSystem.vectorLength(
+      centerDiffX, centerDiffY, centerDiffZ);
+  var velocityAdjust = centerLength * sumVelocitiesLength / 2;
+  centerDiffX /= velocityAdjust;
+  centerDiffY /= velocityAdjust;
+  centerDiffZ /= velocityAdjust;
+
+  sphere1.velocityX = centerDiffX;
+  sphere1.velocityY = centerDiffY;
+  sphere1.velocityZ = centerDiffZ;
+  sphere2.velocityX = centerDiffX * -1;
+  sphere2.velocityY = centerDiffY * -1;
+  sphere2.velocityZ = centerDiffZ * -1;
+};
+
 
 smash.SphereSystem.prototype.step = function() {
-  var sq = smash.SphereSystem.square;
-
   for (var i = 0; i < smash.SphereSystem.SPHERES_COUNT; i++) {
     this.spheres[i].step(1);
     for (var j = 0; j < smash.SphereSystem.SPHERES_COUNT; j++) {
-      if (i != j && Math.sqrt(
-          sq(this.spheres[i].positionX - this.spheres[j].positionX) +
-          sq(this.spheres[i].positionY - this.spheres[j].positionY) +
-          sq(this.spheres[i].positionZ - this.spheres[j].positionZ)
-      ) < this.spheres[i].radius + this.spheres[j].radius) {
-        this.spheres[i].velocityX *= -1;
-        this.spheres[i].velocityY *= -1;
-        this.spheres[i].velocityZ *= -1;
-        this.spheres[j].velocityX *= -1;
-        this.spheres[j].velocityY *= -1;
-        this.spheres[j].velocityZ *= -1;
-        this.spheres[i].step(1);
-        this.spheres[j].step(1);
+      if (i != j &&
+          smash.SphereSystem.checkColliding(this.spheres[i], this.spheres[j])) {
+        smash.SphereSystem.collide(this.spheres[i], this.spheres[j]);
       }
     }
 
