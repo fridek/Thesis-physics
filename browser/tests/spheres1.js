@@ -5,16 +5,16 @@
 
 goog.require('smash.SphereSystem');
 
-window.addEventListener('load', function() {
+//window.addEventListener('load', function() {
   var system = new smash.SphereSystem();
 
-  var step = function() {
-    system.step();
-    window.requestAnimationFrame(step);
-  };
-  window.requestAnimationFrame(step);
-}, true);
+//  var step = function() {
+//    system.step();
+//    window.requestAnimationFrame(step);
+//  };
+//  window.requestAnimationFrame(step);
+//}, true);
 //
-//for (var i = 0; i < 1000; i++) {
-//  system.step();
-//}
+for (var i = 0; i < 1000; i++) {
+  system.step();
+}

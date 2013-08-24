@@ -109,13 +109,13 @@ smash.SphereSystem = function() {
 /**
  * @const {number}
  */
-smash.SphereSystem.SPHERES_COUNT = 500;
+smash.SphereSystem.SPHERES_COUNT = 1000;
 
 
 /**
  * @const {boolean}
  */
-smash.SphereSystem.DRAWING_ENABLED = true;
+smash.SphereSystem.DRAWING_ENABLED = false;
 
 
 /**
@@ -183,16 +183,26 @@ smash.SphereSystem.collide = function(sphere1, sphere2) {
   sphere2.velocityZ = centerDiffZ * -1;
 };
 
+smash.SphereSystem.prototype.applyGravity = function(sphere) {
+  if (smash.SphereSystem.GRAVITY_ENABLED) {
+    sphere.velocityY -= smash.SphereSystem.GRAVITY_FORCE;
+  }
+};
+
+
+smash.SphereSystem.prototype.applyFloor = function(sphere) {
+  if (sphere.positionY - sphere.radius <
+      smash.SphereSystem.FLOOR_LEVEL) {
+    sphere.velocityY *= -smash.SphereSystem.FLOOR_FRICTON;
+  }
+};
+
 
 smash.SphereSystem.prototype.step = function() {
   for (var i = 0; i < smash.SphereSystem.SPHERES_COUNT; i++) {
-    if (smash.SphereSystem.GRAVITY_ENABLED) {
-      this.spheres[i].velocityY -= smash.SphereSystem.GRAVITY_FORCE;
-    }
-    if (this.spheres[i].positionY - this.spheres[i].radius <
-        smash.SphereSystem.FLOOR_LEVEL) {
-      this.spheres[i].velocityY *= -smash.SphereSystem.FLOOR_FRICTON;
-    }
+    this.applyGravity(this.spheres[i]);
+    this.applyFloor(this.spheres[i]);
+
 
     this.spheres[i].step(1);
     for (var j = 0; j < smash.SphereSystem.SPHERES_COUNT; j++) {
@@ -202,9 +212,14 @@ smash.SphereSystem.prototype.step = function() {
       }
     }
 
-    this.threeSpheres[i].position.x = this.spheres[i].positionX;
-    this.threeSpheres[i].position.y = this.spheres[i].positionY;
-    this.threeSpheres[i].position.z = this.spheres[i].positionZ;
+    if (smash.SphereSystem.DRAWING_ENABLED) {
+      this.threeSpheres[i].position.x = this.spheres[i].positionX;
+      this.threeSpheres[i].position.y = this.spheres[i].positionY;
+      this.threeSpheres[i].position.z = this.spheres[i].positionZ;
+    }
   }
-  this.renderer.render(this.scene, this.camera);
+
+  if (smash.SphereSystem.DRAWING_ENABLED) {
+    this.renderer.render(this.scene, this.camera);
+  }
 };

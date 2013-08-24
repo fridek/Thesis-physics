@@ -449,8 +449,8 @@ smash.SphereSystem = function() {
     this.renderer.render(this.scene, this.camera)
   }
 };
-smash.SphereSystem.SPHERES_COUNT = 500;
-smash.SphereSystem.DRAWING_ENABLED = !0;
+smash.SphereSystem.SPHERES_COUNT = 50;
+smash.SphereSystem.DRAWING_ENABLED = !1;
 smash.SphereSystem.GRAVITY_ENABLED = !0;
 smash.SphereSystem.GRAVITY_FORCE = 0.1;
 smash.SphereSystem.FLOOR_LEVEL = -100;
@@ -466,25 +466,25 @@ smash.SphereSystem.collide = function(a, b) {
   b.velocityY = -1 * e;
   b.velocityZ = -1 * f
 };
+smash.SphereSystem.prototype.applyGravity = function(a) {
+  smash.SphereSystem.GRAVITY_ENABLED && (a.velocityY -= smash.SphereSystem.GRAVITY_FORCE)
+};
+smash.SphereSystem.prototype.applyFloor = function(a) {
+  a.positionY - a.radius < smash.SphereSystem.FLOOR_LEVEL && (a.velocityY *= -smash.SphereSystem.FLOOR_FRICTON)
+};
 smash.SphereSystem.prototype.step = function() {
   for(var a = 0;a < smash.SphereSystem.SPHERES_COUNT;a++) {
-    smash.SphereSystem.GRAVITY_ENABLED && (this.spheres[a].velocityY -= smash.SphereSystem.GRAVITY_FORCE);
-    this.spheres[a].positionY - this.spheres[a].radius < smash.SphereSystem.FLOOR_LEVEL && (this.spheres[a].velocityY *= -smash.SphereSystem.FLOOR_FRICTON);
+    this.applyGravity(this.spheres[a]);
+    this.applyFloor(this.spheres[a]);
     this.spheres[a].step(1);
     for(var b = 0;b < smash.SphereSystem.SPHERES_COUNT;b++) {
       a != b && smash.math.checkCollidingSpheres(this.spheres[a], this.spheres[b]) && smash.SphereSystem.collide(this.spheres[a], this.spheres[b])
     }
-    this.threeSpheres[a].position.x = this.spheres[a].positionX;
-    this.threeSpheres[a].position.y = this.spheres[a].positionY;
-    this.threeSpheres[a].position.z = this.spheres[a].positionZ
+    smash.SphereSystem.DRAWING_ENABLED && (this.threeSpheres[a].position.x = this.spheres[a].positionX, this.threeSpheres[a].position.y = this.spheres[a].positionY, this.threeSpheres[a].position.z = this.spheres[a].positionZ)
   }
-  this.renderer.render(this.scene, this.camera)
+  smash.SphereSystem.DRAWING_ENABLED && this.renderer.render(this.scene, this.camera)
 };
-window.addEventListener("load", function() {
-  var a = new smash.SphereSystem, b = function() {
-    a.step();
-    window.requestAnimationFrame(b)
-  };
-  window.requestAnimationFrame(b)
-}, !0);
-
+for(var system = new smash.SphereSystem, i = 0;1E3 > i;i++) {
+  system.step()
+}
+;

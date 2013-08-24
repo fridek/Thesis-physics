@@ -7,18 +7,34 @@ buildspheresjs:
 
 buildjs: buildparticlesjs buildspheresjs
 
-buildcpp:
+buildparticlescpp:
 	g++ runtime/tests/particles1.cpp runtime/engine/particle*.cpp -O3 -o runtime/static/particles1
 	g++ runtime/tests/particles2.cpp runtime/engine/particle*.cpp -O3 -o runtime/static/particles2
+
+buildspherescpp:
+	g++ runtime/tests/spheres1.cpp runtime/engine/math.cpp runtime/engine/sphere*.cpp -O3 -o runtime/static/spheres1
+
+buildcpp: buildparticlescpp buildspherescpp
+
 buildall: buildjs buildcpp
 
-timejs:
+timeparticlesjs:
 	time browser/static/d8 browser/static/particles1.js
 	time browser/static/d8 browser/static/particles2.js
+
+timespheresjs:
+	time browser/static/d8 browser/static/spheres1.js
+
+timejs: timeparticlesjs timespheresjs
 	
-timecpp:
+timeparticlescpp:
 	time runtime/static/particles1
 	time runtime/static/particles2
+
+timespherescpp:
+	time runtime/static/spheres1
+
+timecpp: timeparticlescpp timespherescpp
 
 timeall: timejs timecpp
 
