@@ -109,7 +109,7 @@ smash.SphereSystem = function() {
 /**
  * @const {number}
  */
-smash.SphereSystem.SPHERES_COUNT = 1000;
+smash.SphereSystem.SPHERES_COUNT = 500;
 
 
 /**

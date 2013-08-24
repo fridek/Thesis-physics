@@ -1,6 +1,12 @@
-buildjs:
+buildparticlesjs:
 	java -jar browser/bin/plovr.jar build browser/bin/plovr-config-compile-particles1.js > browser/static/particles1.js
 	java -jar browser/bin/plovr.jar build browser/bin/plovr-config-compile-particles2.js > browser/static/particles2.js
+
+buildspheresjs:
+	java -jar browser/bin/plovr.jar build browser/bin/plovr-config-compile-spheres1.js > browser/static/spheres1.js
+
+buildjs: buildparticlesjs buildspheresjs
+
 buildcpp:
 	g++ runtime/tests/particles1.cpp runtime/engine/particle*.cpp -O3 -o runtime/static/particles1
 	g++ runtime/tests/particles2.cpp runtime/engine/particle*.cpp -O3 -o runtime/static/particles2
