@@ -1,0 +1,18 @@
+[1592]       34 ms: Scavenge 1.6 (18.8) -> 0.9 (18.8) MB, 0.0 ms [Runtime::PerformGC].
+[1592]       37 ms: Scavenge 1.6 (18.8) -> 1.2 (19.8) MB, 1.0 ms [Runtime::PerformGC].
+[1592]       40 ms: Scavenge 1.9 (19.8) -> 1.7 (19.8) MB, 1.0 ms [Runtime::PerformGC].
+[1592]       43 ms: Scavenge 2.4 (19.8) -> 2.2 (19.8) MB, 2.0 ms [Runtime::PerformGC].
+[1592]       49 ms: Scavenge 3.7 (19.8) -> 3.3 (20.8) MB, 3.0 ms [Runtime::PerformGC].
+[1592]       56 ms: Scavenge 4.8 (20.8) -> 4.3 (21.8) MB, 3.0 ms [Runtime::PerformGC].
+[1592]       74 ms: Scavenge 7.2 (21.8) -> 6.5 (23.8) MB, 6.0 ms [Runtime::PerformGC].
+[1592]       98 ms: Scavenge 9.4 (23.8) -> 8.6 (24.8) MB, 5.0 ms [Runtime::PerformGC].
+[1592]      194 ms: Scavenge 14.4 (24.8) -> 11.8 (25.8) MB, 23.0 ms [Runtime::PerformGC].
+[1592]      340 ms: Scavenge 15.9 (25.8) -> 14.1 (30.8) MB, 15.0 ms 
+    (+ 10.0 ms in 41 steps since last GC) [Runtime::PerformGC].
+[1592]      689 ms: Mark-sweep 18.7 (30.8) -> 14.0 (32.8) MB, 7.0 ms 
+    (+ 20.0 ms in 113 steps since start of marking, biggest step 1.0 ms) 
+	    [StackGuard GC request] [GC in old space requested].
+[1592]     1240 ms: Scavenge 21.8 (32.8) -> 14.0 (32.8) MB, 0.0 ms [Runtime::PerformGC].
+[1592]     1799 ms: Scavenge 21.8 (32.8) -> 14.0 (32.8) MB, 0.0 ms [Runtime::PerformGC].
+[1592]     2350 ms: Scavenge 21.8 (32.8) -> 14.0 (32.8) MB, 1.0 ms [Runtime::PerformGC].
+[1592]     2902 ms: Scavenge 21.8 (32.8) -> 14.0 (32.8) MB, 1.0 ms [Runtime::PerformGC].

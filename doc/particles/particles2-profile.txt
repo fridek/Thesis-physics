@@ -1,0 +1,24 @@
+Statistical profiling result from null, (3780 ticks, 2 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+     98    2.6%    0.0%  D:\Dropbox\praca_magisterska\physics\browser\static\d8.exe
+      6    0.2%    0.0%  C:\Windows\SysWOW64\ntdll.dll
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+   3476   92.0%   94.6%  LazyCompile: *f.step browser/static/particles2.js:28
+    101    2.7%    2.7%  Stub: TranscendentalCacheStub {1}
+     89    2.4%    2.4%  Stub: TranscendentalCacheStub
+      5    0.1%    0.1%  Script: ~browser/static/particles2.js
+      1    0.0%    0.0%  Stub: TranscendentalCacheStub {2}
+      1    0.0%    0.0%  Stub: BinaryOpStub_MUL_OverwriteLeft_Number+Number
+      1    0.0%    0.0%  LazyCompile: *sin native math.js:199
+      1    0.0%    0.0%  Builtin: A builtin from the snapshot
+
+ [C++]:
+   ticks  total  nonlib   name
+
+ [GC]:
+   ticks  total  nonlib   name
+     59    1.6%

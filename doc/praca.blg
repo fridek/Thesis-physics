@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: praca.aux
+The style file: abbrv.bst
+A level-1 auxiliary file: rozdzial1.aux
+A level-1 auxiliary file: rozdzial2.aux
+A level-1 auxiliary file: rozdzial3.aux
+A level-1 auxiliary file: rozdzial4.aux
+A level-1 auxiliary file: rozdzial5.aux
+A level-1 auxiliary file: rozdzial6.aux
+A level-1 auxiliary file: rozdzial7.aux
+Illegal, another \bibstyle command---line 81 of file praca.aux
+ : \bibstyle
+ :          {ieeetr}
+I'm skipping whatever remains of this command
+Database file #1: bibliografia.bib
+Warning--entry type for "mousewheel" isn't style-file defined
+--line 4 of file bibliografia.bib
+Warning--entry type for "khronos_webgl" isn't style-file defined
+--line 23 of file bibliografia.bib
+Warning--entry type for "webgl_spec" isn't style-file defined
+--line 33 of file bibliografia.bib
+Warning--entry type for "mozilla_canvas3d" isn't style-file defined
+--line 60 of file bibliografia.bib
+Warning--entry type for "3d_projections" isn't style-file defined
+--line 79 of file bibliografia.bib
+Warning--entry type for "3dxml_spec" isn't style-file defined
+--line 88 of file bibliografia.bib
+Warning--entry type for "canvasspec" isn't style-file defined
+--line 97 of file bibliografia.bib
+Warning--entry type for "jqueryselectors" isn't style-file defined
+--line 106 of file bibliografia.bib
+Warning--entry type for "khronos_collada" isn't style-file defined
+--line 116 of file bibliografia.bib
+Warning--entry type for "opengl_ortho" isn't style-file defined
+--line 125 of file bibliografia.bib
+Warning--entry type for "wyklad_dr_szpyrka" isn't style-file defined
+--line 134 of file bibliografia.bib
+Warning--entry type for "x3d_spec" isn't style-file defined
+--line 142 of file bibliografia.bib
+Warning--entry type for "collada_spec" isn't style-file defined
+--line 151 of file bibliografia.bib
+Warning--to sort, need author or key in x3d_spec
+Warning--to sort, need author or key in 3dxml_spec
+Warning--to sort, need author or key in khronos_collada
+Warning--to sort, need author or key in 3d_projections
+Warning--to sort, need author or key in wyklad_dr_szpyrka
+Warning--to sort, need author or key in canvasspec
+Warning--to sort, need author or key in collada_spec
+Warning--to sort, need author or key in jqueryselectors
+Warning--to sort, need author or key in opengl_ortho
+Warning--empty year in book_3d
+Warning--empty booktitle in www_conference
+(There was 1 error message)

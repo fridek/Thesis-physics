@@ -7,3 +7,5 @@ runtime/physics.layout
 *.o
 v8.txt
 v8.log
+*.aux
+*.tex.undo

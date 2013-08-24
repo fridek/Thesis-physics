@@ -1,0 +1,5 @@
+$ time runtime/static/particles1
+
+real    0m2.606s
+user    0m1.950s
+sys     0m0.498s

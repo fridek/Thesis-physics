@@ -1,0 +1,153 @@
+
+% \documentclass[pdflatex,11pt]{aghdpl}
+\documentclass[en]{ujdpl}               % przy kompilacji programem latex
+% \documentclass[pdflatex,en]{aghdpl}  % praca w jezyku angielskim
+
+\usepackage[polish]{babel}
+\usepackage[cp1250]{inputenc}
+\usepackage{ae}
+
+\usepackage[T1]{fontenc}
+\usepackage{avant}
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+
+\usepackage{hyperref} 
+\usepackage{url}
+\usepackage{latexsym}
+\usepackage{textcomp}
+
+\usepackage{graphics} % wlaczanie grafik
+\usepackage{wrapfig}
+
+\usepackage{color} % kolory
+\usepackage{floatflt}
+\usepackage{bookmark}
+\frenchspacing
+\usepackage{indentfirst}
+
+% dodatkowe pakiety
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{enumerate}
+\usepackage{listings}
+\usepackage[usenames,dvipsnames]{xcolor}
+\lstloadlanguages{xml}
+
+\hyphenpenalty=100000
+
+\definecolor{listinggray}{gray}{0.9}
+\definecolor{lbcolor}{rgb}{0.9,0.9,0.9}
+\lstset{
+	backgroundcolor=\color{lbcolor},
+	tabsize=4,
+	rulecolor=,
+	language=xml,
+        basicstyle=\scriptsize,
+        upquote=true,
+        aboveskip={1.5\baselineskip},
+        columns=fixed,
+        showstringspaces=false,
+        extendedchars=true,
+        breaklines=true,
+        prebreak = \raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+        frame=single,
+        showtabs=false,
+        showspaces=false,
+        showstringspaces=false,
+        identifierstyle=\ttfamily,
+        keywordstyle=\color[rgb]{0,0,1},
+        commentstyle=\color[rgb]{0.133,0.545,0.133},
+        stringstyle=\color[rgb]{0.627,0.126,0.941},
+}
+
+
+\lstdefinelanguage{JavaScript}{
+  keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break, this},
+  keywordstyle=\color{blue}\bfseries,
+  ndkeywords={class, export, boolean, throw, implements, import},
+  ndkeywordstyle=\color{}\bfseries,
+  identifierstyle=\color{black},
+  sensitive=false,
+  comment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  commentstyle=\color{purple}\ttfamily,
+  stringstyle=\color{red}\ttfamily,
+  morestring=[b]',
+  morestring=[b]"
+}
+
+\lstset{
+   language=JavaScript,
+   backgroundcolor=\color{listinggray},
+   extendedchars=true,
+   basicstyle=\footnotesize\ttfamily,
+   showstringspaces=false,
+   showspaces=false,
+   numbers=left,
+   numberstyle=\footnotesize,
+   numbersep=9pt,
+   tabsize=2,
+   breaklines=true,
+   showtabs=false,
+   captionpos=b
+}
+
+
+% paragraph gap:
+\setlength{\parskip}{0.5\baselineskip plus 0.5ex minus 0.2ex}
+
+%---------------------------------------------------------------------------
+
+\author{Sebastian Porêba}
+\shortauthor{Sebastian Porêba}
+
+\titlePL{Porównanie silników fizyki 3D}
+\titleEN{Comparison of 3D physics engines}
+
+\shorttitlePL{Porównanie silników fizyki 3D} % skrócona 
+\shorttitleEN{Comparison of 3D physics engines}
+
+\thesistypePL{Praca magisterska}
+\thesistypeEN{Master of Science Thesis}
+
+\supervisorPL{dr hab. Pawe³ Wêgrzyn}
+\supervisorEN{Pawe³ Wêgrzyn Ph.D}
+
+\departmentPL{Instytut Informatyki Stosowanej}
+\departmentEN{Department of Applied Computer Science} 
+
+\date{2013}
+
+\facultyPL{Wydzia³ Fizyki, Astronomii i Informatyki Stosowanej}
+\facultyEN{Faculty of Phycics, Astronomy and Applied Computer Science}
+
+\acknowledgements{Serdecznie podziêkowania dla ...}
+
+%---------------------------------------------------------------------------
+
+\begin{document}
+
+\titlepages
+
+\tableofcontents
+
+\clearpage
+
+\include{rozdzial1}
+\include{rozdzial2}
+\include{rozdzial3}
+\include{rozdzial4}
+\include{rozdzial5}
+\include{rozdzial6}
+\appendix
+\include{rozdzialA}
+\include{rozdzialB}
+
+\clearpage
+\addcontentsline{toc}{chapter}{References}
+
+\nocite{*}
+\bibliographystyle{ieeetr}
+\bibliography{bibliografia}
+
+\end{document}

@@ -1,0 +1,75 @@
+\begin{thebibliography}{10}
+
+\bibitem{jqueryselectors}
+Lista selektorów zgodnych z j{Q}uery\\
+  http://api.jquery.com/category/selectors/.
+
+\bibitem{opengl_ortho}
+Przyk³adowe zastosowanie rachunku macierzowego w {OpenGL}\\
+  http://www.opengl.org/sdk/docs/man/xhtml/glortho.xml.
+
+\bibitem{3d_projections}
+Rodzaje projekcji {3D}\\
+  http://frank.mtsu.edu/~csjudy/planeview3d/tutorial-parallel.html.
+
+\bibitem{3dxml_spec}
+Specyfikacja {3DXML}\\ http://www.3ds.com/products/3dvia/3d-xml/overview/.
+
+\bibitem{canvasspec}
+Specyfikacja {J}avascript dla <canvas>\\
+  http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html.
+
+\bibitem{x3d_spec}
+Specyfikacja {X3D} http://www.web3d.org/x3d/specifications/.
+
+\bibitem{khronos_collada}
+Strona projektu {C}ollada\\ http://www.khronos.org/collada/.
+
+\bibitem{wyklad_dr_szpyrka}
+Wyk³ad {M}etody matematyczne w grafice komputerowej - dr in¿. {M}arcin
+  {S}zpyrka.
+
+\bibitem{collada_spec}
+{COLLADA} 1.5.0 specification, 2008.
+
+\bibitem{mousewheel}
+A.~Brandon.
+\newblock Wtyczka {jQuery Mousewheel}\\
+  http://brandonaaron.net/code/mousewheel/demos.
+
+\bibitem{book_jquery}
+W.~Gajda.
+\newblock {\em JQuery. Poradnik programisty.}
+\newblock Helion, 2010.
+
+\bibitem{khronos_webgl}
+K.~Group.
+\newblock Grupa {K}hronos\\ http://www.khronos.org/webgl/.
+
+\bibitem{webgl_spec}
+K.~Group.
+\newblock Specyfikacja {WebGL}\\
+  https://cvs.khronos.org/svn/repos/registry/trunk/public/webgl/doc/spec/webgl-spec.html.
+
+\bibitem{book_3d}
+A.~LaMothe.
+\newblock {\em Triki najlepszych programistów gier 3D. Vademecum
+  profesjonalisty}.
+\newblock Helion.
+
+\bibitem{book_math3d}
+E.~Lengyel.
+\newblock {\em Mathematics for 3D Game Programming and Computer Graphics}.
+\newblock Charles River Media, 2004.
+
+\bibitem{mozilla_canvas3d}
+Mozilla.
+\newblock Testowe implementacje {C}anvas 3{D}\\
+  http://blog.vlad1.com/2007/11/26/canvas-3d-gl-power-web-style/, 2006.
+
+\bibitem{www_conference}
+D.~R. Tim Berners-Lee.
+\newblock Pierwsza konferencja {WWW} w {G}enewie.
+\newblock 1999.
+
+\end{thebibliography}

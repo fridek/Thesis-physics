@@ -1,0 +1,17 @@
+\chapter{Introduction}
+\label{cha:introduction}
+
+The main objective of presented project is the implementation of parts of 3D engine in a browser environment. Parts of engine are analysed side-by-side with parallel engine compiled from C++. The objective of analysis is comparison of performance and description of possible issues related to the limited browser resources and dynamic features of JavaScript.
+
+Browser-based engine is implemented in JavaScript and analyzed in V8 engine. V8 is maintained by Google and is used in Google Chrome browser. Executable examples are compiled using gcc compiler and are runned on the same platform. For additional comparison EmScripten project is used to automatically generate JavaScript to measure if automated conversion may be as effective as writing code by hand.
+
+Project is based on conference sessions and announcements authored by V8 programmers regarding performance of JavaScript applications. Analysis of available materials is a topic of Chapter 2, where internals of modern engines for dynamic languages are briefly explained. Results of existing works are reproduced and measured to build a base for extension.
+
+Chapter 3 covers particles system found often in graphic engines. It shows techniques related to memory allocation and garbage collection that help to improve performance.
+
+Chapter 4 is focused on sphere collision detection and reaction.
+
+Chapter 5 shows complex object collision.
+
+Chapter 6 recreates previous examples using EmScripten and compares automatically generated code with JavaScript implementation.
+

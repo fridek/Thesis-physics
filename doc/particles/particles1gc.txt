@@ -1,0 +1,25 @@
+$ browser/static/d8 --trace-gc browser/static/particles1.js
+[9696]       10 ms: Scavenge 1.6 (18.8) -> 0.9 (18.8) MB, 0.0 ms [Runtime::PerformGC].
+[9696]       14 ms: Scavenge 1.6 (18.8) -> 1.3 (19.8) MB, 2.0 ms [Runtime::PerformGC].
+(...)
+[9696]      233 ms: Scavenge 15.0 (25.8) -> 9.7 (25.8) MB, 4.0 ms [Runtime::PerformGC].
+[9696]      277 ms: Scavenge 15.6 (26.8) -> 10.0 (27.8) MB, 4.0 ms 
+    (+ 13.0 ms in 22 steps since last GC) [Runtime::PerformGC].
+[9696] Limited new space size due to high promotion rate: 1 MB
+[9696]      284 ms: Mark-sweep 10.6 (27.8) -> 10.4 (28.8) MB, 6.0 ms 
+    (+ 14.0 ms in 23 steps since start of marking, biggest step 1.0 ms) 
+	[StackGuard GC request] [GC in old space requested].
+[9696]      294 ms: Scavenge 11.5 (28.8) -> 11.0 (29.8) MB, 1.0 ms [Runtime::PerformGC].
+[9696]      295 ms: Scavenge 11.9 (29.8) -> 11.6 (30.8) MB, 0.0 ms [Runtime::PerformGC].
+(...)
+[9696]      555 ms: Scavenge 43.4 (68.8) -> 43.4 (69.8) MB, 1.0 ms [Runtime::PerformGC].
+[9696] Increasing marking speed to 3 due to high promotion rate
+[9696]      564 ms: Scavenge 43.9 (69.8) -> 43.6 (69.8) MB, 1.0 ms 
+    (+ 4.0 ms in 3 steps since last GC) [Runtime::PerformGC].
+[9696]      576 ms: Scavenge 44.2 (69.8) -> 44.2 (70.8) MB, 1.0 ms 
+    (+ 8.0 ms in 2 steps since last GC) [Runtime::PerformGC].
+[9696]      581 ms: Mark-sweep 44.9 (70.8) -> 13.4 (61.8) MB, 3.0 ms 
+    (+ 14.0 ms in 6 steps since start of marking, biggest step 2.0 ms) 
+	[StackGuard GC request] [GC in old space requested].
+[9696]      591 ms: Scavenge 14.3 (61.8) -> 14.1 (61.8) MB, 0.0 ms [Runtime::PerformGC].
+(...)

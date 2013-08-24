@@ -1,0 +1,22 @@
+[marking Point.setX 0x2d6ecb87e568 for recompilation, 
+reason: small function, ICs with typeinfo: 1/1 (100%)]
+[marking Point.setY 0x2d6ecb87e5b0 for recompilation, 
+reason: small function, ICs with typeinfo: 1/1 (100%)]
+
+[optimizing: Point.setY / 2d6ecb87e5b1 - took 0.037, 0.047, 0.000 ms]
+[optimizing: Point.setX / 2d6ecb87e569 - took 0.021, 0.038, 0.000 ms]
+
+[marking Point 0x2d6ecb87e448 for recompilation, 
+reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking dot 0x2d6ecb87e490 for recompilation, 
+reason: small function, ICs with typeinfo: 7/7 (100%)]
+
+[optimizing: Point / 2d6ecb87e449 - took 0.004, 0.019, 0.000 ms]
+[optimizing: dot / 2d6ecb87e491 - took 0.013, 0.057, 0.000 ms]
+
+**** DEOPT: dot at bailout #2, address 0x0, frame size 0
+[deoptimizing: begin 0x2d6ecb87e491 dot @2]
+  translating dot => node=3, height=0
+[deoptimizing: end 0x2d6ecb87e491 dot => node=3, pc=0x98518d30ac6, state=NO_REGISTERS, 
+  alignment=no padding, took 0.146 ms]
+[removing optimized code for: dot]

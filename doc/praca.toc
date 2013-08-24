@@ -1,0 +1,28 @@
+\select@language {polish}
+\contentsline {chapter}{\numberline {1}Introduction}{6}{chapter.1}
+\contentsline {chapter}{\numberline {2}Overview of JavaScript and V8 engine architecture}{7}{chapter.2}
+\contentsline {section}{\numberline {2.1}JIT compilation - tracking variable types}{7}{section.2.1}
+\contentsline {section}{\numberline {2.2}Type interference}{9}{section.2.2}
+\contentsline {section}{\numberline {2.3}Hidden classes}{10}{section.2.3}
+\contentsline {section}{\numberline {2.4}Garbage collection}{11}{section.2.4}
+\contentsline {chapter}{\numberline {3}Particle system}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}System parameters}{13}{section.3.1}
+\contentsline {section}{\numberline {3.2}Implementation with high memory allocation}{14}{section.3.2}
+\contentsline {chapter}{\numberline {4}Sphere collision}{21}{chapter.4}
+\contentsline {section}{\numberline {4.1}Algorithm description}{21}{section.4.1}
+\contentsline {section}{\numberline {4.2}Three-dimensional SAT}{21}{section.4.2}
+\contentsline {section}{\numberline {4.3}{$O(N^2)$} approach}{21}{section.4.3}
+\contentsline {section}{\numberline {4.4}Octree-partitioned space}{21}{section.4.4}
+\contentsline {chapter}{\numberline {5}Boxes collision}{22}{chapter.5}
+\contentsline {section}{\numberline {5.1}Algorithm description}{22}{section.5.1}
+\contentsline {section}{\numberline {5.2}{$O(N^2)$} approach}{22}{section.5.2}
+\contentsline {section}{\numberline {5.3}Octree-partitioned space}{22}{section.5.3}
+\contentsline {chapter}{\numberline {6}Summary}{23}{chapter.6}
+\contentsline {section}{\numberline {6.1}Encountered environment limitations}{23}{section.6.1}
+\contentsline {section}{\numberline {6.2}Browser advantages}{23}{section.6.2}
+\contentsline {section}{\numberline {6.3}Recommended techniques}{23}{section.6.3}
+\contentsline {section}{\numberline {6.4}Final thoughts}{23}{section.6.4}
+\contentsline {chapter}{\numberline {A}Acknowledgements}{24}{appendix.A}
+\contentsline {chapter}{\numberline {B}Source code}{25}{appendix.B}
+\contentsline {section}{\numberline {B.1}Particle system}{25}{section.B.1}
+\contentsline {chapter}{References}{39}{lstnumber.B.8.75}

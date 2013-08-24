@@ -1,0 +1,13 @@
+//         Unknown
+//           |   \____________
+//           |                |
+//      Primitive       Non-primitive
+//           |   \_______     |
+//           |           |    |
+//        Number       String |
+//         /   \         |    |
+//    Double  Integer32  |   /
+//        |      |      /   /
+//        |     Smi    /   /
+//        |      |    / __/
+//        Uninitialized.
