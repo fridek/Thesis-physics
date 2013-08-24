@@ -5,6 +5,8 @@
 
 goog.provide('smash.Particle');
 
+
+
 /**
  * @struct
  * @constructor
@@ -47,13 +49,14 @@ smash.Particle = function() {
   this.isDead = false;
 };
 
+
 /**
  *
  */
 smash.Particle.prototype.step = function() {
   this.positionX += this.velocityX;
   this.positionY += this.velocityY;
-  this.age ++;
+  this.age++;
 };
 
 

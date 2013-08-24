@@ -6,6 +6,7 @@
 goog.provide('smash.SphereSystem');
 
 goog.require('smash.Sphere');
+goog.require('smash.math');
 
 
 
@@ -34,9 +35,15 @@ smash.SphereSystem = function() {
      * @type {!THREE.PerspectiveCamera}
      */
     this.camera = new THREE.PerspectiveCamera(20,
-        smash.SphereSystem.CANVAS_WIDTH / smash.SphereSystem.CANVAS_HEIGHT,
+        smash.SphereSystem.CANVAS_WIDTH /
+            smash.SphereSystem.CANVAS_HEIGHT,
         1, 10000);
-    this.camera.position.z = 600;
+    this.camera.position.z = 1000;
+
+    var controls = new THREE.OrbitControls(this.camera);
+    controls.addEventListener('change', goog.bind(function() {
+      this.renderer.render(this.scene, this.camera);
+    }, this));
 
     /**
      * @type {!THREE.Scene}
@@ -44,8 +51,27 @@ smash.SphereSystem = function() {
     this.scene = new THREE.Scene();
 
     var spotLight = new THREE.PointLight(0xffffff);
-    spotLight.position.set( -40, 60, -10 );
-    this.scene.add( spotLight );
+    spotLight.position.set(-40, 60, -10);
+    this.scene.add(spotLight);
+
+    var axes = new THREE.AxisHelper(20);
+    this.scene.add(axes);
+
+    var planeGeometry = new THREE.PlaneGeometry(
+        10000, 10000, 100, 100);
+    var planeMaterial = new THREE.MeshBasicMaterial({
+      color: 0xcccccc,
+      wireframe: true
+    });
+
+    var plane = new THREE.Mesh(planeGeometry, planeMaterial);
+    plane.rotation.x = -0.5 * Math.PI;
+    plane.position.x = 0;
+    plane.position.y = smash.SphereSystem.FLOOR_LEVEL;
+    plane.position.z = 0;
+
+    this.scene.add(plane);
+
 
 
     var material = new THREE.MeshLambertMaterial({
@@ -93,6 +119,31 @@ smash.SphereSystem.DRAWING_ENABLED = true;
 
 
 /**
+ * @const {boolean}
+ */
+smash.SphereSystem.GRAVITY_ENABLED = true;
+
+
+/**
+ * @const {number}
+ */
+smash.SphereSystem.GRAVITY_FORCE = 0.1;
+
+
+/**
+ * @const {number}
+ */
+smash.SphereSystem.FLOOR_LEVEL = -100;
+
+
+/**
+ * (1 - energy lost on floor hit)
+ * @const {number}
+ */
+smash.SphereSystem.FLOOR_FRICTON = 0.8;
+
+
+/**
  * @const {number}
  */
 smash.SphereSystem.CANVAS_WIDTH = 1200;
@@ -105,66 +156,19 @@ smash.SphereSystem.CANVAS_HEIGHT = 400;
 
 
 /**
- * @param {number} x
- * @return {number}
- */
-smash.SphereSystem.square = function(x) {
-  return x*x;
-};
-
-/**
- * @param {number} x1
- * @param {number} y1
- * @param {number} z1
- * @param {number} x2
- * @param {number} y2
- * @param {number} z2
- * @return {number}
- */
-smash.SphereSystem.vectorDistance = function(x1, y1, z1, x2, y2, z2) {
-  return Math.sqrt(smash.SphereSystem.square(x1 - x2) +
-      smash.SphereSystem.square(y1 - y2) +
-      smash.SphereSystem.square(z1 - z2));
-};
-
-/**
- * @param {number} x
- * @param {number} y
- * @param {number} z
- * @return {number}
- */
-smash.SphereSystem.vectorLength = function(x, y, z) {
-  return Math.sqrt(smash.SphereSystem.square(x) +
-      smash.SphereSystem.square(y) +
-      smash.SphereSystem.square(z));
-};
-
-/**
- * @param {!smash.Sphere} sphere1
- * @param {!smash.Sphere} sphere2
- * @return {boolean}
- */
-smash.SphereSystem.checkColliding = function(sphere1, sphere2) {
-  return smash.SphereSystem.vectorDistance(
-      sphere1.positionX, sphere1.positionY, sphere1.positionZ,
-      sphere2.positionX, sphere2.positionY, sphere2.positionZ) <
-      sphere1.radius + sphere2.radius;
-};
-
-/**
  * @param {!smash.Sphere} sphere1
  * @param {!smash.Sphere} sphere2
  */
 smash.SphereSystem.collide = function(sphere1, sphere2) {
-  var sumVelocitiesLength = smash.SphereSystem.vectorLength(
+  var sumVelocitiesLength = smash.math.vectorLength(
       sphere1.velocityX, sphere1.velocityY, sphere1.velocityZ) +
-      smash.SphereSystem.vectorLength(
+      smash.math.vectorLength(
           sphere2.velocityX, sphere2.velocityY, sphere2.velocityZ);
 
   var centerDiffX = sphere1.positionX - sphere2.positionX;
   var centerDiffY = sphere1.positionY - sphere2.positionY;
   var centerDiffZ = sphere1.positionZ - sphere2.positionZ;
-  var centerLength = smash.SphereSystem.vectorLength(
+  var centerLength = smash.math.vectorLength(
       centerDiffX, centerDiffY, centerDiffZ);
   var velocityAdjust = centerLength * sumVelocitiesLength / 2;
   centerDiffX /= velocityAdjust;
@@ -182,10 +186,18 @@ smash.SphereSystem.collide = function(sphere1, sphere2) {
 
 smash.SphereSystem.prototype.step = function() {
   for (var i = 0; i < smash.SphereSystem.SPHERES_COUNT; i++) {
+    if (smash.SphereSystem.GRAVITY_ENABLED) {
+      this.spheres[i].velocityY -= smash.SphereSystem.GRAVITY_FORCE;
+    }
+    if (this.spheres[i].positionY - this.spheres[i].radius <
+        smash.SphereSystem.FLOOR_LEVEL) {
+      this.spheres[i].velocityY *= -smash.SphereSystem.FLOOR_FRICTON;
+    }
+
     this.spheres[i].step(1);
     for (var j = 0; j < smash.SphereSystem.SPHERES_COUNT; j++) {
       if (i != j &&
-          smash.SphereSystem.checkColliding(this.spheres[i], this.spheres[j])) {
+          smash.math.checkCollidingSpheres(this.spheres[i], this.spheres[j])) {
         smash.SphereSystem.collide(this.spheres[i], this.spheres[j]);
       }
     }

@@ -15,3 +15,9 @@ timecpp:
 	time runtime/static/particles2
 
 timeall: timejs timecpp
+
+lint:
+	gjslint --strict --closurized_namespaces="goog,smash" browser/engine/*.js browser/tests/*.js
+
+fixjs:
+	fixjsstyle --strict --closurized_namespaces="goog,smash" browser/engine/*.js browser/tests/*.js

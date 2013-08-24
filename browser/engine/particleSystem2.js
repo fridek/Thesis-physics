@@ -6,7 +6,7 @@
 goog.provide('smash.ParticleSystem2');
 
 goog.require('smash.Particle');
-goog.require('smash.ParticleEmitter');
+
 
 
 /**
@@ -32,7 +32,7 @@ smash.ParticleSystem2 = function() {
     /**
      * @type {!Element}
      */
-    this.canvas = window.document.createElement("canvas");
+    this.canvas = window.document.createElement('canvas');
     this.canvas.width = smash.ParticleSystem2.CANVAS_WIDTH;
     this.canvas.height = smash.ParticleSystem2.CANVAS_HEIGHT;
     window.document.body.appendChild(this.canvas);
@@ -55,15 +55,18 @@ smash.ParticleSystem2 = function() {
   }
 };
 
+
 /**
  * @const {boolean}
  */
 smash.ParticleSystem2.DRAWING_ENABLED = false;
 
+
 /**
  * @const {number}
  */
 smash.ParticleSystem2.CANVAS_WIDTH = 1200;
+
 
 /**
  * @const {number}
@@ -74,7 +77,7 @@ smash.ParticleSystem2.CANVAS_HEIGHT = 400;
 smash.ParticleSystem2.prototype.step = function() {
   if (smash.ParticleSystem2.DRAWING_ENABLED) {
     for (var i = 0; i < smash.ParticleSystem2.CANVAS_WIDTH *
-        smash.ParticleSystem2.CANVAS_HEIGHT * 4; i+=4) {
+        smash.ParticleSystem2.CANVAS_HEIGHT * 4; i += 4) {
       this.pixels[i] = 0;
       this.pixels[i + 1] = 0;
       this.pixels[i + 2] = 0;
@@ -135,6 +138,7 @@ smash.ParticleSystem2.prototype.step = function() {
     this.context.putImageData(this.imageData, 0, 0);
   }
 };
+
 
 /**
  * @param {!smash.ParticleEmitter} emitter

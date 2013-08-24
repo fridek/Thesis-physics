@@ -7,6 +7,8 @@ goog.provide('smash.ParticleEmitter');
 
 goog.require('smash.Particle');
 
+
+
 /**
  * @constructor
  */

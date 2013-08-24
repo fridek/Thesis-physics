@@ -6,7 +6,7 @@
 goog.require('smash.SphereSystem');
 
 window.addEventListener('load', function() {
-var system = new smash.SphereSystem();
+  var system = new smash.SphereSystem();
 
   var step = function() {
     system.step();
