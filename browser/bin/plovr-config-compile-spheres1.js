@@ -4,8 +4,8 @@
     "../engine"
   ],
   "inputs": "../tests/spheres1.js",
-  "mode": "SIMPLE",
-  "pretty-print": true,
+  "mode": "ADVANCED",
+  "pretty-print": false,
   "level": "SILENT",
   "checks": {
     "checkRegExp": "WARNING",
