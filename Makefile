@@ -8,11 +8,11 @@ buildspheresjs:
 buildjs: buildparticlesjs buildspheresjs
 
 buildparticlescpp:
-	g++ runtime/tests/particles1.cpp runtime/engine/particle*.cpp -O3 -o runtime/static/particles1
-	g++ runtime/tests/particles2.cpp runtime/engine/particle*.cpp -O3 -o runtime/static/particles2
+	g++ runtime/tests/particles1.cpp runtime/engine/particle*.cpp -O3 -static -o runtime/static/particles1
+	g++ runtime/tests/particles2.cpp runtime/engine/particle*.cpp -O3 -static -o runtime/static/particles2
 
 buildspherescpp:
-	g++ runtime/tests/spheres1.cpp runtime/engine/math.cpp runtime/engine/sphere*.cpp -O3 -o runtime/static/spheres1
+	g++ runtime/tests/spheres1.cpp runtime/engine/math.cpp runtime/engine/sphere*.cpp -O3 -static -o runtime/static/spheres1
 
 buildcpp: buildparticlescpp buildspherescpp
 

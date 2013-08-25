@@ -7,6 +7,7 @@
 
 smash::SphereSystem::SphereSystem() {
   this->spheres = new std::vector<smash::Sphere*>;
+  collisions = 0;
   
   float generalVelocity = 1;
     for (int i = 0; i < smash::SphereSystem::SPHERES_COUNT; i++) {
@@ -83,6 +84,7 @@ void smash::SphereSystem::step() {
       smash::Sphere* s2 = *it2;
       if (s != s2 &&
           smash::math::checkCollidingSpheres(s, s2)) {
+        this->collisions++;
         smash::SphereSystem::collide(s, s2);
       }
     }

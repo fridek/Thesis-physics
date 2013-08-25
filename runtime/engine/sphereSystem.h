@@ -18,6 +18,8 @@ namespace smash {
       const static float FLOOR_LEVEL = -100;
       const static float FLOOR_FRICTON = 0.8;
 
+      int collisions;
+
       SphereSystem(void);
       ~SphereSystem(void);
       static void collide(smash::Sphere*, smash::Sphere*);

@@ -103,6 +103,11 @@ smash.SphereSystem = function() {
     document.body.appendChild(this.renderer.domElement);
     this.renderer.render(this.scene, this.camera);
   }
+
+  /**
+   * @type {number}
+   */
+  this.collisions = 0;
 };
 
 
@@ -183,6 +188,10 @@ smash.SphereSystem.collide = function(sphere1, sphere2) {
   sphere2.velocityZ = centerDiffZ * -1;
 };
 
+
+/**
+ * @param {!smash.Sphere} sphere
+ */
 smash.SphereSystem.prototype.applyGravity = function(sphere) {
   if (smash.SphereSystem.GRAVITY_ENABLED) {
     sphere.velocityY -= smash.SphereSystem.GRAVITY_FORCE;
@@ -190,6 +199,9 @@ smash.SphereSystem.prototype.applyGravity = function(sphere) {
 };
 
 
+/**
+ * @param {!smash.Sphere} sphere
+ */
 smash.SphereSystem.prototype.applyFloor = function(sphere) {
   if (sphere.positionY - sphere.radius <
       smash.SphereSystem.FLOOR_LEVEL) {
@@ -198,6 +210,9 @@ smash.SphereSystem.prototype.applyFloor = function(sphere) {
 };
 
 
+/**
+ *
+ */
 smash.SphereSystem.prototype.step = function() {
   for (var i = 0; i < smash.SphereSystem.SPHERES_COUNT; i++) {
     this.applyGravity(this.spheres[i]);
@@ -208,6 +223,7 @@ smash.SphereSystem.prototype.step = function() {
     for (var j = 0; j < smash.SphereSystem.SPHERES_COUNT; j++) {
       if (i != j &&
           smash.math.checkCollidingSpheres(this.spheres[i], this.spheres[j])) {
+        this.collisions++;
         smash.SphereSystem.collide(this.spheres[i], this.spheres[j]);
       }
     }
