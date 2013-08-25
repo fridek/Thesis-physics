@@ -8,7 +8,6 @@
 \usepackage{ae}
 
 \usepackage[T1]{fontenc}
-\usepackage{avant}
 \renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
 
 \usepackage{hyperref} 
@@ -132,6 +131,9 @@
 \tableofcontents
 
 \clearpage
+
+\let\stdsection\section
+\renewcommand\section{\newpage\stdsection}
 
 \include{rozdzial1}
 \include{rozdzial2}
