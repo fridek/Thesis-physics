@@ -4,6 +4,13 @@ buildparticlesjs:
 
 buildspheresjs:
 	java -jar browser/bin/plovr.jar build browser/bin/plovr-config-compile-spheres1.js > browser/static/spheres1.js
+	java -jar browser/bin/plovr.jar build browser/bin/plovr-config-compile-spheres2.js > browser/static/spheres2.js
+
+buildspheresjs1:
+	java -jar browser/bin/plovr.jar build browser/bin/plovr-config-compile-spheres1.js > browser/static/spheres1.js
+
+buildspheresjs2:
+	java -jar browser/bin/plovr.jar build browser/bin/plovr-config-compile-spheres2.js > browser/static/spheres2.js
 
 buildjs: buildparticlesjs buildspheresjs
 
@@ -24,6 +31,7 @@ timeparticlesjs:
 
 timespheresjs:
 	time browser/static/d8 browser/static/spheres1.js
+	time browser/static/d8 browser/static/spheres2.js
 
 timejs: timeparticlesjs timespheresjs
 	

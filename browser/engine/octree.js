@@ -3,10 +3,25 @@
  * @author sebastian.poreba@gmail.com (Sebastian Poręba)
  */
 
+goog.provide('smash.Octree');
+
+goog.require('goog.array');
+
+
+/**
+ * @param left
+ * @param right
+ * @param top
+ * @param bottom
+ * @param near
+ * @param far
+ * @param maxDepth
+ * @constructor
+ */
 smash.Octree = function(left, right, top, bottom, near, far, maxDepth) {
   this.maxDepth = maxDepth;
 
-  this.childNodes_ = [];
+  this.childNodes = [];
 
   this.left = left;
 
@@ -20,29 +35,53 @@ smash.Octree = function(left, right, top, bottom, near, far, maxDepth) {
 
   this.far = far;
 
-  this.objects_ = [];
+  this.objects = [];
 };
 
-
+/**
+ *
+ */
 smash.Octree.prototype.split = function() {
   var middleX = (this.left + this.right) / 2;
   var middleY = (this.top + this.bottom) / 2;
   var middleZ = (this.near + this.far) / 2;
   var maxDepth = this.maxDepth - 1;
 
-  this.childNodes_[0] = new smash.Octree(this.left, middleX, this.top, middleY, this.near, middleZ, maxDepth);
-  this.childNodes_[1] = new smash.Octree(middleX, this.right, this.top, middleY, this.near, middleZ, maxDepth);
+  this.childNodes[0] = new smash.Octree(this.left, middleX, this.top, middleY, this.near, middleZ, maxDepth);
+  this.childNodes[1] = new smash.Octree(middleX, this.right, this.top, middleY, this.near, middleZ, maxDepth);
 
-  this.childNodes_[2] = new smash.Octree(this.left, middleX, middleY, this.bottom, this.near, middleZ, maxDepth);
-  this.childNodes_[3] = new smash.Octree(middleX, this.right, middleY, this.bottom, this.near, middleZ, maxDepth);
+  this.childNodes[2] = new smash.Octree(this.left, middleX, middleY, this.bottom, this.near, middleZ, maxDepth);
+  this.childNodes[3] = new smash.Octree(middleX, this.right, middleY, this.bottom, this.near, middleZ, maxDepth);
 
-  this.childNodes_[4] = new smash.Octree(this.left, middleX, this.top, middleY, middleZ, this.far, maxDepth);
-  this.childNodes_[5] = new smash.Octree(middleX, this.right, this.top, middleY, middleZ, this.far, maxDepth);
+  this.childNodes[4] = new smash.Octree(this.left, middleX, this.top, middleY, middleZ, this.far, maxDepth);
+  this.childNodes[5] = new smash.Octree(middleX, this.right, this.top, middleY, middleZ, this.far, maxDepth);
 
-  this.childNodes_[6] = new smash.Octree(this.left, middleX, middleY, this.bottom, middleZ, this.far, maxDepth);
-  this.childNodes_[7] = new smash.Octree(middleX, this.right, middleY, this.bottom, middleZ, this.far, maxDepth);
+  this.childNodes[6] = new smash.Octree(this.left, middleX, middleY, this.bottom, middleZ, this.far, maxDepth);
+  this.childNodes[7] = new smash.Octree(middleX, this.right, middleY, this.bottom, middleZ, this.far, maxDepth);
 };
 
+/**
+ *
+ * @return {boolean}
+ */
+smash.Octree.prototype.hasAnyObjects = function() {
+  return this.objects.length > 0 ||
+      this.childNodes.some(function(node) {
+    return node.hasAnyObjects();
+  });
+};
+
+
+/**
+ *
+ * @param left
+ * @param right
+ * @param top
+ * @param bottom
+ * @param near
+ * @param far
+ * @return {Array}
+ */
 smash.Octree.prototype.getAllOffsets = function(left, right, top, bottom, near, far) {
   var middleX = (this.left + this.right) / 2;
   var middleY = (this.top + this.bottom) / 2;
@@ -91,11 +130,36 @@ smash.Octree.prototype.getAllOffsets = function(left, right, top, bottom, near, 
       allOffsets.push(allOffsets[i] + 1);
     }
   }
+  return allOffsets;
+};
 
+
+/**
+ *
+ * @param sphere
+ * @return {boolean}
+ */
+smash.Octree.prototype.sphereLeft = function(sphere) {
+  return (sphere.positionX + sphere.radius < this.left ||
+      sphere.positionX - sphere.radius > this.right ||
+      sphere.positionY + sphere.radius < this.top ||
+      sphere.positionY - sphere.radius > this.bottom ||
+      sphere.positionZ + sphere.radius < this.near ||
+      sphere.positionZ - sphere.radius > this.far);
+};
+
+
+smash.Octree.prototype.removeSphere = function(sphere) {
+  goog.array.remove(this.objects, sphere);
 };
 
 
 smash.Octree.prototype.addSphere = function(sphere) {
+  if (this.objects.indexOf(sphere) != -1) {
+    return; // this happens when sphere is re-added from two
+    // different nodes after removal.
+  }
+
   var left = sphere.positionX - sphere.radius;
   var right = sphere.positionX + sphere.radius;
   var top = sphere.positionY - sphere.radius;
@@ -103,17 +167,23 @@ smash.Octree.prototype.addSphere = function(sphere) {
   var near = sphere.positionZ - sphere.radius;
   var far = sphere.positionZ + sphere.radius;
 
-  if (this.childNodes_.length == 0) {
-    this.objects_.push(sphere);
+  if (this.maxDepth == 0 || this.objects.length == 0) {
+    this.objects.push(sphere);
   } else {
-    if (this.childNodes_.length == 1) {
+    if (this.childNodes.length == 0) {
       this.split();
     }
     var offsets = this.getAllOffsets(left, right, top, bottom, near, far);
-
     offsets.forEach(function(offset) {
-      this.childNodes_[offset].addSphere(sphere, left, right, top, bottom, near, far);
+      this.childNodes[offset].addSphere(sphere);
     }, this);
-    this.objects_.push(sphere);
   }
+};
+
+smash.Octree.prototype.log = function() {
+  window.console.log('On level ', this.maxDepth,
+      ' octree node with', this.objects.length, 'objects');
+  this.childNodes.forEach(function(node) {
+    node.log();
+  });
 };

@@ -6,7 +6,7 @@
   "externs": [
     "../third_party/threejs-exports.js"
   ],
-  "inputs": "../tests/spheres1.js",
+  "inputs": "../tests/spheres2.js",
   "mode": "RAW",
   "pretty-print": true,
   "level": "VERBOSE",
