@@ -145,7 +145,7 @@ smash.SphereSystem2.SPHERES_COUNT = 1000;
 /**
  * @const {boolean}
  */
-smash.SphereSystem2.DRAWING_ENABLED = true;
+smash.SphereSystem2.DRAWING_ENABLED = false;
 
 
 /**

@@ -4,7 +4,7 @@
     "../engine"
   ],
   "inputs": "../tests/spheres2.js",
-  "mode": "SIMPLE",
+  "mode": "ADVANCED",
   "pretty-print": false,
   "level": "SILENT",
   "checks": {
