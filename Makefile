@@ -18,8 +18,10 @@ buildparticlescpp:
 	g++ runtime/tests/particles1.cpp runtime/engine/particle*.cpp -O3 -static -o runtime/static/particles1
 	g++ runtime/tests/particles2.cpp runtime/engine/particle*.cpp -O3 -static -o runtime/static/particles2
 
-buildspherescpp:
+buildspherescpp1:
 	g++ runtime/tests/spheres1.cpp runtime/engine/math.cpp runtime/engine/sphere*.cpp -O3 -static -o runtime/static/spheres1
+buildspherescpp2:
+	g++ runtime/tests/spheres2.cpp runtime/engine/math.cpp runtime/engine/octree.cpp runtime/engine/sphere*.cpp -O3 -static -o runtime/static/spheres2
 
 buildcpp: buildparticlescpp buildspherescpp
 
