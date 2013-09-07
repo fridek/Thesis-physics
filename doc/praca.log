@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.3.13)  7 SEP 2013 18:36
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.3.13)  7 SEP 2013 19:46
 entering extended mode
 **praca.tex
 (D:\Dropbox\praca_magisterska\physics\doc\praca.tex
@@ -1479,10 +1479,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 14254 strings out of 494045
- 211197 string characters out of 3145966
+ 14256 strings out of 494045
+ 211225 string characters out of 3145966
  801359 words of memory out of 3000000
- 14606 multiletter control sequences out of 15000+200000
+ 14608 multiletter control sequences out of 15000+200000
  49078 words of font info for 109 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  41i,14n,63p,953b,2021s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1512,7 +1512,7 @@ onts/type1/public/amsfonts/cm/cmssi9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/cm/cmtt8.pfb>
-Output written on praca.pdf (73 pages, 7733323 bytes).
+Output written on praca.pdf (73 pages, 7735225 bytes).
 PDF statistics:
  3521 PDF objects out of 3580 (max. 8388607)
  2525 named destinations out of 2984 (max. 500000)
