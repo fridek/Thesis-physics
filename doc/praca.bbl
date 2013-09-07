@@ -1,75 +1,66 @@
 \begin{thebibliography}{10}
 
-\bibitem{jqueryselectors}
-Lista selektorów zgodnych z j{Q}uery\\
-  http://api.jquery.com/category/selectors/.
+\bibitem{v8designdoc}
+V8 documentation.
 
-\bibitem{opengl_ortho}
-Przyk³adowe zastosowanie rachunku macierzowego w {OpenGL}\\
-  http://www.opengl.org/sdk/docs/man/xhtml/glortho.xml.
+\bibitem{v8highperformance}
+M.~Ager.
+\newblock Google i/o 2009 - v8: High performance javascript engine.
+\newblock 2009.
 
-\bibitem{3d_projections}
-Rodzaje projekcji {3D}\\
-  http://frank.mtsu.edu/~csjudy/planeview3d/tutorial-parallel.html.
+\bibitem{breakingjsspeedlimit}
+D.~Clifford.
+\newblock Google i/o 2012 - breaking the javascript speed limit with v8.
+\newblock 2012.
 
-\bibitem{3dxml_spec}
-Specyfikacja {3DXML}\\ http://www.3ds.com/products/3dvia/3d-xml/overview/.
+\bibitem{atourofv8}
+J.~Conrod.
+\newblock A tour of v8: full compiler.
 
-\bibitem{canvasspec}
-Specyfikacja {J}avascript dla <canvas>\\
-  http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html.
+\bibitem{goodparts}
+D.~Crockford.
+\newblock {\em JavaScript: The Good Parts}.
+\newblock O'Reilly, 2008.
 
-\bibitem{x3d_spec}
-Specyfikacja {X3D} http://www.web3d.org/x3d/specifications/.
+\bibitem{theraceforspeed}
+J.~Dalziel.
+\newblock The race for speed series.
 
-\bibitem{khronos_collada}
-Strona projektu {C}ollada\\ http://www.khronos.org/collada/.
+\bibitem{egorov}
+V.~Egorov.
+\newblock Series of articles on v8.
 
-\bibitem{wyklad_dr_szpyrka}
-Wyk³ad {M}etody matematyczne w grafice komputerowej - dr in¿. {M}arcin
-  {S}zpyrka.
+\bibitem{understandingv8}
+V.~Egorov.
+\newblock Understanding v8.
+\newblock 2011.
 
-\bibitem{collada_spec}
-{COLLADA} 1.5.0 specification, 2008.
+\bibitem{realtimecollisiondetection}
+C.~Ericson.
+\newblock {\em Real-Time Collision Detection}.
+\newblock CRC Press, 2004.
 
-\bibitem{mousewheel}
-A.~Brandon.
-\newblock Wtyczka {jQuery Mousewheel}\\
-  http://brandonaaron.net/code/mousewheel/demos.
+\bibitem{floitsch}
+F.~Loitsch.
+\newblock Optimizing fo v8 series.
 
-\bibitem{book_jquery}
-W.~Gajda.
-\newblock {\em JQuery. Poradnik programisty.}
-\newblock Helion, 2010.
+\bibitem{gamephysicsenginedev}
+I.~Millington.
+\newblock {\em Game physics engine development}.
+\newblock CRC Press, 2010.
 
-\bibitem{khronos_webgl}
-K.~Group.
-\newblock Grupa {K}hronos\\ http://www.khronos.org/webgl/.
+\bibitem{fromconsoletochrome}
+L.~Thompson.
+\newblock Gdc 2012: From console to chrome.
+\newblock 2012.
 
-\bibitem{webgl_spec}
-K.~Group.
-\newblock Specyfikacja {WebGL}\\
-  https://cvs.khronos.org/svn/repos/registry/trunk/public/webgl/doc/spec/webgl-spec.html.
+\bibitem{andywingo}
+A.~Wingo.
+\newblock Series of articles on v8.
 
-\bibitem{book_3d}
-A.~LaMothe.
-\newblock {\em Triki najlepszych programistów gier 3D. Vademecum
-  profesjonalisty}.
-\newblock Helion.
-
-\bibitem{book_math3d}
-E.~Lengyel.
-\newblock {\em Mathematics for 3D Game Programming and Computer Graphics}.
-\newblock Charles River Media, 2004.
-
-\bibitem{mozilla_canvas3d}
-Mozilla.
-\newblock Testowe implementacje {C}anvas 3{D}\\
-  http://blog.vlad1.com/2007/11/26/canvas-3d-gl-power-web-style/, 2006.
-
-\bibitem{www_conference}
-D.~R. Tim Berners-Lee.
-\newblock Pierwsza konferencja {WWW} w {G}enewie.
-\newblock 1999.
+\bibitem{highperformancejavascript}
+N.~C. Zakas.
+\newblock {\em High Performance JavaScript}.
+\newblock O'Reilly, 2010.
 
 \end{thebibliography}

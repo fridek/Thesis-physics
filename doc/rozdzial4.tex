@@ -49,7 +49,7 @@ TODO: add math here, finish this chapter.
 \section{{$O(N^2)$} approach}
 \label{sec:sphereinitial}
 
-Naive approach for collision detection proves to by easy to implement in JavaScript. Since almost no memory is allocated in each frame, no garbage collection issues appear. All methods are well defined and work mostly on floats. This results in highly optimised binary code produced by compiler, as show on \ref{img:spheres1profile}.
+Naive approach for collision detection proves to by easy to implement in JavaScript. Since almost no memory is allocated in each frame, no garbage collection issues appear. All methods are well defined and work mostly on floats. This results in highly optimised binary code produced by compiler, as shown on \ref{img:spheres1profile}.
 
 \begin{figure}[h!]
   \caption{Chart of time used in optimised version of JavaScript}
@@ -58,7 +58,7 @@ Naive approach for collision detection proves to by easy to implement in JavaScr
 	\includegraphics[width=16cm]{spheres/spheres1-profile.png}
 \end{figure} 
 
-Multiple tests with N=1000 and different number of frames rendered show, that for simple mathematical task performance of JavaScript is very close to those of C++. On average, JavaScript version of benchmark runs 15\% longer than C++ one.
+Multiple tests with N=1000 and different number of frames rendered show, that for simple mathematical task performance of JavaScript is very close to this of C++. On average, JavaScript version of benchmark runs 15\% longer than C++ one.
 
 \begin{figure}[h!]
   \caption{Comparison of total execution time. N = 1000, varying number of frames.}
@@ -66,15 +66,40 @@ Multiple tests with N=1000 and different number of frames rendered show, that fo
   \centering
 	\includegraphics[width=16cm]{spheres/time-total.png}
 \end{figure} 
-
-
 \begin{figure}[h!]
   \caption{Comparison of execution time per frame. N = 1000, varying number of frames.}
   \label{img:spheres1-time-per-frame}
   \centering
 	\includegraphics[width=16cm]{spheres/time-per-frame.png}
-\end{figure} 
-
+\end{figure}
 
 \section{Octree-partitioned space}
 \label{sec:sphereoctree}
+
+\begin{figure}[h!]
+  \caption{Octree partitioned sphere collision system}
+  \label{img:spheres}
+  \centering
+	\includegraphics[width=16cm]{spheres/render2.png}
+\end{figure}
+
+Tests with Octree partitioning were executed with N=1000 spheres and T=1000 frames. Varying value is maximum depth of Octree, ranging from 1 to 10. 
+Changing maximum depth reduces number of collision checks between spheres, as shown on \ref{img:octree-collisions}.
+
+\begin{figure}[h!]
+  \caption{Number of collisions in Octree}
+  \label{img:octree-collisions}
+  \centering
+	\includegraphics[width=16cm]{spheres/octree-collisions.png}
+\end{figure}
+
+For low values overall complexity of checks doesn't change significantly, since most of spheres are in one or few bounding cubes and no checks are skipped. Additional operations related to Octree are actually making this solution slower than $O(n^2)$ approach. For depth values in optimal zone, number of collision is reduced by factor of at least 10, while keeping Octree overhead reasonable. Interesting thing happens when maximum level of Octree is very high and edge of smallest Octree cube approaches size of spheres. Number of transitions between partitioning cubes, related memory allocation and cleanups actually make this approach much slower, as shown on \ref{img:octree-time}. Moreover, some spheres are references in more than one cube, raising again number of collision checks.
+
+\begin{figure}[h!]
+  \caption{Run times in Octree system}
+  \label{img:octree-time}
+  \centering
+	\includegraphics[width=16cm]{spheres/octree-time.png}
+\end{figure}
+
+It's clearly visible that number of collision checks and run time is correlated  only up to certain point. For deep Octrees number of checks doesn't improve further, but overall run time is getting longer. Performance of JavaScript in relation to C++ varies between 30\% to 80\% overhead. In comparison with $O(n^2)$ approach, optimal Octree in JavaScript runs over 92\% faster and C++ over 94\% faster. 

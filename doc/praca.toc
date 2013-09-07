@@ -10,21 +10,21 @@
 \contentsline {section}{\numberline {3.2}Implementation with high memory allocation}{16}{section.3.2}
 \contentsline {chapter}{\numberline {4}Sphere collision}{22}{chapter.4}
 \contentsline {section}{\numberline {4.1}Algorithm description}{23}{section.4.1}
-\contentsline {section}{\numberline {4.2}{$O(N^2)$} approach}{24}{section.4.2}
-\contentsline {section}{\numberline {4.3}Octree-partitioned space}{25}{section.4.3}
-\contentsline {chapter}{\numberline {5}Boxes collision}{26}{chapter.5}
-\contentsline {section}{\numberline {5.1}Algorithm description}{27}{section.5.1}
-\contentsline {section}{\numberline {5.2}Three-dimensional SAT}{28}{section.5.2}
+\contentsline {section}{\numberline {4.2}{$O(N^2)$} approach}{25}{section.4.2}
+\contentsline {section}{\numberline {4.3}Octree-partitioned space}{27}{section.4.3}
+\contentsline {chapter}{\numberline {5}Boxes collision}{29}{chapter.5}
+\contentsline {section}{\numberline {5.1}Algorithm description}{29}{section.5.1}
+\contentsline {section}{\numberline {5.2}Three-dimensional SAT}{29}{section.5.2}
 \contentsline {section}{\numberline {5.3}{$O(N^2)$} approach}{29}{section.5.3}
-\contentsline {section}{\numberline {5.4}Octree-partitioned space}{30}{section.5.4}
-\contentsline {chapter}{\numberline {6}Summary}{31}{chapter.6}
-\contentsline {section}{\numberline {6.1}Encountered environment limitations}{32}{section.6.1}
-\contentsline {section}{\numberline {6.2}Browser advantages}{33}{section.6.2}
-\contentsline {section}{\numberline {6.3}Recommended techniques}{34}{section.6.3}
-\contentsline {section}{\numberline {6.4}Final thoughts}{35}{section.6.4}
-\contentsline {chapter}{\numberline {A}Acknowledgements}{36}{appendix.A}
-\contentsline {chapter}{\numberline {B}Source code}{37}{appendix.B}
-\contentsline {section}{\numberline {B.1}Math utilities}{38}{section.B.1}
-\contentsline {section}{\numberline {B.2}Particle system}{41}{section.B.2}
-\contentsline {section}{\numberline {B.3}Spheres collision detection}{55}{section.B.3}
-\contentsline {chapter}{References}{63}{lstnumber.B.14.93}
+\contentsline {section}{\numberline {5.4}Octree-partitioned space}{29}{section.5.4}
+\contentsline {chapter}{\numberline {6}Summary}{30}{chapter.6}
+\contentsline {section}{\numberline {6.1}Encountered environment limitations}{30}{section.6.1}
+\contentsline {section}{\numberline {6.2}Browser advantages}{30}{section.6.2}
+\contentsline {section}{\numberline {6.3}Recommended techniques}{30}{section.6.3}
+\contentsline {section}{\numberline {6.4}Final thoughts}{30}{section.6.4}
+\contentsline {chapter}{\numberline {A}Acknowledgements}{31}{appendix.A}
+\contentsline {chapter}{\numberline {B}Source code}{32}{appendix.B}
+\contentsline {section}{\numberline {B.1}Math utilities}{32}{section.B.1}
+\contentsline {section}{\numberline {B.2}Particle system}{35}{section.B.2}
+\contentsline {section}{\numberline {B.3}Spheres collision detection}{49}{section.B.3}
+\contentsline {chapter}{References}{73}{lstnumber.B.18.142}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.3.13)  25 AUG 2013 16:29
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.3.13)  7 SEP 2013 18:36
 entering extended mode
 **praca.tex
 (D:\Dropbox\praca_magisterska\physics\doc\praca.tex
@@ -587,8 +587,11 @@ File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 
 LaTeX Warning: Label `listing:particles1profile' multiply defined.
 
-) (D:\Dropbox\praca_magisterska\physics\doc\rozdzial4.aux)
-(D:\Dropbox\praca_magisterska\physics\doc\rozdzial5.aux)
+) (D:\Dropbox\praca_magisterska\physics\doc\rozdzial4.aux
+
+LaTeX Warning: Label `img:spheres' multiply defined.
+
+) (D:\Dropbox\praca_magisterska\physics\doc\rozdzial5.aux)
 (D:\Dropbox\praca_magisterska\physics\doc\rozdzial6.aux)
 (D:\Dropbox\praca_magisterska\physics\doc\rozdzialA.aux)
 (D:\Dropbox\praca_magisterska\physics\doc\rozdzialB.aux
@@ -602,28 +605,28 @@ LaTeX Warning: Label `listing:particlejs' multiply defined.
 LaTeX Warning: Label `listing:spherejs' multiply defined.
 
 ))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 127.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 127.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 128.
+LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 128.
+LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 128.
+LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 128.
+LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 128.
+LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 128.
+LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 128.
+LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 128.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 128.
 
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Try loading font information for T1+aess on input line 127.
+LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    Try loading font information for T1+aess on input line 128.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ae\t1aess.fd"
@@ -678,7 +681,7 @@ File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box36
-Package hyperref Info: Link coloring OFF on input line 127.
+Package hyperref Info: Link coloring OFF on input line 128.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 
@@ -687,25 +690,25 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count140
 )
-LaTeX Info: Redefining \ref on input line 127.
-LaTeX Info: Redefining \pageref on input line 127.
-LaTeX Info: Redefining \nameref on input line 127.
+LaTeX Info: Redefining \ref on input line 128.
+LaTeX Info: Redefining \pageref on input line 128.
+LaTeX Info: Redefining \nameref on input line 128.
 \c@lstlisting=\count141
 
 
 LaTeX Font Warning: Font shape `T1/aess/bx/sc' undefined
-(Font)              using `T1/aess/bx/n' instead on input line 129.
+(Font)              using `T1/aess/bx/n' instead on input line 130.
 
 
 LaTeX Font Warning: Font shape `T1/aess/m/sc' undefined
-(Font)              using `T1/aess/m/n' instead on input line 129.
+(Font)              using `T1/aess/m/n' instead on input line 130.
 
 <uj.jpg, id=3, 331.83975pt x 145.14224pt>
 File: uj.jpg Graphic file (type jpg)
  <use uj.jpg>
-Package pdftex.def Info: uj.jpg used on input line 129.
+Package pdftex.def Info: uj.jpg used on input line 130.
 (pdftex.def)             Requested size: 232.28624pt x 101.59886pt.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 129.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 130.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
@@ -713,7 +716,7 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Program Files (x86)/Mi
 KTeX 2.9/tex/latex/misc/ujdpl/uj.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 129--129
+Underfull \hbox (badness 10000) in paragraph at lines 130--130
 
  []
 
@@ -721,26 +724,26 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.129 \titlepages
+l.130 \titlepages
                   [1
 
 ]
 File: uj.jpg Graphic file (type jpg)
  <use uj.jpg>
-Package pdftex.def Info: uj.jpg used on input line 129.
+Package pdftex.def Info: uj.jpg used on input line 130.
 (pdftex.def)             Requested size: 232.28624pt x 101.59886pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.129 \titlepages
+l.130 \titlepages
                   [1
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.129 \titlepages
+l.130 \titlepages
                   [1
 
 ] (D:\Dropbox\praca_magisterska\physics\doc\praca.toc)
@@ -773,8 +776,10 @@ Package pdftex.def Info: jit-2.jpg used on input line 29.
 (pdftex.def)             Requested size: 227.62204pt x 136.38487pt.
 LaTeX Font Info:    Font shape `T1/aess/m/it' in size <9> not available
 (Font)              Font shape `T1/aess/m/sl' tried instead on input line 34.
- [8 <D:/Dropbox/praca_magisterska/physics/doc/jit-1.jpg> <D:/Dropbox/praca_magi
-sterska/physics/doc/jit-2.jpg>]
+ [8
+
+ <D:/Dropbox/praca_magisterska/physics/doc/jit-1.jpg> <D:/Dropbox/praca_magiste
+rska/physics/doc/jit-2.jpg>]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 36.
 LaTeX Font Info:    Try loading font information for T1+aett on input line 36.
@@ -786,7 +791,9 @@ File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 LaTeX Font Warning: Font shape `T1/aett/bx/n' undefined
 (Font)              using `T1/aett/m/n' instead on input line 2.
 
-) [9] (D:\Dropbox\praca_magisterska\physics\doc\types.txt) [10]
+) [9] (D:\Dropbox\praca_magisterska\physics\doc\types.txt) [10
+
+]
 <point0.png, id=165, 1003.75pt x 602.25pt>
 File: point0.png Graphic file (type png)
  <use point0.png>
@@ -814,12 +821,16 @@ Package pdftex.def Info: point_tree2.png used on input line 80.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[11 <D:/Dropbox/praca_magisterska/physics/doc/point0.png (PNG copy)> <D:/Dropbo
-x/praca_magisterska/physics/doc/point1.png (PNG copy)> <D:/Dropbox/praca_magist
-erska/physics/doc/point2.png (PNG copy)>]
+[11
+
+ <D:/Dropbox/praca_magisterska/physics/doc/point0.png (PNG copy)> <D:/Dropbox/p
+raca_magisterska/physics/doc/point1.png (PNG copy)> <D:/Dropbox/praca_magisters
+ka/physics/doc/point2.png (PNG copy)>]
 (D:\Dropbox\praca_magisterska\physics\doc\migration.txt) [12 <D:/Dropbox/praca_
 magisterska/physics/doc/point_tree2.png (PNG copy)>]
-(D:\Dropbox\praca_magisterska\physics\doc\gc.txt)) [13]
+(D:\Dropbox\praca_magisterska\physics\doc\gc.txt)) [13
+
+]
 (D:\Dropbox\praca_magisterska\physics\doc\rozdzial3.tex
 Rozdzia\l  3.
 <particles.png, id=217, 531.9875pt x 338.26375pt>
@@ -831,12 +842,16 @@ Package pdftex.def Info: particles.png used on input line 11.
 
 
 
- <D:/Dropbox/praca_magisterska/physics/doc/particles.png>] [15]
+ <D:/Dropbox/praca_magisterska/physics/doc/particles.png>] [15
+
+]
 (D:\Dropbox\praca_magisterska\physics\doc\particles/timejs1.txt)
 (D:\Dropbox\praca_magisterska\physics\doc\particles/timecpp1.txt)
 (D:\Dropbox\praca_magisterska\physics\doc\particles/particles1-profile.txt
-[16]) (D:\Dropbox\praca_magisterska\physics\doc\particles/particleSystemStep.js
-[17]) <particles/particles1-profile.png, id=316, 1204.5pt x 602.25pt>
+[16
+
+]) (D:\Dropbox\praca_magisterska\physics\doc\particles/particleSystemStep.js [1
+7]) <particles/particles1-profile.png, id=316, 1204.5pt x 602.25pt>
 File: particles/particles1-profile.png Graphic file (type png)
 
 <use particles/particles1-profile.png>
@@ -887,7 +902,10 @@ Package pdftex.def Info: octree/octree.png used on input line 38.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[23 <D:/Dropbox/praca_magisterska/physics/doc/octree/octree2.png>]
+[23
+
+ <D:/Dropbox/praca_magisterska/physics/doc/octree/octree2.png>] [24 <D:/Dropbox
+/praca_magisterska/physics/doc/octree/octree.png (PNG copy)>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 49.
@@ -900,44 +918,66 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 49.
 
-<spheres/spheres1-profile.png, id=464, 1204.5pt x 602.25pt>
+<spheres/spheres1-profile.png, id=469, 1204.5pt x 602.25pt>
 File: spheres/spheres1-profile.png Graphic file (type png)
 
 <use spheres/spheres1-profile.png>
 Package pdftex.def Info: spheres/spheres1-profile.png used on input line 58.
 (pdftex.def)             Requested size: 455.24408pt x 227.62596pt.
 
-<spheres/time-total.png, id=465, 813.0375pt x 384.43625pt>
+<spheres/time-total.png, id=470, 813.0375pt x 384.43625pt>
 File: spheres/time-total.png Graphic file (type png)
 
 <use spheres/time-total.png>
 Package pdftex.def Info: spheres/time-total.png used on input line 67.
 (pdftex.def)             Requested size: 455.24408pt x 215.2535pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<spheres/time-per-frame.png, id=466, 830.10126pt x 387.4475pt>
+<spheres/time-per-frame.png, id=471, 830.10126pt x 387.4475pt>
 File: spheres/time-per-frame.png Graphic file (type png)
 
 <use spheres/time-per-frame.png>
-Package pdftex.def Info: spheres/time-per-frame.png used on input line 75.
+Package pdftex.def Info: spheres/time-per-frame.png used on input line 73.
 (pdftex.def)             Requested size: 455.24408pt x 212.48193pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[24 <D:/Dropbox/praca_magisterska/physics/doc/octree/octree.png (PNG copy)> <D:
-/Dropbox/praca_magisterska/physics/doc/spheres/spheres1-profile.png>]) [25 <D:/
-Dropbox/praca_magisterska/physics/doc/spheres/time-total.png (PNG copy)> <D:/Dr
-opbox/praca_magisterska/physics/doc/spheres/time-per-frame.png (PNG copy)>]
-(D:\Dropbox\praca_magisterska\physics\doc\rozdzial5.tex
+[25
+
+ <D:/Dropbox/praca_magisterska/physics/doc/spheres/spheres1-profile.png> <D:/Dr
+opbox/praca_magisterska/physics/doc/spheres/time-total.png (PNG copy)>]
+[26 <D:/Dropbox/praca_magisterska/physics/doc/spheres/time-per-frame.png (PNG c
+opy)>] <spheres/render2.png, id=488, 1209.51875pt x 409.53pt>
+File: spheres/render2.png Graphic file (type png)
+
+<use spheres/render2.png>
+Package pdftex.def Info: spheres/render2.png used on input line 83.
+(pdftex.def)             Requested size: 455.24408pt x 154.14201pt.
+
+<spheres/octree-collisions.png, id=490, 605.26125pt x 218.8175pt>
+File: spheres/octree-collisions.png Graphic file (type png)
+
+<use spheres/octree-collisions.png>
+Package pdftex.def Info: spheres/octree-collisions.png used on input line 93.
+(pdftex.def)             Requested size: 455.24408pt x 164.5835pt.
+
+<spheres/octree-time.png, id=492, 608.2725pt x 258.9675pt>
+File: spheres/octree-time.png Graphic file (type png)
+
+<use spheres/octree-time.png>
+Package pdftex.def Info: spheres/octree-time.png used on input line 102.
+(pdftex.def)             Requested size: 455.24408pt x 193.82207pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [27
+
+ <D:/Dropbox/praca_magisterska/physics/doc/spheres/render2.png (PNG copy)> <D:/
+Dropbox/praca_magisterska/physics/doc/spheres/octree-collisions.png (PNG copy)>
+] [28 <D:/Dropbox/praca_magisterska/physics/doc/spheres/octree-time.png (PNG co
+py)>] (D:\Dropbox\praca_magisterska\physics\doc\rozdzial5.tex
 Rozdzia\l  5.
-[26
-
-
-
-] [27] [28]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 9.
@@ -950,26 +990,25 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 9.
 
-[29]) [30] (D:\Dropbox\praca_magisterska\physics\doc\rozdzial6.tex
+) [29
+
+
+
+] (D:\Dropbox\praca_magisterska\physics\doc\rozdzial6.tex
 Rozdzia\l  6.
-[31
+) [30
 
 
 
-] [32] [33] [34]) [35]
-(D:\Dropbox\praca_magisterska\physics\doc\rozdzialA.tex
+] (D:\Dropbox\praca_magisterska\physics\doc\rozdzialA.tex
 Dodatek A.
-) [36
+) [31
 
 
 
 ] (D:\Dropbox\praca_magisterska\physics\doc\rozdzialB.tex
 Dodatek B.
-[37
-
-
-
-] (D:\Dropbox\praca_magisterska\physics\doc\math.js
+(D:\Dropbox\praca_magisterska\physics\doc\math.js
 LaTeX Font Info:    Try loading font information for TS1+aett on input line 3.
 LaTeX Font Info:    No file TS1aett.fd. on input line 3.
 
@@ -978,11 +1017,11 @@ LaTeX Font Warning: Font shape `TS1/aett/m/n' undefined
 (Font)              using `TS1/cmr/m/n' instead
 (Font)              for symbol `texttrademark' on input line 3.
 
+[32
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [38])
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+
+]) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
@@ -999,24 +1038,26 @@ Overfull \hbox (29.03033pt too wide) in paragraph at lines 22--23
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-[39]) [40] (D:\Dropbox\praca_magisterska\physics\doc\particles/particle.js
+[33]) [34] (D:\Dropbox\praca_magisterska\physics\doc\particles/particle.js
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [41])
-(D:\Dropbox\praca_magisterska\physics\doc\particles/particle.cpp [42])
-(D:\Dropbox\praca_magisterska\physics\doc\particles/particleEmitter.js [43]
+ [35
+
+])
+(D:\Dropbox\praca_magisterska\physics\doc\particles/particle.cpp [36])
+(D:\Dropbox\praca_magisterska\physics\doc\particles/particleEmitter.js [37]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [44])
+ [38])
 (D:\Dropbox\praca_magisterska\physics\doc\particles/particleEmitter.cpp
-[45])
+[39])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [46]
-(D:\Dropbox\praca_magisterska\physics\doc\particles/particleSystem.js [47]
+ [40]
+(D:\Dropbox\praca_magisterska\physics\doc\particles/particleSystem.js [41]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [48])
+ [42])
 (D:\Dropbox\praca_magisterska\physics\doc\particles/particleSystem.cpp
 Overfull \hbox (156.47098pt too wide) in paragraph at lines 20--21
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
@@ -1042,13 +1083,13 @@ Overfull \hbox (130.98285pt too wide) in paragraph at lines 26--27
   
  []
 
-[49]) (D:\Dropbox\praca_magisterska\physics\doc\particles/particleSystem2.js
-[50]
+[43]) (D:\Dropbox\praca_magisterska\physics\doc\particles/particleSystem2.js
+[44]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [51])
+ [45])
 (D:\Dropbox\praca_magisterska\physics\doc\particles/particleSystem2.cpp
-[52]
+[46]
 Overfull \hbox (156.47098pt too wide) in paragraph at lines 26--27
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -1069,26 +1110,28 @@ Overfull \hbox (130.98285pt too wide) in paragraph at lines 53--54
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [53])
-[54] (D:\Dropbox\praca_magisterska\physics\doc\spheres/sphere.js
+ [47])
+[48] (D:\Dropbox\praca_magisterska\physics\doc\spheres/sphere.js
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [55])
+ [49
+
+])
 (D:\Dropbox\praca_magisterska\physics\doc\spheres/sphere.cpp)
-(D:\Dropbox\praca_magisterska\physics\doc\spheres/sphereSystem.js [56]
+(D:\Dropbox\praca_magisterska\physics\doc\spheres/sphereSystem.js [50]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [57]
+ [51]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [58]
+ [52]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [59])
-[60] (D:\Dropbox\praca_magisterska\physics\doc\spheres/sphereSystem.cpp
+ [53])
+[54] (D:\Dropbox\praca_magisterska\physics\doc\spheres/sphereSystem.cpp
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [61]
+ [55]
 Overfull \hbox (100.3971pt too wide) in paragraph at lines 76--77
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -1106,12 +1149,310 @@ Overfull \hbox (125.88522pt too wide) in paragraph at lines 83--84
   
  []
 
-)) [62] (D:\Dropbox\praca_magisterska\physics\doc\praca.bbl
+) (D:\Dropbox\praca_magisterska\physics\doc\spheres/octree.js [56]
+Overfull \hbox (100.3971pt too wide) in paragraph at lines 50--51
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+ []
+
+
+Overfull \hbox (105.49472pt too wide) in paragraph at lines 51--53
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+ []
+
+
+Overfull \hbox (115.68997pt too wide) in paragraph at lines 53--54
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+ []
+
+
+Overfull \hbox (120.7876pt too wide) in paragraph at lines 54--56
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+ []
+
+
+Overfull \hbox (95.29947pt too wide) in paragraph at lines 56--57
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+ []
+
+
+Overfull \hbox (100.3971pt too wide) in paragraph at lines 57--59
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+ []
+
+
+Overfull \hbox (110.59235pt too wide) in paragraph at lines 59--60
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+ []
+
+
+Overfull \hbox (115.68997pt too wide) in paragraph at lines 60--61
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [57]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [58]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [59])
+(D:\Dropbox\praca_magisterska\physics\doc\spheres/octree.cpp
+Overfull \hbox (130.98285pt too wide) in paragraph at lines 26--27
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+  
+ []
+
+
+Overfull \hbox (161.5686pt too wide) in paragraph at lines 41--42
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+
+ []
+
+
+Overfull \hbox (166.66623pt too wide) in paragraph at lines 42--44
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+
+ []
+
+
+Overfull \hbox (176.86148pt too wide) in paragraph at lines 44--45
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+
+ []
+
+
+Overfull \hbox (181.9591pt too wide) in paragraph at lines 45--47
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+
+ []
+
+
+Overfull \hbox (156.47098pt too wide) in paragraph at lines 47--48
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+
+ []
+
+
+Overfull \hbox (161.5686pt too wide) in paragraph at lines 48--50
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+
+ []
+
+
+Overfull \hbox (171.76385pt too wide) in paragraph at lines 50--51
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+
+ []
+
+
+Overfull \hbox (176.86148pt too wide) in paragraph at lines 51--52
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+
+ []
+
+[60]
+Overfull \hbox (130.98285pt too wide) in paragraph at lines 59--60
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+  
+ []
+
+
+Overfull \hbox (130.98285pt too wide) in paragraph at lines 71--72
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+  
+ []
+
+
+Overfull \hbox (130.98285pt too wide) in paragraph at lines 80--81
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+  
+ []
+
+
+Overfull \hbox (161.5686pt too wide) in paragraph at lines 88--89
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][]  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [61]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [62]
+Overfull \hbox (3.5422pt too wide) in paragraph at lines 167--168
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+]  
+ []
+
+) (D:\Dropbox\praca_magisterska\physics\doc\spheres/sphereSystem2.js [63]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [64]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [65]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [66]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [67]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [68]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [69])
+(D:\Dropbox\praca_magisterska\physics\doc\spheres/sphereSystem2.cpp [70]
+Overfull \hbox (100.3971pt too wide) in paragraph at lines 82--83
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+  
+ []
+
+
+Overfull \hbox (125.88522pt too wide) in paragraph at lines 83--84
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+  
+ []
+
+
+Overfull \hbox (130.98285pt too wide) in paragraph at lines 94--95
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+  
+ []
+
+
+Overfull \hbox (100.3971pt too wide) in paragraph at lines 102--103
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [71]
+Overfull \hbox (130.98285pt too wide) in paragraph at lines 113--114
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+  
+ []
+
+
+Overfull \hbox (110.59235pt too wide) in paragraph at lines 118--119
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][]  
+ []
+
+
+Overfull \hbox (141.1781pt too wide) in paragraph at lines 124--125
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+  
+ []
+
+
+Overfull \hbox (100.3971pt too wide) in paragraph at lines 135--136
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+  
+ []
+
+)) [72] (D:\Dropbox\praca_magisterska\physics\doc\praca.bbl
 LaTeX Font Info:    Font shape `T1/aess/m/it' in size <10> not available
-(Font)              Font shape `T1/aess/m/sl' tried instead on input line 42.
+(Font)              Font shape `T1/aess/m/sl' tried instead on input line 22.
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 155.
- [63
+ [73
 
 
 
@@ -1138,15 +1479,15 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 13146 strings out of 494045
- 192083 string characters out of 3145966
- 798878 words of memory out of 3000000
- 14414 multiletter control sequences out of 15000+200000
+ 14254 strings out of 494045
+ 211197 string characters out of 3145966
+ 801359 words of memory out of 3000000
+ 14606 multiletter control sequences out of 15000+200000
  49078 words of font info for 109 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  41i,14n,63p,953b,2021s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{lstnumber.B.14.93} has been referenced but does n
-ot exist, replaced by a fixed one
+pdfTeX warning (dest): name{lstnumber.B.18.142} has been referenced but does 
+not exist, replaced by a fixed one
 
  <C:\Users\fridek\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\t
 crm0800.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
@@ -1171,9 +1512,9 @@ onts/type1/public/amsfonts/cm/cmssi9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/cm/cmtt8.pfb>
-Output written on praca.pdf (63 pages, 5192046 bytes).
+Output written on praca.pdf (73 pages, 7733323 bytes).
 PDF statistics:
- 2400 PDF objects out of 2487 (max. 8388607)
- 1621 named destinations out of 1728 (max. 500000)
- 313 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3521 PDF objects out of 3580 (max. 8388607)
+ 2525 named destinations out of 2984 (max. 500000)
+ 328 words of extra memory for PDF output out of 10000 (max. 10000000)
 

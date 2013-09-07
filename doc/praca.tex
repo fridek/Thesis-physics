@@ -15,6 +15,7 @@
 \usepackage{latexsym}
 \usepackage{textcomp}
 
+\usepackage{titlesec}
 \usepackage{graphics} % wlaczanie grafik
 \usepackage{wrapfig}
 
@@ -132,8 +133,7 @@
 
 \clearpage
 
-\let\stdsection\section
-\renewcommand\section{\newpage\stdsection}
+\newcommand{\sectionbreak}{\clearpage}
 
 \include{rozdzial1}
 \include{rozdzial2}
