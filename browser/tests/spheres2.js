@@ -17,7 +17,7 @@ var system;
 //  window.requestAnimationFrame(step);
 //}, true);
 //
-for (var i = 0; i < arguments[0]; i++) {
+for (var i = 0; i < 10000; i++) {
   system.step();
 }
 print(system.collisions);

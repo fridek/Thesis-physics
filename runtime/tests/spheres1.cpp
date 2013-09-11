@@ -4,8 +4,8 @@
 #include "../engine/sphere.h"
 
 int main(int argc, char** argv) {
-  int frames;
-  sscanf (argv[1],"%d",&frames);
+  int frames = 1000;
+  // sscanf (argv[1],"%d",&frames);
   
   smash::SphereSystem* system = new smash::SphereSystem();
   for (int i = 0; i < frames; i++) {

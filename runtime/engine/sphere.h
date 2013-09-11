@@ -1,12 +1,10 @@
 #pragma once
 
 #include <iostream>
-#include <tr1/memory>
 
 namespace smash {
 	class Sphere {
 	  public:
-	    typedef std::tr1::shared_ptr<Sphere> pointer;
 	    
       float positionX;
       float positionY;

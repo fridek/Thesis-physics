@@ -1,10 +1,13 @@
-buildparticlesjs:
+GCCFLAGS=-O3 -static
+EMCCFLAGS=-O2 --closure 1
+
+buildparticlesjs1:
 	java -jar browser/bin/plovr.jar build browser/bin/plovr-config-compile-particles1.js > browser/static/particles1.js
+
+buildparticlesjs2:
 	java -jar browser/bin/plovr.jar build browser/bin/plovr-config-compile-particles2.js > browser/static/particles2.js
 
-buildspheresjs:
-	java -jar browser/bin/plovr.jar build browser/bin/plovr-config-compile-spheres1.js > browser/static/spheres1.js
-	java -jar browser/bin/plovr.jar build browser/bin/plovr-config-compile-spheres2.js > browser/static/spheres2.js
+buildparticlesjs: buildparticlesjs1 buildparticlesjs2
 
 buildspheresjs1:
 	java -jar browser/bin/plovr.jar build browser/bin/plovr-config-compile-spheres1.js > browser/static/spheres1.js
@@ -12,41 +15,60 @@ buildspheresjs1:
 buildspheresjs2:
 	java -jar browser/bin/plovr.jar build browser/bin/plovr-config-compile-spheres2.js > browser/static/spheres2.js
 
+buildspheresjs: buildspheresjs1 buildspheresjs2
+
 buildjs: buildparticlesjs buildspheresjs
 
-buildparticlescpp:
-	g++ runtime/tests/particles1.cpp runtime/engine/particle*.cpp -O3 -static -o runtime/static/particles1
-	g++ runtime/tests/particles2.cpp runtime/engine/particle*.cpp -O3 -static -o runtime/static/particles2
+buildparticlescpp1:
+	g++ runtime/tests/particles1.cpp runtime/engine/particle*.cpp $(GCCFLAGS) -o runtime/static/particles1
+buildparticlescpp2:
+	g++ runtime/tests/particles2.cpp runtime/engine/particle*.cpp $(GCCFLAGS) -o runtime/static/particles2
+
+buildparticlescpp: buildparticlescpp1 buildparticlescpp2
 
 buildspherescpp1:
-	g++ runtime/tests/spheres1.cpp runtime/engine/math.cpp runtime/engine/sphere*.cpp -O3 -static -o runtime/static/spheres1
+	g++ runtime/tests/spheres1.cpp runtime/engine/math.cpp runtime/engine/sphere.cpp runtime/engine/sphereSystem.cpp $(GCCFLAGS) -o runtime/static/spheres1
 buildspherescpp2:
-	g++ runtime/tests/spheres2.cpp runtime/engine/math.cpp runtime/engine/octree.cpp runtime/engine/sphere*.cpp -O3 -static -o runtime/static/spheres2
+	g++ runtime/tests/spheres2.cpp runtime/engine/math.cpp runtime/engine/octree.cpp runtime/engine/sphere*.cpp $(GCCFLAGS) -o runtime/static/spheres2
+
+buildspherescpp: buildspherescpp1 buildspherescpp2
 
 buildcpp: buildparticlescpp buildspherescpp
 
-buildall: buildjs buildcpp
 
-timeparticlesjs:
-	time browser/static/d8 browser/static/particles1.js
-	time browser/static/d8 browser/static/particles2.js
+buildparticlesem1:
+	emcc runtime/tests/particles1.cpp runtime/engine/particle*.cpp $(EMCCFLAGS) -o emscripten/particles1.js
+buildparticlesem2:
+	emcc runtime/tests/particles2.cpp runtime/engine/particle*.cpp $(EMCCFLAGS) -o emscripten/particles2.js
 
-timespheresjs:
-	time browser/static/d8 browser/static/spheres1.js
-	time browser/static/d8 browser/static/spheres2.js
+buildparticlesem: buildparticlesem1 buildparticlesem2
 
-timejs: timeparticlesjs timespheresjs
-	
-timeparticlescpp:
-	time runtime/static/particles1
-	time runtime/static/particles2
+buildspheresem1:
+	emcc runtime/tests/spheres1.cpp runtime/engine/math.cpp runtime/engine/sphere.cpp runtime/engine/sphereSystem.cpp $(EMCCFLAGS) -o emscripten/spheres1.js
+buildspheresem2:
+	emcc runtime/tests/spheres2.cpp runtime/engine/math.cpp runtime/engine/octree.cpp runtime/engine/sphere*.cpp $(EMCCFLAGS) -o emscripten/spheres2.js
 
-timespherescpp:
-	time runtime/static/spheres1
+buildspheresem: buildspheresem1 buildspheresem2
 
-timecpp: timeparticlescpp timespherescpp
+buildem: buildparticlesem buildspheresem
 
-timeall: timejs timecpp
+buildall: buildjs buildcpp buildem
+
+timeparticles1:
+	time/particles1.sh
+
+timeparticles2:
+	time/particles2.sh
+
+timespheres1:
+	time/spheres1.sh
+
+timespheres2:
+	time/spheres2.sh
+
+timeall: timeparticles1 timeparticles2 timespheres1 timespheres2
+
+build_and_test: buildall timeall
 
 lint:
 	gjslint --strict --closurized_namespaces="goog,smash" browser/engine/*.js browser/tests/*.js

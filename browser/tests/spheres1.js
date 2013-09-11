@@ -15,7 +15,7 @@ goog.require('smash.SphereSystem');
 //  window.requestAnimationFrame(step);
 //}, true);
 //
-for (var i = 0; i < arguments[0]; i++) {
+for (var i = 0; i < 1000; i++) {
   system.step();
 }
 print(system.collisions);
