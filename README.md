@@ -1,4 +1,4 @@
-This project aim to implement common subsystems of physics engines using C++ and JavaScript.
+This project aims to implement common subsystems of physics engines using C++ and JavaScript.
 Then C++ is cross-compiled to JavaScript using EmScripten and all three versions are compared time-wise.
 Demo of Octree-partitioned space with 1K spheres colliding available at http://fridek.github.io/Thesis-physics/
 
