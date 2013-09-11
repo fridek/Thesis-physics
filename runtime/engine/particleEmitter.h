@@ -21,7 +21,6 @@ namespace smash {
       int productionRate;
       
       ParticleEmitter(void);
-      ~ParticleEmitter(void);
       
       void setAngle(float angle);
       void setVelocity(float velocity);

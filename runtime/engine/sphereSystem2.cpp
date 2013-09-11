@@ -14,7 +14,7 @@ smash::SphereSystem2::SphereSystem2() {
       -1000, 1000, smash::SphereSystem2::OCTREE_DEPTH);
 
   float generalVelocity = 1;
-    for (int i = 0; i < smash::SphereSystem2::SPHERES_COUNT; i++) {
+  for (int i = 0; i < smash::SphereSystem2::SPHERES_COUNT; i++) {
     smash::Sphere* sphere = new smash::Sphere();
     sphere->positionX = (((float) rand() / (RAND_MAX)) - 0.5) * 400;
     sphere->positionY = (((float) rand() / (RAND_MAX)) - 0.5) * 200;

@@ -15,7 +15,6 @@ namespace smash {
       float radius;
 
       Sphere(void);
-      ~Sphere(void);
       void step(float);
   };
 }

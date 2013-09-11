@@ -29,5 +29,7 @@ int main(int argc, char** argv) {
     system->step();
   }
   delete system;
+  delete emitter;
+  delete emitter2;
   return 0;
 }

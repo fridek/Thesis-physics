@@ -20,9 +20,11 @@ void smash::ParticleSystem::step() {
   for (std::vector<smash::ParticleEmitter*>::iterator it = this->emitters->begin(); it != this->emitters->end(); it++) {
     std::vector<smash::Particle*>* particleFromEmitters = (*it)->getNewParticles();
     this->particles->insert(this->particles->end(), particleFromEmitters->begin(), particleFromEmitters->end());
+    delete particleFromEmitters;
   }
 
-  std::vector<smash::Particle*>* newParticles = new std::vector<smash::Particle*>;
+  std::vector<smash::Particle*> newParticles;
+
   for (std::vector<smash::Particle*>::iterator it = this->particles->begin(); it != this->particles->end(); it++) {
     smash::Particle* p = *it;
     p->step();
@@ -31,11 +33,13 @@ void smash::ParticleSystem::step() {
         p->positionY >= 0 &&
         p->positionY < smash::ParticleSystem::CANVAS_HEIGHT &&
         p->age < p->lifespan) {
-      newParticles->push_back(p);
+      newParticles.push_back(p);
+    } else {
+      delete p;
     }
   };
-  delete this->particles;
-  this->particles = newParticles;
+  this->particles->swap(newParticles);
+  newParticles.clear();
 };
 
 /**
