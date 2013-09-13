@@ -1,33 +1,5 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: praca.aux
 The style file: abbrv.bst
-A level-1 auxiliary file: rozdzial1.aux
-A level-1 auxiliary file: rozdzial2.aux
-A level-1 auxiliary file: rozdzial3.aux
-A level-1 auxiliary file: rozdzial4.aux
-A level-1 auxiliary file: rozdzial5.aux
-A level-1 auxiliary file: rozdzial6.aux
-A level-1 auxiliary file: rozdzialA.aux
-A level-1 auxiliary file: rozdzialB.aux
-Illegal, another \bibstyle command---line 62 of file praca.aux
- : \bibstyle
- :          {authordate1}
-I'm skipping whatever remains of this command
-Database file #1: bibliografia.bib
-Warning--entry type for "atourofv8" isn't style-file defined
---line 20 of file bibliografia.bib
-Warning--entry type for "theraceforspeed" isn't style-file defined
---line 37 of file bibliografia.bib
-Warning--entry type for "egorov" isn't style-file defined
---line 45 of file bibliografia.bib
-Warning--entry type for "floitsch" isn't style-file defined
---line 70 of file bibliografia.bib
-Warning--entry type for "andywingo" isn't style-file defined
---line 95 of file bibliografia.bib
-Warning--entry type for "v8designdoc" isn't style-file defined
---line 112 of file bibliografia.bib
-Warning--to sort, need author or key in v8designdoc
-Warning--empty booktitle in v8highperformance
-Warning--empty booktitle in breakingjsspeedlimit
-Warning--empty booktitle in understandingv8
-Warning--empty booktitle in fromconsoletochrome
-(There was 1 error message)
+I found no \citation commands---while reading file praca.aux
+I found no \bibdata command---while reading file praca.aux
+(There were 2 error messages)
