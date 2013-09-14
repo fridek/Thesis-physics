@@ -8,21 +8,27 @@
 \contentsline {chapter}{\numberline {3}Particle system}{14}{chapter.3}
 \contentsline {section}{\numberline {3.1}System parameters}{15}{section.3.1}
 \contentsline {section}{\numberline {3.2}Implementation with high memory allocation}{16}{section.3.2}
+\contentsline {section}{\numberline {3.3}Implementation with object pool}{20}{section.3.3}
 \contentsline {chapter}{\numberline {4}Sphere collision}{22}{chapter.4}
 \contentsline {section}{\numberline {4.1}Algorithm description}{23}{section.4.1}
 \contentsline {section}{\numberline {4.2}{$O(N^2)$} approach}{25}{section.4.2}
 \contentsline {section}{\numberline {4.3}Octree-partitioned space}{27}{section.4.3}
 \contentsline {chapter}{\numberline {5}Emscripten}{29}{chapter.5}
-\contentsline {section}{\numberline {5.1}Technology overview}{32}{section.5.1}
-\contentsline {section}{\numberline {5.2}Benchmarks}{33}{section.5.2}
-\contentsline {chapter}{\numberline {6}Summary}{34}{chapter.6}
-\contentsline {section}{\numberline {6.1}Encountered environment limitations}{34}{section.6.1}
-\contentsline {section}{\numberline {6.2}Browser advantages}{34}{section.6.2}
-\contentsline {section}{\numberline {6.3}Recommended techniques}{34}{section.6.3}
-\contentsline {section}{\numberline {6.4}Final thoughts}{34}{section.6.4}
-\contentsline {chapter}{\numberline {A}Acknowledgements}{35}{appendix.A}
-\contentsline {chapter}{\numberline {B}Source code}{36}{appendix.B}
-\contentsline {section}{\numberline {B.1}Math utilities}{36}{section.B.1}
-\contentsline {section}{\numberline {B.2}Particle system}{39}{section.B.2}
-\contentsline {section}{\numberline {B.3}Spheres collision detection}{53}{section.B.3}
-\contentsline {chapter}{References}{77}{lstnumber.B.18.142}
+\contentsline {section}{\numberline {5.1}Asm.js overview}{32}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Unboxed representations of integers and floating-point numbers}{32}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Absence of runtime type checks}{32}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Absence of garbage collection}{32}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}Efficient heap loads and stores}{32}{subsection.5.1.4}
+\contentsline {subsection}{\numberline {5.1.5}Summary}{32}{subsection.5.1.5}
+\contentsline {section}{\numberline {5.2}Benchmarks}{34}{section.5.2}
+\contentsline {chapter}{\numberline {6}Summary}{36}{chapter.6}
+\contentsline {section}{\numberline {6.1}Encountered environment limitations}{38}{section.6.1}
+\contentsline {section}{\numberline {6.2}Browser advantages}{38}{section.6.2}
+\contentsline {section}{\numberline {6.3}Recommended techniques}{38}{section.6.3}
+\contentsline {section}{\numberline {6.4}Final thoughts}{38}{section.6.4}
+\contentsline {chapter}{\numberline {A}Acknowledgements}{39}{appendix.A}
+\contentsline {chapter}{\numberline {B}Source code}{40}{appendix.B}
+\contentsline {section}{\numberline {B.1}Math utilities}{40}{section.B.1}
+\contentsline {section}{\numberline {B.2}Particle system}{43}{section.B.2}
+\contentsline {section}{\numberline {B.3}Spheres collision detection}{57}{section.B.3}
+\contentsline {chapter}{References}{81}{lstnumber.B.18.142}

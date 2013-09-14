@@ -3,14 +3,17 @@
 
 The main objective of presented project is the implementation of parts of 3D engine in a browser environment. Parts of engine are analysed side-by-side with parallel engine compiled from C++. The objective of analysis is comparison of performance and description of possible issues related to the limited browser resources and dynamic features of JavaScript.
 
-Browser-based engine is implemented in JavaScript and analyzed in V8 engine. V8 is maintained by Google and is used in Google Chrome browser. Executable examples are compiled using gcc compiler and are runned on the same platform. For additional comparison EmScripten project is used to automatically generate JavaScript to measure if automated conversion may be as effective as writing code by hand.
+Browser-based engine is implemented in JavaScript and analyzed in V8 engine. V8 is maintained by Google and is used in Google Chrome browser. Executable examples are compiled using gcc compiler and are runned on the same platform. For additional comparison Emscripten project is used to automatically generate JavaScript and measure if automated conversion may be as effective as writing code by hand.
 
-Project is based on conference sessions and announcements authored by V8 programmers regarding performance of JavaScript applications. Analysis of available materials is a topic of Chapter 2, where internals of modern engines for dynamic languages are briefly explained. Results of existing works are reproduced and measured to build a base for extension.
+Project is based on conference sessions and announcements authored by V8 programmers regarding performance of JavaScript applications. Analysis of available materials is a topic of Chapter 2, where internals of modern engines for dynamic languages are briefly explained.
 
-Chapter 3 covers particles system found often in graphic engines. It shows techniques related to memory allocation and garbage collection that help to improve performance.
+Chapter 3 covers particles system found often in graphic engines. It shows techniques related to memory allocation and garbage collection that help to improve performance. Two particle systems are presented - one with high memory allocation that is expected to cause some performance issues and second one, improved by usage of object pools.
 
-Chapter 4 is focused on sphere collision detection and reaction, with both naive solution and space partitioning using Octree.
+Chapter 4 is focused on sphere collision detection and reaction, with both naive solution and space partitioning using Octree. This benchmark shows application with high CPU usage and relatively simple math computations.
 
-Chapter 5 describes Emscripten, project aimed to convert complete C++ projects to JavaScript. Generated code is compared to the one created in previous chapters.
+Chapter 5 describes Emscripten, project aimed to convert complete C++ projects to JavaScript. Related library, asm.js, is presented with overview of architectural choices that lead to better performance. Generated code is compared to the one created in previous chapters and execution times of all benchmarks is compared and briefly explained.
 
+Last chapter is summary of all achieved results. Limitations of JavaScript engines are presented alongside future possibilities for gaming industry. 
+
+Benchmarks are by no means a complete physics system and are not representing current state of the art of physics algorithms. They are aimed to resemble optimal algorithms in used methods and complexity, so that benchmarks reflect how actual engine is using memory and computing power.
 

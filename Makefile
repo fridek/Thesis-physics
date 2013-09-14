@@ -20,16 +20,16 @@ buildspheresjs: buildspheresjs1 buildspheresjs2
 buildjs: buildparticlesjs buildspheresjs
 
 buildparticlescpp1:
-	g++ runtime/tests/particles1.cpp runtime/engine/particle*.cpp $(GCCFLAGS) -o runtime/static/particles1
+	g++ runtime/tests/particles1.cpp runtime/engine/particle.cpp runtime/engine/particleEmitter.cpp runtime/engine/particleSystem.cpp $(GCCFLAGS) -o runtime/static/particles1
 buildparticlescpp2:
-	g++ runtime/tests/particles2.cpp runtime/engine/particle*.cpp $(GCCFLAGS) -o runtime/static/particles2
+	g++ runtime/tests/particles2.cpp runtime/engine/particle.cpp runtime/engine/particleEmitter.cpp runtime/engine/particleSystem2.cpp $(GCCFLAGS) -o runtime/static/particles2
 
 buildparticlescpp: buildparticlescpp1 buildparticlescpp2
 
 buildspherescpp1:
 	g++ runtime/tests/spheres1.cpp runtime/engine/math.cpp runtime/engine/sphere.cpp runtime/engine/sphereSystem.cpp $(GCCFLAGS) -o runtime/static/spheres1
 buildspherescpp2:
-	g++ runtime/tests/spheres2.cpp runtime/engine/math.cpp runtime/engine/octree.cpp runtime/engine/sphere*.cpp $(GCCFLAGS) -o runtime/static/spheres2
+	g++ runtime/tests/spheres2.cpp runtime/engine/math.cpp runtime/engine/octree.cpp runtime/engine/sphere.cpp runtime/engine/sphereSystem2.cpp $(GCCFLAGS) -o runtime/static/spheres2
 
 buildspherescpp: buildspherescpp1 buildspherescpp2
 
@@ -37,16 +37,16 @@ buildcpp: buildparticlescpp buildspherescpp
 
 
 buildparticlesem1:
-	emcc runtime/tests/particles1.cpp runtime/engine/particle*.cpp $(EMCCFLAGS) -o emscripten/particles1.js
+	emcc runtime/tests/particles1.cpp runtime/engine/particle.cpp runtime/engine/particleEmitter.cpp runtime/engine/particleSystem.cpp $(EMCCFLAGS) -o emscripten/particles1.js
 buildparticlesem2:
-	emcc runtime/tests/particles2.cpp runtime/engine/particle*.cpp $(EMCCFLAGS) -o emscripten/particles2.js
+	emcc runtime/tests/particles2.cpp runtime/engine/particle.cpp runtime/engine/particleEmitter.cpp runtime/engine/particleSystem2.cpp $(EMCCFLAGS) -o emscripten/particles2.js
 
 buildparticlesem: buildparticlesem1 buildparticlesem2
 
 buildspheresem1:
 	emcc runtime/tests/spheres1.cpp runtime/engine/math.cpp runtime/engine/sphere.cpp runtime/engine/sphereSystem.cpp $(EMCCFLAGS) -o emscripten/spheres1.js
 buildspheresem2:
-	emcc runtime/tests/spheres2.cpp runtime/engine/math.cpp runtime/engine/octree.cpp runtime/engine/sphere*.cpp $(EMCCFLAGS) -o emscripten/spheres2.js
+	emcc runtime/tests/spheres2.cpp runtime/engine/math.cpp runtime/engine/octree.cpp runtime/engine/sphere.cpp runtime/engine/sphereSystem2.cpp $(EMCCFLAGS) -o emscripten/spheres2.js
 
 buildspheresem: buildspheresem1 buildspheresem2
 

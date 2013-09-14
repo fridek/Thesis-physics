@@ -70,6 +70,9 @@ Garbage collection cycles blocking execution are also visible with --trace-gc fl
 
 \lstinputlisting[caption=Garbage collection in unoptimised particle system,label=listing:particles1gc]{particles/particles1gc.txt}
 
+\section{Implementation with object pool}
+\label{sec:particlesobjectpool}
+
 To improve performance different approach to particles allocation is used. Each particle has a flag "isDead" telling if it may be safely reused for new particle. Particle pool is kept along with a list of pointers to dead particles. This way when system reaches it's maximum congestion (around 15000 particles in given example) no new allocations occur.
 Creation of new particles is moved from particle emitter to particle system, to avoid allocation of new array. Emitter works now as a structure describing behaviour but not implementing one.
 

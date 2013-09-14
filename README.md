@@ -40,22 +40,22 @@ C++ time: 3.44s [FASTEST]
 Windows 7, Intel i7 2670QM, 4GB RAM, g++ 4.7.3, Cygwin
 ```
 time/particles1.sh
-JavaScript time: 20.45s 538.03% slower
-Emscripten JavaScript time: 6.18s 92.98% slower
-C++ time: 3.21s [FASTEST]
+JavaScript time: 20.77s 491.96% slower
+Emscripten JavaScript time: 6.46s 84.09% slower
+C++ time: 3.51s [FASTEST]
 
 time/particles2.sh
-JavaScript time: 3.28s 123.21% slower
-Emscripten JavaScript time: 5.39s 267.12% slower
-C++ time: 1.47s [FASTEST]
+JavaScript time: 3.47s 102.57% slower
+Emscripten JavaScript time: 5.57s 225.72% slower
+C++ time: 1.71s [FASTEST]
 
 time/spheres1.sh
-JavaScript time: 10.79s 16.50% slower
-Emscripten JavaScript time: 11.19s 20.88% slower
-C++ time: 9.26s [FASTEST]
+JavaScript time: 10.81s 13.52% slower
+Emscripten JavaScript time: 11.82s 24.15% slower
+C++ time: 9.52s [FASTEST]
 
 time/spheres2.sh
-JavaScript time: 13.19s 35.80% slower
-Emscripten JavaScript time: 9.71s [FASTEST]
-C++ time: 13.87s 42.77% slower
+JavaScript time: 16.95s 20.19% slower
+Emscripten JavaScript time: 17.79s 26.14% slower
+C++ time: 14.10s [FASTEST]
 ```
