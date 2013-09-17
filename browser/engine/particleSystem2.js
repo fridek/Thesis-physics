@@ -6,6 +6,7 @@
 goog.provide('smash.ParticleSystem2');
 
 goog.require('smash.Particle');
+goog.require('smash.flags');
 
 
 
@@ -28,7 +29,7 @@ smash.ParticleSystem2 = function() {
    */
   this.emitters = [];
 
-  if (smash.ParticleSystem2.DRAWING_ENABLED) {
+  if (smash.flags.DRAWING_ENABLED) {
     /**
      * @type {!Element}
      */
@@ -57,12 +58,6 @@ smash.ParticleSystem2 = function() {
 
 
 /**
- * @const {boolean}
- */
-smash.ParticleSystem2.DRAWING_ENABLED = false;
-
-
-/**
  * @const {number}
  */
 smash.ParticleSystem2.CANVAS_WIDTH = 1200;
@@ -75,7 +70,7 @@ smash.ParticleSystem2.CANVAS_HEIGHT = 400;
 
 
 smash.ParticleSystem2.prototype.step = function() {
-  if (smash.ParticleSystem2.DRAWING_ENABLED) {
+  if (smash.flags.DRAWING_ENABLED) {
     for (var i = 0; i < smash.ParticleSystem2.CANVAS_WIDTH *
         smash.ParticleSystem2.CANVAS_HEIGHT * 4; i += 4) {
       this.pixels[i] = 0;
@@ -122,7 +117,7 @@ smash.ParticleSystem2.prototype.step = function() {
       p.isDead = true;
     }
 
-    if (smash.ParticleSystem2.DRAWING_ENABLED && !p.isDead) {
+    if (smash.flags.DRAWING_ENABLED && !p.isDead) {
       var baseIndex =
           (Math.round(p.positionY) *
               smash.ParticleSystem2.CANVAS_WIDTH +
@@ -134,7 +129,7 @@ smash.ParticleSystem2.prototype.step = function() {
     }
   }
 
-  if (smash.ParticleSystem2.DRAWING_ENABLED) {
+  if (smash.flags.DRAWING_ENABLED) {
     this.context.putImageData(this.imageData, 0, 0);
   }
 };

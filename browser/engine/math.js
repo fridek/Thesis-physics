@@ -55,3 +55,17 @@ smash.math.checkCollidingSpheres = function(sphere1, sphere2) {
       sphere2.positionX, sphere2.positionY, sphere2.positionZ) <
       sphere1.radius + sphere2.radius;
 };
+
+
+/**
+ * @param {number} x1
+ * @param {number} y1
+ * @param {number} z1
+ * @param {number} x2
+ * @param {number} y2
+ * @param {number} z2
+ * @return {number}
+ */
+smash.math.dot = function(x1, y1, z1, x2, y2, z2) {
+  return x1 * x2 + y1 * y2 + z1 * z2;
+};

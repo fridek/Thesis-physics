@@ -13,6 +13,7 @@ namespace smash {
       float velocityY;
       float velocityZ;
       float radius;
+      float mass;
 
       Sphere(void);
       void step(float);

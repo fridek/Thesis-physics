@@ -7,6 +7,7 @@ goog.provide('smash.SphereSystem2');
 
 goog.require('smash.Octree');
 goog.require('smash.Sphere');
+goog.require('smash.flags');
 goog.require('smash.math');
 
 
@@ -31,7 +32,7 @@ smash.SphereSystem2 = function() {
     this.spheres[i] = sphere;
   }
 
-  if (smash.SphereSystem2.DRAWING_ENABLED) {
+  if (smash.flags.DRAWING_ENABLED) {
     /**
      * @type {!THREE.PerspectiveCamera}
      */
@@ -145,14 +146,8 @@ smash.SphereSystem2.SPHERES_COUNT = 1000;
 /**
  * @const {boolean}
  */
-smash.SphereSystem2.DRAWING_ENABLED = false;
-
-
-/**
- * @const {boolean}
- */
 smash.SphereSystem2.DRAWING_OCTREE_ENABLED =
-    smash.SphereSystem2.DRAWING_ENABLED && true;
+    smash.flags.DRAWING_ENABLED && true;
 
 
 /**
@@ -202,27 +197,28 @@ smash.SphereSystem2.CANVAS_HEIGHT = 400;
  * @param {!smash.Sphere} sphere2
  */
 smash.SphereSystem2.collide = function(sphere1, sphere2) {
-  var sumVelocitiesLength = smash.math.vectorLength(
-      sphere1.velocityX, sphere1.velocityY, sphere1.velocityZ) +
-      smash.math.vectorLength(
-          sphere2.velocityX, sphere2.velocityY, sphere2.velocityZ);
+  var distanceX = sphere1.positionX - sphere2.positionX;
+  var distanceY = sphere1.positionY - sphere2.positionY;
+  var distanceZ = sphere1.positionZ - sphere2.positionZ;
+  var distanceLength = smash.math.vectorLength(
+      distanceX, distanceY, distanceZ);
+  // normalize
+  distanceX /= distanceLength;
+  distanceY /= distanceLength;
+  distanceZ /= distanceLength;
 
-  var centerDiffX = sphere1.positionX - sphere2.positionX;
-  var centerDiffY = sphere1.positionY - sphere2.positionY;
-  var centerDiffZ = sphere1.positionZ - sphere2.positionZ;
-  var centerLength = smash.math.vectorLength(
-      centerDiffX, centerDiffY, centerDiffZ);
-  var velocityAdjust = centerLength * sumVelocitiesLength / 2;
-  centerDiffX /= velocityAdjust;
-  centerDiffY /= velocityAdjust;
-  centerDiffZ /= velocityAdjust;
+  var a1 = smash.math.dot(sphere1.velocityX, sphere1.velocityY, sphere1.velocityZ,
+      distanceX, distanceY, distanceZ);
+  var a2 = smash.math.dot(sphere2.velocityX, sphere2.velocityY, sphere2.velocityZ,
+      distanceX, distanceY, distanceZ);
+  var optimizedP = (2.0 * (a1 - a2)) / (sphere1.mass + sphere2.mass);
 
-  sphere1.velocityX = centerDiffX;
-  sphere1.velocityY = centerDiffY;
-  sphere1.velocityZ = centerDiffZ;
-  sphere2.velocityX = centerDiffX * -1;
-  sphere2.velocityY = centerDiffY * -1;
-  sphere2.velocityZ = centerDiffZ * -1;
+  sphere1.velocityX -= optimizedP * sphere2.mass * distanceX;
+  sphere1.velocityY -= optimizedP * sphere2.mass * distanceY;
+  sphere1.velocityZ -= optimizedP * sphere2.mass * distanceZ;
+  sphere2.velocityX += optimizedP * sphere1.mass * distanceX;
+  sphere2.velocityY += optimizedP * sphere1.mass * distanceY;
+  sphere2.velocityZ += optimizedP * sphere1.mass * distanceZ;
 };
 
 
@@ -342,7 +338,7 @@ smash.SphereSystem2.prototype.step = function() {
     this.spheres[i].step(1);
 
 
-    if (smash.SphereSystem2.DRAWING_ENABLED) {
+    if (smash.flags.DRAWING_ENABLED) {
       this.threeSpheres[i].position.x = this.spheres[i].positionX;
       this.threeSpheres[i].position.y = this.spheres[i].positionY;
       this.threeSpheres[i].position.z = this.spheres[i].positionZ;
@@ -353,7 +349,7 @@ smash.SphereSystem2.prototype.step = function() {
     this.addOctreeMesh(this.octreeRoot_);
   }
 
-  if (smash.SphereSystem2.DRAWING_ENABLED) {
+  if (smash.flags.DRAWING_ENABLED) {
     this.renderer.render(this.scene, this.camera);
   }
 };

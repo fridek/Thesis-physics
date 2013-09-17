@@ -5,8 +5,8 @@
 
 goog.require('smash.ParticleEmitter');
 goog.require('smash.ParticleSystem2');
+goog.require('smash.flags');
 
-//window.addEventListener('load', function() {
 var system = new smash.ParticleSystem2();
 
 var emitter = new smash.ParticleEmitter();
@@ -28,13 +28,16 @@ emitter2.setAngle(90);
 emitter2.setProductionRate(1000);
 system.addEmitter(emitter2);
 
-//  var step = function() {
-//    system.step();
-//    window.requestAnimationFrame(step);
-//  };
-//  window.requestAnimationFrame(step);
-//}, true);
-
-for (var i = 0; i < 1000; i++) {
-  system.step();
+if (smash.flags.DRAWING_ENABLED) {
+  window.addEventListener('load', function() {
+    var step = function() {
+      system.step();
+      window.requestAnimationFrame(step);
+    };
+    window.requestAnimationFrame(step);
+  }, true);
+} else {
+  for (var i = 0; i < 1000; i++) {
+    system.step();
+  }
 }

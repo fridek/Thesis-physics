@@ -39,28 +39,30 @@ smash::SphereSystem2::~SphereSystem2() {
  * @param {smash::Sphere*} sphere1
  * @param {smash::Sphere*} sphere2
  */
-void smash::SphereSystem2::collide(smash::Sphere* sphere1, smash::Sphere* sphere2) {
-  float sumVelocitiesLength = smash::math::vectorLength(
-      sphere1->velocityX, sphere1->velocityY, sphere1->velocityZ) +
-      smash::math::vectorLength(
-          sphere2->velocityX, sphere2->velocityY, sphere2->velocityZ);
+void smash::SphereSystem::collide(smash::Sphere* sphere1, smash::Sphere* sphere2) {
+  float distanceX = sphere1->positionX - sphere2->positionX;
+  float distanceY = sphere1->positionY - sphere2->positionY;
+  float distanceZ = sphere1->positionZ - sphere2->positionZ;
+  float distanceLength = smash::math::vectorLength(
+      distanceX, distanceY, distanceZ);
 
-  float centerDiffX = sphere1->positionX - sphere2->positionX;
-  float centerDiffY = sphere1->positionY - sphere2->positionY;
-  float centerDiffZ = sphere1->positionZ - sphere2->positionZ;
-  float centerLength = smash::math::vectorLength(
-      centerDiffX, centerDiffY, centerDiffZ);
-  float velocityAdjust = centerLength * sumVelocitiesLength / 2;
-  centerDiffX /= velocityAdjust;
-  centerDiffY /= velocityAdjust;
-  centerDiffZ /= velocityAdjust;
+  // normalize
+  distanceX /= distanceLength;
+  distanceY /= distanceLength;
+  distanceZ /= distanceLength;
 
-  sphere1->velocityX = centerDiffX;
-  sphere1->velocityY = centerDiffY;
-  sphere1->velocityZ = centerDiffZ;
-  sphere2->velocityX = centerDiffX * -1;
-  sphere2->velocityY = centerDiffY * -1;
-  sphere2->velocityZ = centerDiffZ * -1;
+  float a1 = smash::math::dot(sphere1->velocityX, sphere1->velocityY, sphere1->velocityZ,
+      distanceX, distanceY, distanceZ);
+  float a2 = smash::math::dot(sphere2->velocityX, sphere2->velocityY, sphere2->velocityZ,
+      distanceX, distanceY, distanceZ);
+  float optimizedP = (2.0 * (a1 - a2)) / (sphere1->mass + sphere2->mass);
+
+  sphere1->velocityX -= optimizedP * sphere2->mass * distanceX;
+  sphere1->velocityY -= optimizedP * sphere2->mass * distanceY;
+  sphere1->velocityZ -= optimizedP * sphere2->mass * distanceZ;
+  sphere2->velocityX += optimizedP * sphere1->mass * distanceX;
+  sphere2->velocityY += optimizedP * sphere1->mass * distanceY;
+  sphere2->velocityZ += optimizedP * sphere1->mass * distanceZ;
 };
 
 void smash::SphereSystem2::applyGravity(smash::Sphere* sphere) {

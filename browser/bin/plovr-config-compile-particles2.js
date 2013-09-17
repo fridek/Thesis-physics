@@ -5,7 +5,7 @@
   ],
   "inputs": "../tests/particles2.js",
   "mode": "ADVANCED",
-  "pretty-print": true,
+  "pretty-print": false,
   "level": "SILENT",
   "checks": {
     "checkRegExp": "WARNING",
