@@ -18,7 +18,7 @@ if (smash.flags.DRAWING_ENABLED) {
     window.requestAnimationFrame(step);
   }, true);
 } else {
-  for (var i = 0; i < 1000; i++) {
+  for (var i = 0; i < 10000; i++) {
     system.step();
   }
   print(system.collisions);

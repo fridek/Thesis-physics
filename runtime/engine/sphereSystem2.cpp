@@ -39,7 +39,7 @@ smash::SphereSystem2::~SphereSystem2() {
  * @param {smash::Sphere*} sphere1
  * @param {smash::Sphere*} sphere2
  */
-void smash::SphereSystem::collide(smash::Sphere* sphere1, smash::Sphere* sphere2) {
+void smash::SphereSystem2::collide(smash::Sphere* sphere1, smash::Sphere* sphere2) {
   float distanceX = sphere1->positionX - sphere2->positionX;
   float distanceY = sphere1->positionY - sphere2->positionY;
   float distanceZ = sphere1->positionZ - sphere2->positionZ;
@@ -64,6 +64,7 @@ void smash::SphereSystem::collide(smash::Sphere* sphere1, smash::Sphere* sphere2
   sphere2->velocityY += optimizedP * sphere1->mass * distanceY;
   sphere2->velocityZ += optimizedP * sphere1->mass * distanceZ;
 };
+
 
 void smash::SphereSystem2::applyGravity(smash::Sphere* sphere) {
   if (smash::SphereSystem2::GRAVITY_ENABLED) {

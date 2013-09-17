@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.3.13)  15 SEP 2013 14:44
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.3.13)  18 SEP 2013 01:30
 entering extended mode
 **praca.tex
 (D:\Dropbox\praca_magisterska\physics\doc\praca.tex
@@ -596,37 +596,7 @@ File: lstlang1.sty 2004/09/05 1.3 listings language file
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 )
-(D:\Dropbox\praca_magisterska\physics\doc\praca.aux
-(D:\Dropbox\praca_magisterska\physics\doc\rozdzial1.aux)
-(D:\Dropbox\praca_magisterska\physics\doc\rozdzial2.aux)
-(D:\Dropbox\praca_magisterska\physics\doc\rozdzial3.aux
-
-LaTeX Warning: Label `listing:particles1profile' multiply defined.
-
-) (D:\Dropbox\praca_magisterska\physics\doc\rozdzial4.aux
-
-LaTeX Warning: Label `img:spheres' multiply defined.
-
-) (D:\Dropbox\praca_magisterska\physics\doc\rozdzial5.aux
-
-LaTeX Warning: Label `img:epicitadel' multiply defined.
-
-
-LaTeX Warning: Label `table:benchmarks' multiply defined.
-
-) (D:\Dropbox\praca_magisterska\physics\doc\rozdzial6.aux)
-(D:\Dropbox\praca_magisterska\physics\doc\rozdzialA.aux)
-(D:\Dropbox\praca_magisterska\physics\doc\rozdzialB.aux
-
-LaTeX Warning: Label `listing:mathjs' multiply defined.
-
-
-LaTeX Warning: Label `listing:particlejs' multiply defined.
-
-
-LaTeX Warning: Label `listing:spherejs' multiply defined.
-
-))
+(D:\Dropbox\praca_magisterska\physics\doc\praca.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 130.
 LaTeX Font Info:    ... okay on input line 130.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 130.
@@ -644,7 +614,8 @@ LaTeX Font Info:    ... okay on input line 130.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 130.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 130.
 
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 130.
@@ -774,43 +745,75 @@ l.132 \titlepages
 l.132 \titlepages
                   [1
 
-] (D:\Dropbox\praca_magisterska\physics\doc\praca.toc)
-\tf@toc=\write3
+]
 
+Package hyperref Warning: old toc file detected, not used; run LaTeX again.
+
+\tf@toc=\write3
 [5
 
 ] (D:\Dropbox\praca_magisterska\physics\doc\rozdzial1.tex
 Rozdzia\l  1.
-) [6
+[6
 
 
 
-] (D:\Dropbox\praca_magisterska\physics\doc\rozdzial2.tex
+]
+LaTeX Font Info:    Font shape `T1/aess/m/it' in size <9> not available
+(Font)              Font shape `T1/aess/m/sl' tried instead on input line 16.
+ [7] <summary/impactjs.png, id=58, 958.58125pt x 634.37pt>
+File: summary/impactjs.png Graphic file (type png)
+
+<use summary/impactjs.png>
+Package pdftex.def Info: summary/impactjs.png used on input line 30.
+(pdftex.def)             Requested size: 341.43306pt x 225.9531pt.
+
+<summary/isogenic.png, id=62, 1355.0625pt x 691.58376pt>
+File: summary/isogenic.png Graphic file (type png)
+
+<use summary/isogenic.png>
+Package pdftex.def Info: summary/isogenic.png used on input line 40.
+(pdftex.def)             Requested size: 341.43306pt x 174.2568pt.
+
+Underfull \vbox (badness 4096) has occurred while \output is active []
+
+ [8
+
+ <D:/Dropbox/praca_magisterska/physics/doc/summary/impactjs.png (PNG copy)>]
+<summary/rome.jpg, id=74, 943.525pt x 411.5375pt>
+File: summary/rome.jpg Graphic file (type jpg)
+ <use summary/rome.jpg>
+Package pdftex.def Info: summary/rome.jpg used on input line 49.
+(pdftex.def)             Requested size: 341.43306pt x 148.92577pt.
+
+[9 <D:/Dropbox/praca_magisterska/physics/doc/summary/isogenic.png (PNG copy)> <
+D:/Dropbox/praca_magisterska/physics/doc/summary/rome.jpg>]) [10
+
+]
+(D:\Dropbox\praca_magisterska\physics\doc\rozdzial2.tex
 Rozdzia\l  2.
-[7
+[11
 
 
 
 ] <jit-1.jpg, id=99, 487.8225pt x 292.09125pt>
 File: jit-1.jpg Graphic file (type jpg)
  <use jit-1.jpg>
-Package pdftex.def Info: jit-1.jpg used on input line 21.
+Package pdftex.def Info: jit-1.jpg used on input line 19.
 (pdftex.def)             Requested size: 227.62204pt x 136.29344pt.
 
 <jit-2.jpg, id=100, 480.79625pt x 288.07625pt>
 File: jit-2.jpg Graphic file (type jpg)
  <use jit-2.jpg>
-Package pdftex.def Info: jit-2.jpg used on input line 29.
+Package pdftex.def Info: jit-2.jpg used on input line 27.
 (pdftex.def)             Requested size: 227.62204pt x 136.38487pt.
-LaTeX Font Info:    Font shape `T1/aess/m/it' in size <9> not available
-(Font)              Font shape `T1/aess/m/sl' tried instead on input line 33.
- [8
+ [12
 
  <D:/Dropbox/praca_magisterska/physics/doc/jit-1.jpg> <D:/Dropbox/praca_magiste
 rska/physics/doc/jit-2.jpg>]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 36.
-LaTeX Font Info:    Try loading font information for T1+aett on input line 36.
+nput line 34.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 34.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
@@ -819,66 +822,74 @@ File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 LaTeX Font Warning: Font shape `T1/aett/bx/n' undefined
 (Font)              using `T1/aett/m/n' instead on input line 2.
 
-) [9] (D:\Dropbox\praca_magisterska\physics\doc\types.txt) [10
+) [13] (D:\Dropbox\praca_magisterska\physics\doc\types.txt) [14
 
 ]
-<point0.png, id=159, 1003.75pt x 602.25pt>
+<point0.png, id=160, 1003.75pt x 602.25pt>
 File: point0.png Graphic file (type png)
  <use point0.png>
-Package pdftex.def Info: point0.png used on input line 59.
+Package pdftex.def Info: point0.png used on input line 57.
 (pdftex.def)             Requested size: 227.62204pt x 136.56639pt.
 
-<point1.png, id=160, 1003.75pt x 602.25pt>
+<point1.png, id=161, 1003.75pt x 602.25pt>
 File: point1.png Graphic file (type png)
  <use point1.png>
-Package pdftex.def Info: point1.png used on input line 65.
+Package pdftex.def Info: point1.png used on input line 63.
 (pdftex.def)             Requested size: 227.62204pt x 136.56639pt.
 
-<point2.png, id=161, 1003.75pt x 602.25pt>
+<point2.png, id=162, 1003.75pt x 602.25pt>
 File: point2.png Graphic file (type png)
  <use point2.png>
-Package pdftex.def Info: point2.png used on input line 71.
+Package pdftex.def Info: point2.png used on input line 69.
 (pdftex.def)             Requested size: 227.62204pt x 136.56639pt.
 
-<point_tree2.png, id=162, 1003.75pt x 803.0pt>
+<point_tree2.png, id=163, 1003.75pt x 803.0pt>
 File: point_tree2.png Graphic file (type png)
  <use point_tree2.png>
-Package pdftex.def Info: point_tree2.png used on input line 80.
+Package pdftex.def Info: point_tree2.png used on input line 78.
 (pdftex.def)             Requested size: 227.62204pt x 182.08852pt.
 
 Underfull \vbox (badness 3579) has occurred while \output is active []
 
- [11
+ [15
 
  <D:/Dropbox/praca_magisterska/physics/doc/point0.png (PNG copy)> <D:/Dropbox/p
 raca_magisterska/physics/doc/point1.png (PNG copy)> <D:/Dropbox/praca_magisters
 ka/physics/doc/point2.png (PNG copy)>]
-(D:\Dropbox\praca_magisterska\physics\doc\migration.txt) [12 <D:/Dropbox/praca_
+
+LaTeX Warning: Reference `listing:typestree' on page 16 undefined on input line
+ 81.
+
+(D:\Dropbox\praca_magisterska\physics\doc\migration.txt) [16 <D:/Dropbox/praca_
 magisterska/physics/doc/point_tree2.png (PNG copy)>]
-(D:\Dropbox\praca_magisterska\physics\doc\gc.txt)) [13
+(D:\Dropbox\praca_magisterska\physics\doc\gc.txt)) [17
 
 ]
 (D:\Dropbox\praca_magisterska\physics\doc\rozdzial3.tex
 Rozdzia\l  3.
-<particles.png, id=211, 531.9875pt x 338.26375pt>
+<particles.png, id=212, 531.9875pt x 338.26375pt>
 File: particles.png Graphic file (type png)
  <use particles.png>
 Package pdftex.def Info: particles.png used on input line 11.
 (pdftex.def)             Requested size: 455.24408pt x 289.4714pt.
- [14
+ [18
 
 
 
- <D:/Dropbox/praca_magisterska/physics/doc/particles.png>] [15
+ <D:/Dropbox/praca_magisterska/physics/doc/particles.png>]
 
-]
-(D:\Dropbox\praca_magisterska\physics\doc\particles/timejs1.txt)
+LaTeX Warning: Reference `cha:sourcecode' on page 19 undefined on input line 39
+.
+
+[19
+
+] (D:\Dropbox\praca_magisterska\physics\doc\particles/timejs1.txt)
 (D:\Dropbox\praca_magisterska\physics\doc\particles/timecpp1.txt)
 (D:\Dropbox\praca_magisterska\physics\doc\particles/particles1-profile.txt
-[16
+[20
 
-]) (D:\Dropbox\praca_magisterska\physics\doc\particles/particleSystemStep.js [1
-7]) <particles/particles1-profile.png, id=310, 1204.5pt x 602.25pt>
+]) (D:\Dropbox\praca_magisterska\physics\doc\particles/particleSystemStep.js [2
+1]) <particles/particles1-profile.png, id=314, 1204.5pt x 602.25pt>
 File: particles/particles1-profile.png Graphic file (type png)
 
 <use particles/particles1-profile.png>
@@ -886,14 +897,14 @@ Package pdftex.def Info: particles/particles1-profile.png used on input line 66
 .
 (pdftex.def)             Requested size: 455.24408pt x 227.62596pt.
 
-(D:\Dropbox\praca_magisterska\physics\doc\particles/particles1gc.txt [18 <D:/Dr
+(D:\Dropbox\praca_magisterska\physics\doc\particles/particles1gc.txt [22 <D:/Dr
 opbox/praca_magisterska/physics/doc/particles/particles1-profile.png>])
-[19] (D:\Dropbox\praca_magisterska\physics\doc\particles/timejs2.txt)
+[23] (D:\Dropbox\praca_magisterska\physics\doc\particles/timejs2.txt)
 (D:\Dropbox\praca_magisterska\physics\doc\particles/timecpp2.txt)
 (D:\Dropbox\praca_magisterska\physics\doc\particles/particles2-profile.txt
-[20
+[24
 
-]) <particles/particles2-profile.png, id=408, 1204.5pt x 602.25pt>
+]) <particles/particles2-profile.png, id=412, 1204.5pt x 602.25pt>
 File: particles/particles2-profile.png Graphic file (type png)
 
 <use particles/particles2-profile.png>
@@ -901,28 +912,28 @@ Package pdftex.def Info: particles/particles2-profile.png used on input line 92
 .
 (pdftex.def)             Requested size: 455.24408pt x 227.62596pt.
 
-(D:\Dropbox\praca_magisterska\physics\doc\particles/particles2gc.txt)) [21 <D:/
+(D:\Dropbox\praca_magisterska\physics\doc\particles/particles2gc.txt)) [25 <D:/
 Dropbox/praca_magisterska/physics/doc/particles/particles2-profile.png>]
 (D:\Dropbox\praca_magisterska\physics\doc\rozdzial4.tex
 Rozdzia\l  4.
-<spheres/render.png, id=438, 814.04124pt x 505.89pt>
+<spheres/render.png, id=443, 814.04124pt x 505.89pt>
 File: spheres/render.png Graphic file (type png)
  <use spheres/render.png>
 Package pdftex.def Info: spheres/render.png used on input line 11.
 (pdftex.def)             Requested size: 455.24408pt x 282.91049pt.
 
-[22
+[26
 
 
 
  <D:/Dropbox/praca_magisterska/physics/doc/spheres/render.png (PNG copy)>]
-<octree/octree2.png, id=444, 401.5pt x 230.8625pt>
+<octree/octree2.png, id=452, 401.5pt x 230.8625pt>
 File: octree/octree2.png Graphic file (type png)
  <use octree/octree2.png>
 Package pdftex.def Info: octree/octree2.png used on input line 28.
 (pdftex.def)             Requested size: 284.52756pt x 163.61407pt.
 
-<octree/octree.png, id=445, 679.53876pt x 585.18625pt>
+<octree/octree.png, id=453, 679.53876pt x 585.18625pt>
 File: octree/octree.png Graphic file (type png)
  <use octree/octree.png>
 Package pdftex.def Info: octree/octree.png used on input line 38.
@@ -931,95 +942,123 @@ Package pdftex.def Info: octree/octree.png used on input line 38.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[23
+[27
 
- <D:/Dropbox/praca_magisterska/physics/doc/octree/octree2.png>] [24 <D:/Dropbox
-/praca_magisterska/physics/doc/octree/octree.png (PNG copy)>]
+ <D:/Dropbox/praca_magisterska/physics/doc/octree/octree2.png>]
+<spheres/bounce.jpg, id=466, 261.97874pt x 280.04625pt>
+File: spheres/bounce.jpg Graphic file (type jpg)
+
+<use spheres/bounce.jpg>
+Package pdftex.def Info: spheres/bounce.jpg used on input line 92.
+(pdftex.def)             Requested size: 227.62204pt x 243.32631pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[28 <D:/Dropbox/praca_magisterska/physics/doc/octree/octree.png (PNG copy)>]
+[29 <D:/Dropbox/praca_magisterska/physics/doc/spheres/bounce.jpg>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 49.
+(hyperref)                removing `math shift' on input line 128.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 49.
+(hyperref)                removing `superscript' on input line 128.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 49.
+(hyperref)                removing `math shift' on input line 128.
 
-<spheres/spheres1-profile.png, id=463, 1204.5pt x 602.25pt>
+
+LaTeX Warning: Reference `img:spheres1profile' on page 30 undefined on input li
+ne 131.
+
+<spheres/spheres1-profile.png, id=477, 1204.5pt x 602.25pt>
 File: spheres/spheres1-profile.png Graphic file (type png)
 
 <use spheres/spheres1-profile.png>
-Package pdftex.def Info: spheres/spheres1-profile.png used on input line 58.
+Package pdftex.def Info: spheres/spheres1-profile.png used on input line 137.
 (pdftex.def)             Requested size: 455.24408pt x 227.62596pt.
 
-<spheres/time-total.png, id=464, 813.0375pt x 384.43625pt>
+<spheres/time-total.png, id=478, 813.0375pt x 384.43625pt>
 File: spheres/time-total.png Graphic file (type png)
 
 <use spheres/time-total.png>
-Package pdftex.def Info: spheres/time-total.png used on input line 67.
+Package pdftex.def Info: spheres/time-total.png used on input line 146.
 (pdftex.def)             Requested size: 455.24408pt x 215.2535pt.
 
-<spheres/time-per-frame.png, id=465, 830.10126pt x 387.4475pt>
+<spheres/time-per-frame.png, id=479, 830.10126pt x 387.4475pt>
 File: spheres/time-per-frame.png Graphic file (type png)
 
 <use spheres/time-per-frame.png>
-Package pdftex.def Info: spheres/time-per-frame.png used on input line 73.
+Package pdftex.def Info: spheres/time-per-frame.png used on input line 152.
 (pdftex.def)             Requested size: 455.24408pt x 212.48193pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[25
+[30
 
  <D:/Dropbox/praca_magisterska/physics/doc/spheres/spheres1-profile.png> <D:/Dr
 opbox/praca_magisterska/physics/doc/spheres/time-total.png (PNG copy)>]
-[26 <D:/Dropbox/praca_magisterska/physics/doc/spheres/time-per-frame.png (PNG c
-opy)>] <spheres/render2.png, id=482, 1209.51875pt x 409.53pt>
+[31 <D:/Dropbox/praca_magisterska/physics/doc/spheres/time-per-frame.png (PNG c
+opy)>] <spheres/render2.png, id=497, 1209.51875pt x 409.53pt>
 File: spheres/render2.png Graphic file (type png)
 
 <use spheres/render2.png>
-Package pdftex.def Info: spheres/render2.png used on input line 83.
+Package pdftex.def Info: spheres/render2.png used on input line 162.
 (pdftex.def)             Requested size: 455.24408pt x 154.14201pt.
 
-<spheres/octree-collisions.png, id=484, 605.26125pt x 218.8175pt>
+
+LaTeX Warning: Reference `img:octree-collisions' on page 32 undefined on input 
+line 166.
+
+<spheres/octree-collisions.png, id=498, 605.26125pt x 218.8175pt>
 File: spheres/octree-collisions.png Graphic file (type png)
 
 <use spheres/octree-collisions.png>
-Package pdftex.def Info: spheres/octree-collisions.png used on input line 93.
+Package pdftex.def Info: spheres/octree-collisions.png used on input line 172.
 (pdftex.def)             Requested size: 455.24408pt x 164.5835pt.
 
-<spheres/octree-time.png, id=486, 608.2725pt x 258.9675pt>
+
+LaTeX Warning: Reference `img:octree-time' on page 32 undefined on input line 1
+75.
+
+<spheres/octree-time.png, id=499, 608.2725pt x 258.9675pt>
 File: spheres/octree-time.png Graphic file (type png)
 
 <use spheres/octree-time.png>
-Package pdftex.def Info: spheres/octree-time.png used on input line 102.
+Package pdftex.def Info: spheres/octree-time.png used on input line 181.
 (pdftex.def)             Requested size: 455.24408pt x 193.82207pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [27
+) [32
 
  <D:/Dropbox/praca_magisterska/physics/doc/spheres/render2.png (PNG copy)> <D:/
 Dropbox/praca_magisterska/physics/doc/spheres/octree-collisions.png (PNG copy)>
-] [28 <D:/Dropbox/praca_magisterska/physics/doc/spheres/octree-time.png (PNG co
+] [33 <D:/Dropbox/praca_magisterska/physics/doc/spheres/octree-time.png (PNG co
 py)>] (D:\Dropbox\praca_magisterska\physics\doc\rozdzial5.tex
 Rozdzia\l  5.
-<emscripten/pipeline.jpg, id=501, 301.125pt x 225.84375pt>
+<emscripten/pipeline.jpg, id=515, 301.125pt x 225.84375pt>
 File: emscripten/pipeline.jpg Graphic file (type jpg)
 
 <use emscripten/pipeline.jpg>
 Package pdftex.def Info: emscripten/pipeline.jpg used on input line 13.
 (pdftex.def)             Requested size: 227.62204pt x 170.72292pt.
- [29
+
+
+LaTeX Warning: Reference `sec:asmjsoverview' on page 34 undefined on input line
+ 16.
+
+[34
 
 
 
  <D:/Dropbox/praca_magisterska/physics/doc/emscripten/pipeline.jpg>]
 (D:\Dropbox\praca_magisterska\physics\doc\emscripten/asm.js)
-<emscripten/epic-citadel.jpg, id=517, 1928.20375pt x 1204.5pt>
+<emscripten/epic-citadel.jpg, id=531, 1928.20375pt x 1204.5pt>
 File: emscripten/epic-citadel.jpg Graphic file (type jpg)
 
 <use emscripten/epic-citadel.jpg>
@@ -1029,7 +1068,7 @@ Package pdftex.def Info: emscripten/epic-citadel.jpg used on input line 30.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<emscripten/ammojs.png, id=519, 1020.81375pt x 382.42876pt>
+<emscripten/ammojs.png, id=533, 1020.81375pt x 382.42876pt>
 File: emscripten/ammojs.png Graphic file (type png)
 
 <use emscripten/ammojs.png>
@@ -1039,14 +1078,31 @@ Package pdftex.def Info: emscripten/ammojs.png used on input line 40.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[30] [31 <D:/Dropbox/praca_magisterska/physics/doc/emscripten/epic-citadel.jpg>
+[35] [36 <D:/Dropbox/praca_magisterska/physics/doc/emscripten/epic-citadel.jpg>
  <D:/Dropbox/praca_magisterska/physics/doc/emscripten/ammojs.png (PNG copy)>]
+
+LaTeX Warning: Reference `listing:typestree' on page 37 undefined on input line
+ 50.
+
+
+LaTeX Warning: Reference `table:jsarrays' on page 37 undefined on input line 63
+.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[32
+[37
 
-] [33]
+] [38]
+
+LaTeX Warning: Reference `sec:particlesinitial' on page 39 undefined on input l
+ine 96.
+
+
+LaTeX Warning: Reference `sec:particlesobjectpool' on page 39 undefined on inpu
+t line 98.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 107--107
 []\T1/aess/m/sc/10 Fedora 19, In-tel i7
  []
@@ -1060,6 +1116,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 107--107
 Underfull \hbox (badness 10000) in paragraph at lines 108--108
 []\T1/aess/m/sc/10 Windows 7, In-tel i7
  []
+
+
+LaTeX Warning: Reference `sec:sphereinitial' on page 39 undefined on input line
+ 114.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 125--125
@@ -1079,52 +1139,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 127--127
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [34
+) [39
 
-] [35] (D:\Dropbox\praca_magisterska\physics\doc\rozdzial6.tex
+] [40] (D:\Dropbox\praca_magisterska\physics\doc\rozdzial6.tex
 Rozdzia\l  6.
-<summary/impactjs.png, id=600, 958.58125pt x 634.37pt>
-File: summary/impactjs.png Graphic file (type png)
-
-<use summary/impactjs.png>
-Package pdftex.def Info: summary/impactjs.png used on input line 10.
-(pdftex.def)             Requested size: 341.43306pt x 225.9531pt.
-
-<summary/isogenic.png, id=604, 1355.0625pt x 691.58376pt>
-File: summary/isogenic.png Graphic file (type png)
-
-<use summary/isogenic.png>
-Package pdftex.def Info: summary/isogenic.png used on input line 20.
-(pdftex.def)             Requested size: 341.43306pt x 174.2568pt.
+) [41
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[36
-
-
-
- <D:/Dropbox/praca_magisterska/physics/doc/summary/impactjs.png (PNG copy)>] <s
-ummary/rome.jpg, id=617, 943.525pt x 411.5375pt>
-File: summary/rome.jpg Graphic file (type jpg)
- <use summary/rome.jpg>
-Package pdftex.def Info: summary/rome.jpg used on input line 29.
-(pdftex.def)             Requested size: 341.43306pt x 148.92577pt.
-
-[37 <D:/Dropbox/praca_magisterska/physics/doc/summary/isogenic.png (PNG copy)> 
-<D:/Dropbox/praca_magisterska/physics/doc/summary/rome.jpg>]
-Underfull \hbox (badness 2189) in paragraph at lines 32--32
- |\T1/aess/bx/sc/14.4 6.1. En-co-un-te-red envi-ron-ment li-mi-ta-tions and re-
-com-men-ded
- []
-
-[38
-
-]) [39
 
 ] (D:\Dropbox\praca_magisterska\physics\doc\rozdzialA.tex
 Dodatek A.
-) [40
+) [42
 
 
 
@@ -1139,7 +1164,7 @@ LaTeX Font Warning: Font shape `TS1/aett/m/n' undefined
 (Font)              using `TS1/cmr/m/n' instead
 (Font)              for symbol `texttrademark' on input line 3.
 
-[41
+[43
 
 
 
@@ -1160,26 +1185,26 @@ Overfull \hbox (29.03033pt too wide) in paragraph at lines 22--23
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-[42]) [43] (D:\Dropbox\praca_magisterska\physics\doc\particles/particle.js
+[44]) [45] (D:\Dropbox\praca_magisterska\physics\doc\particles/particle.js
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [44
+ [46
 
 ])
-(D:\Dropbox\praca_magisterska\physics\doc\particles/particle.cpp [45])
-(D:\Dropbox\praca_magisterska\physics\doc\particles/particleEmitter.js [46]
+(D:\Dropbox\praca_magisterska\physics\doc\particles/particle.cpp [47])
+(D:\Dropbox\praca_magisterska\physics\doc\particles/particleEmitter.js [48]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [47])
+ [49])
 (D:\Dropbox\praca_magisterska\physics\doc\particles/particleEmitter.cpp
-[48])
+[50])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [49]
-(D:\Dropbox\praca_magisterska\physics\doc\particles/particleSystem.js [50]
+ [51]
+(D:\Dropbox\praca_magisterska\physics\doc\particles/particleSystem.js [52]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [51])
+ [53])
 (D:\Dropbox\praca_magisterska\physics\doc\particles/particleSystem.cpp
 Overfull \hbox (156.47098pt too wide) in paragraph at lines 20--21
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
@@ -1205,13 +1230,13 @@ Overfull \hbox (130.98285pt too wide) in paragraph at lines 26--27
   
  []
 
-[52]) (D:\Dropbox\praca_magisterska\physics\doc\particles/particleSystem2.js
-[53]
+[54]) (D:\Dropbox\praca_magisterska\physics\doc\particles/particleSystem2.js
+[55]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [54])
+ [56])
 (D:\Dropbox\praca_magisterska\physics\doc\particles/particleSystem2.cpp
-[55]
+[57]
 Overfull \hbox (156.47098pt too wide) in paragraph at lines 26--27
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -1232,31 +1257,31 @@ Overfull \hbox (130.98285pt too wide) in paragraph at lines 53--54
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [56])
-[57] (D:\Dropbox\praca_magisterska\physics\doc\spheres/sphere.js
+ [58])
+[59] (D:\Dropbox\praca_magisterska\physics\doc\spheres/sphere.js
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [58
+ [60
 
 ])
 (D:\Dropbox\praca_magisterska\physics\doc\spheres/sphere.cpp)
-(D:\Dropbox\praca_magisterska\physics\doc\spheres/sphereSystem.js [59]
+(D:\Dropbox\praca_magisterska\physics\doc\spheres/sphereSystem.js [61]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [60]
+ [62]
 Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [61]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [62])
-Underfull \vbox (badness 4569) has occurred while \output is active []
 
  [63]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [64])
+Underfull \vbox (badness 4569) has occurred while \output is active []
+
+ [65]
 (D:\Dropbox\praca_magisterska\physics\doc\spheres/sphereSystem.cpp
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [64]
+ [66]
 Overfull \hbox (100.3971pt too wide) in paragraph at lines 76--77
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -1274,7 +1299,7 @@ Overfull \hbox (125.88522pt too wide) in paragraph at lines 83--84
   
  []
 
-) (D:\Dropbox\praca_magisterska\physics\doc\spheres/octree.js [65]
+) (D:\Dropbox\praca_magisterska\physics\doc\spheres/octree.js [67]
 Overfull \hbox (100.3971pt too wide) in paragraph at lines 50--51
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -1341,13 +1366,13 @@ Overfull \hbox (115.68997pt too wide) in paragraph at lines 60--61
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [66]
+ [68]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [67]
+ [69]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [68])
+ [70])
 (D:\Dropbox\praca_magisterska\physics\doc\spheres/octree.cpp
 Overfull \hbox (130.98285pt too wide) in paragraph at lines 26--27
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
@@ -1429,7 +1454,7 @@ Overfull \hbox (176.86148pt too wide) in paragraph at lines 51--52
 
  []
 
-[69]
+[71]
 Overfull \hbox (130.98285pt too wide) in paragraph at lines 59--60
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -1468,10 +1493,10 @@ Overfull \hbox (161.5686pt too wide) in paragraph at lines 88--89
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [70]
+ [72]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [71]
+ [73]
 Overfull \hbox (3.5422pt too wide) in paragraph at lines 167--168
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -1479,13 +1504,7 @@ Overfull \hbox (3.5422pt too wide) in paragraph at lines 167--168
 ]  
  []
 
-) (D:\Dropbox\praca_magisterska\physics\doc\spheres/sphereSystem2.js [72]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [73]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [74]
+) (D:\Dropbox\praca_magisterska\physics\doc\spheres/sphereSystem2.js [74]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [75]
@@ -1497,8 +1516,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [77]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [78])
-(D:\Dropbox\praca_magisterska\physics\doc\spheres/sphereSystem2.cpp [79]
+ [78]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [79]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [80])
+(D:\Dropbox\praca_magisterska\physics\doc\spheres/sphereSystem2.cpp [81]
 Overfull \hbox (100.3971pt too wide) in paragraph at lines 82--83
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -1537,7 +1562,7 @@ Overfull \hbox (100.3971pt too wide) in paragraph at lines 102--103
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [80]
+ [82]
 Overfull \hbox (130.98285pt too wide) in paragraph at lines 113--114
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -1572,13 +1597,13 @@ Overfull \hbox (100.3971pt too wide) in paragraph at lines 135--136
   
  []
 
-)) [81] (D:\Dropbox\praca_magisterska\physics\doc\praca.bbl
+)) [83] (D:\Dropbox\praca_magisterska\physics\doc\praca.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 155.
- [82
+ [84
 
 
 
@@ -1600,14 +1625,17 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 155.
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 15346 strings out of 494045
- 231302 string characters out of 3145966
- 812722 words of memory out of 3000000
- 15624 multiletter control sequences out of 15000+200000
+ 15328 strings out of 494045
+ 230377 string characters out of 3145966
+ 810549 words of memory out of 3000000
+ 15619 multiletter control sequences out of 15000+200000
  48722 words of font info for 108 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  41i,14n,63p,988b,2009s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1636,9 +1664,9 @@ fonts/type1/public/amsfonts/cm/cmssi9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/t
 ype1/public/amsfonts/cm/cmtt8.pfb>
-Output written on praca.pdf (82 pages, 14922973 bytes).
+Output written on praca.pdf (84 pages, 14964108 bytes).
 PDF statistics:
- 3637 PDF objects out of 4296 (max. 8388607)
- 2582 named destinations out of 2984 (max. 500000)
- 334 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3611 PDF objects out of 4296 (max. 8388607)
+ 2586 named destinations out of 2984 (max. 500000)
+ 339 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -38,13 +38,92 @@ TODO: reference for complexity.
 	\includegraphics[width=10cm]{octree/octree.png}
 \end{figure} 
 
-When collision is detected, collision response is calculated. It's result is directly derived from rule of conservation of momentum and conservation of kinetic energy.
+When collision is detected, collision response is calculated. From rule of conservation of momentum:
 
-$m_1*\vec{v_1} + m_2*\vec{v_2} = m_1*\vec{v'_1} + m_2*\vec{v'_2}$
+\begin{center}
+$m_1 * \vec{v_1} + m_2 * \vec{v_2} = m_1 * \vec{v'_1} + m_2 * \vec{v'_2}$
+\end{center}
 
-$\frac{m_1}{2}*\vec{v_1}^2 + \frac{m_2}{2}*\vec{v_2}^2 = \frac{m_1}{2}*\vec{v'_1}^2 + \frac{m_2}{2}*\vec{v'_2}^2$
+Meaning that change of both momentums is of equal value.
+\begin{center}
+$m_1*\vec{v'_1} =  m_1*\vec{v_1} - \Delta P$
 
-TODO: add math here, finish this chapter.
+$m_2*\vec{v'_2} =  m_2*\vec{v_2} + \Delta P$
+
+$\vec{v'_1} =  \vec{v_1} - \frac{\Delta P}{m_1}$
+
+$\vec{v'_2} =  \vec{v_2} + \frac{\Delta P}{m_2}$
+\end{center}
+
+To simplify response rotation and deformation of spheres are ignored. This does not affect performance analysis, since operations performed all tests is done in the same way.
+
+Let
+\begin{center}
+$P = |\Delta P|$
+
+$N = \hat{pos_1 - pos_2}$
+\end{center}
+
+Since transference of momentum occurs only along single point of contact:
+\begin{center}
+$ \Delta P = P * \hat{\vec{N}}$
+
+$\vec{v'_1} =  \vec{v_1} - \frac{P}{m_1} * \vec{N}$
+
+$\vec{v'_2} =  \vec{v_2} + \frac{P}{m_2} * \vec{N}$
+\end{center}
+
+Lets split each velocity into two scalars, perpendicular and parallel value of velocity vector, and introduce $\vec{Q}$, similar to $\vec{N}$, a perpendicular normalised vector lining along exchanged momentum.
+
+ \begin{center}
+$\vec{v_1} =  a_1 * \vec{N} + b_1 * \vec{Q}$
+
+$\vec{v_2} =  a_2 * \vec{N} + b_2 * \vec{Q}$
+
+$\vec{v'_1} =  a'_1 * \vec{N} + b'_1 * \vec{Q}$
+
+$\vec{v'_2} =  a'_2 * \vec{N} + b'_2 * \vec{Q}$
+\end{center}
+
+\begin{figure}[h!]
+  \caption{Illustration for collision response}
+  \label{img:spheresbounce}
+  \centering
+	\includegraphics[width=8cm]{spheres/bounce.jpg}
+\end{figure} 
+
+Deriving from previous equations:
+
+ \begin{center}
+$a_1' =  a_1 - \frac{P}{m_1}$
+
+$b_1' = b_1$
+
+$a_2' =  a_2 + \frac{P}{m_2}$
+
+$b_2' = b_2$
+\end{center}
+
+Now lets use rule of conservation of energy to solve P:
+
+ \begin{center}
+$\frac{m_1}{2} * ||\vec{v_1}||^2 + \frac{m_2}{2} * ||\vec{v_2}||^2 = \frac{m_1}{2} * ||\vec{v'_1}||^2 + \frac{m_2}{2} * ||\vec{v'_2}||^2$
+
+$\frac{m_1}{2} * ({a_1}^2 + {b_1}^2) + \frac{m_2}{2} * ({a_2}^2 + {b_2}^2) = \frac{m_1}{2} * ({a'_1}^2 + {b'_1}^2) + \frac{m_2}{2} * ({a'_2}^2 + {b'_2}^2)2$
+
+$P = \frac{2*m_1*m_2*(a_1-a_2)}{m_1+m_2}$
+\end{center}
+
+and finally, using result from conservation of momentum:
+
+ \begin{center}
+$\vec{v'_1} =  \vec{v_1} - \frac{2*(a_1-a_2)}{m_1+m_2} * m_2 * \vec{N}$
+
+$\vec{v'_2} =  \vec{v_2} + \frac{2*(a_1-a_2)}{m_1+m_2} * m_1 * \vec{N}$
+\end{center}
+
+From this result, using only dot product of velocity vectors and normalised vector $pos_1 - pos_2$ correct response to collision is calculated. In tested scenarios mass of all spheres is equal since it doesn't affect complexity of calculations and produces less randomised results.
+
 
 \section{{$O(N^2)$} approach}
 \label{sec:sphereinitial}
