@@ -197,6 +197,8 @@ void smash::Octree::addSphere(smash::Sphere *sphere) {
       }
       this->childNodes->at(offset)->addSphere(sphere);
     }
+    offsets->clear();
+    delete offsets;
   }
 };
 

@@ -22,11 +22,10 @@
 \contentsline {subsection}{\numberline {5.1.3}Absence of garbage collection}{37}{subsection.5.1.3}
 \contentsline {subsection}{\numberline {5.1.4}Efficient heap loads and stores}{37}{subsection.5.1.4}
 \contentsline {subsection}{\numberline {5.1.5}Summary}{37}{subsection.5.1.5}
-\contentsline {section}{\numberline {5.2}Benchmarks}{39}{section.5.2}
-\contentsline {chapter}{\numberline {6}Summary}{41}{chapter.6}
+\contentsline {chapter}{\numberline {6}Summary}{39}{chapter.6}
 \contentsline {chapter}{\numberline {A}Acknowledgements}{42}{appendix.A}
 \contentsline {chapter}{\numberline {B}Source code}{43}{appendix.B}
 \contentsline {section}{\numberline {B.1}Math utilities}{43}{section.B.1}
 \contentsline {section}{\numberline {B.2}Particle system}{46}{section.B.2}
 \contentsline {section}{\numberline {B.3}Spheres collision detection}{60}{section.B.3}
-\contentsline {chapter}{References}{84}{lstnumber.B.18.142}
+\contentsline {chapter}{References}{84}{lstnumber.B.18.145}

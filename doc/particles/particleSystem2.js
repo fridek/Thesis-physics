@@ -6,7 +6,8 @@
 goog.provide('smash.ParticleSystem2');
 
 goog.require('smash.Particle');
-goog.require('smash.ParticleEmitter');
+goog.require('smash.flags');
+
 
 
 /**
@@ -28,11 +29,11 @@ smash.ParticleSystem2 = function() {
    */
   this.emitters = [];
 
-  if (smash.ParticleSystem2.DRAWING_ENABLED) {
+  if (smash.flags.DRAWING_ENABLED) {
     /**
      * @type {!Element}
      */
-    this.canvas = window.document.createElement("canvas");
+    this.canvas = window.document.createElement('canvas');
     this.canvas.width = smash.ParticleSystem2.CANVAS_WIDTH;
     this.canvas.height = smash.ParticleSystem2.CANVAS_HEIGHT;
     window.document.body.appendChild(this.canvas);
@@ -55,15 +56,12 @@ smash.ParticleSystem2 = function() {
   }
 };
 
-/**
- * @const {boolean}
- */
-smash.ParticleSystem2.DRAWING_ENABLED = true;
 
 /**
  * @const {number}
  */
 smash.ParticleSystem2.CANVAS_WIDTH = 1200;
+
 
 /**
  * @const {number}
@@ -72,9 +70,9 @@ smash.ParticleSystem2.CANVAS_HEIGHT = 400;
 
 
 smash.ParticleSystem2.prototype.step = function() {
-  if (smash.ParticleSystem2.DRAWING_ENABLED) {
+  if (smash.flags.DRAWING_ENABLED) {
     for (var i = 0; i < smash.ParticleSystem2.CANVAS_WIDTH *
-        smash.ParticleSystem2.CANVAS_HEIGHT * 4; i+=4) {
+        smash.ParticleSystem2.CANVAS_HEIGHT * 4; i += 4) {
       this.pixels[i] = 0;
       this.pixels[i + 1] = 0;
       this.pixels[i + 2] = 0;
@@ -119,7 +117,7 @@ smash.ParticleSystem2.prototype.step = function() {
       p.isDead = true;
     }
 
-    if (smash.ParticleSystem2.DRAWING_ENABLED && !p.isDead) {
+    if (smash.flags.DRAWING_ENABLED && !p.isDead) {
       var baseIndex =
           (Math.round(p.positionY) *
               smash.ParticleSystem2.CANVAS_WIDTH +
@@ -131,10 +129,11 @@ smash.ParticleSystem2.prototype.step = function() {
     }
   }
 
-  if (smash.ParticleSystem2.DRAWING_ENABLED) {
+  if (smash.flags.DRAWING_ENABLED) {
     this.context.putImageData(this.imageData, 0, 0);
   }
 };
+
 
 /**
  * @param {!smash.ParticleEmitter} emitter

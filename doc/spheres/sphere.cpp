@@ -13,6 +13,7 @@ smash::Sphere::Sphere() {
   velocityY = 0;
   velocityZ = 0;
   radius = 5.5;
+  mass = 3.5;
 };
 
 /**

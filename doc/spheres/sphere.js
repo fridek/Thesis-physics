@@ -47,6 +47,11 @@ smash.Sphere = function() {
    * @type {number}
    */
   this.radius = 5.5;
+
+  /**
+   * @type {number}
+   */
+  this.mass = 3.5;
 };
 
 
