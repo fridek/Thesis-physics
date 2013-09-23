@@ -93,7 +93,7 @@ pdf-clean:
 	rm -f *.log *.bak *.aux *.bbl *.blg *.idx *.toc *.out *~
 
 pdf:
-	TEXINPUTS="doc:.:" pdflatex doc/praca.tex
+	cd doc; TEXINPUTS="doc:.:" pdflatex praca.tex
 
 pdf-bib: pdf-clean-all
 	cd doc; pdflatex praca.tex; bibtex praca.aux; pdflatex praca.tex; pdflatex praca.tex;
