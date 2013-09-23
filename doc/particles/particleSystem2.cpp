@@ -23,7 +23,8 @@ smash::ParticleSystem2::~ParticleSystem2() {
 };
 
 void smash::ParticleSystem2::step() {
-  for (std::vector<smash::ParticleEmitter*>::iterator it = this->emitters->begin(); it != this->emitters->end(); it++) {
+  for (std::vector<smash::ParticleEmitter*>::iterator it =
+      this->emitters->begin(); it != this->emitters->end(); it++) {
     smash::ParticleEmitter* emitter = *it;
     for (int i = 0; i < emitter->productionRate; i++) {
       smash::Particle* p;
@@ -50,7 +51,8 @@ void smash::ParticleSystem2::step() {
     }
   }
 
-  for (std::vector<smash::Particle*>::iterator it = this->particles->begin(); it != this->particles->end(); it++) {
+  for (std::vector<smash::Particle*>::iterator it = this->particles->begin();
+      it != this->particles->end(); it++) {
     smash::Particle* p = *it;
     if (p->isDead) {
       continue;

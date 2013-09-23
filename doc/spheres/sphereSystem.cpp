@@ -33,7 +33,8 @@ smash::SphereSystem::~SphereSystem() {
  * @param {smash::Sphere*} sphere1
  * @param {smash::Sphere*} sphere2
  */
-void smash::SphereSystem::collide(smash::Sphere* sphere1, smash::Sphere* sphere2) {
+void smash::SphereSystem::collide(smash::Sphere* sphere1,
+      smash::Sphere* sphere2) {
   float distanceX = sphere1->positionX - sphere2->positionX;
   float distanceY = sphere1->positionY - sphere2->positionY;
   float distanceZ = sphere1->positionZ - sphere2->positionZ;
@@ -45,10 +46,10 @@ void smash::SphereSystem::collide(smash::Sphere* sphere1, smash::Sphere* sphere2
   distanceY /= distanceLength;
   distanceZ /= distanceLength;
 
-  float a1 = smash::math::dot(sphere1->velocityX, sphere1->velocityY, sphere1->velocityZ,
-      distanceX, distanceY, distanceZ);
-  float a2 = smash::math::dot(sphere2->velocityX, sphere2->velocityY, sphere2->velocityZ,
-      distanceX, distanceY, distanceZ);
+  float a1 = smash::math::dot(sphere1->velocityX, sphere1->velocityY,
+      sphere1->velocityZ, distanceX, distanceY, distanceZ);
+  float a2 = smash::math::dot(sphere2->velocityX, sphere2->velocityY,
+      sphere2->velocityZ, distanceX, distanceY, distanceZ);
   float optimizedP = (2.0 * (a1 - a2)) / (sphere1->mass + sphere2->mass);
 
   sphere1->velocityX -= optimizedP * sphere2->mass * distanceX;
@@ -75,14 +76,16 @@ void smash::SphereSystem::applyFloor(smash::Sphere* sphere) {
 
 
 void smash::SphereSystem::step() {
-  for (std::vector<smash::Sphere*>::iterator it = this->spheres->begin(); it != this->spheres->end(); it++) {
+  for (std::vector<smash::Sphere*>::iterator it = this->spheres->begin();
+      it != this->spheres->end(); it++) {
     smash::Sphere* s = *it;
     applyGravity(s);
     applyFloor(s);
 
 
     s->step(1);
-    for (std::vector<smash::Sphere*>::iterator it2 = this->spheres->begin(); it2 != this->spheres->end(); it2++) {
+    for (std::vector<smash::Sphere*>::iterator it2 = this->spheres->begin();
+      it2 != this->spheres->end(); it2++) {
       smash::Sphere* s2 = *it2;
       if (s != s2 &&
           smash::math::checkCollidingSpheres(s, s2)) {
