@@ -75,3 +75,25 @@ lint:
 
 fixjs:
 	fixjsstyle --strict --closurized_namespaces="goog,smash" browser/engine/*.js browser/tests/*.js
+
+cpcodetodoc:
+	cp browser/engine/particle*.js doc/particles/
+	cp runtime/engine/particle*.cpp doc/particles/
+	cp browser/engine/sphere*.js doc/spheres/
+	cp runtime/engine/sphere*.cpp doc/spheres/
+	cp browser/engine/octree.js doc/spheres/
+	cp runtime/engine/octree.cpp doc/spheres/
+	cp browser/engine/math.js doc/
+	cp runtime/engine/math.cpp doc/
+
+pdf-clean-all:
+	rm -f *.dvi *.log *.bak *.aux *.bbl *.blg *.idx *.ps *.eps *.pdf *.toc *.out *~
+
+pdf-clean:
+	rm -f *.log *.bak *.aux *.bbl *.blg *.idx *.toc *.out *~
+
+pdf:
+	TEXINPUTS="doc:.:" pdflatex doc/praca.tex
+
+pdf-bib: pdf-clean-all
+	cd doc; pdflatex praca.tex; bibtex praca.aux; pdflatex praca.tex; pdflatex praca.tex;

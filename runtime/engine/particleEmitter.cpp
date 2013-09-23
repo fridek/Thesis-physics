@@ -68,7 +68,8 @@ void smash::ParticleEmitter::setProductionRate(int rate) {
  * @return {!Array.<!smash::Particle>}
  */
 std::vector<smash::Particle*>* smash::ParticleEmitter::getNewParticles() {
-  std::vector<smash::Particle*> *newParticles = new std::vector<smash::Particle*>;
+  std::vector<smash::Particle*> *newParticles =
+      new std::vector<smash::Particle*>;
   for (int i = 0; i < this->productionRate; i++) {
     smash::Particle* p = new smash::Particle();
     p->lifespan = this->lifespan;

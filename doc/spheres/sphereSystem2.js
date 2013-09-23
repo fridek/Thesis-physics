@@ -1,6 +1,6 @@
 /**
  * @fileoverview Sphere collision detection system.
- * @author sebastian.poreba@gmail.com (Sebastian Poręba)
+ * @author sebastian.poreba@gmail.com (Sebastian Poreba)
  */
 
 goog.provide('smash.SphereSystem2');
@@ -155,6 +155,7 @@ smash.SphereSystem2.DRAWING_OCTREE_ENABLED =
  */
 smash.SphereSystem2.OCTREE_DEPTH = 5;
 
+
 /**
  * @const {boolean}
  */
@@ -207,10 +208,10 @@ smash.SphereSystem2.collide = function(sphere1, sphere2) {
   distanceY /= distanceLength;
   distanceZ /= distanceLength;
 
-  var a1 = smash.math.dot(sphere1.velocityX, sphere1.velocityY, sphere1.velocityZ,
-      distanceX, distanceY, distanceZ);
-  var a2 = smash.math.dot(sphere2.velocityX, sphere2.velocityY, sphere2.velocityZ,
-      distanceX, distanceY, distanceZ);
+  var a1 = smash.math.dot(sphere1.velocityX, sphere1.velocityY,
+      sphere1.velocityZ, distanceX, distanceY, distanceZ);
+  var a2 = smash.math.dot(sphere2.velocityX, sphere2.velocityY,
+      sphere2.velocityZ, distanceX, distanceY, distanceZ);
   var optimizedP = (2.0 * (a1 - a2)) / (sphere1.mass + sphere2.mass);
 
   sphere1.velocityX -= optimizedP * sphere2.mass * distanceX;
@@ -244,7 +245,7 @@ smash.SphereSystem2.prototype.applyFloor = function(sphere) {
 
 
 /**
- *
+ * @param {!smash.Octree} node
  */
 smash.SphereSystem2.prototype.addOctreeMesh = function(node) {
   if (!node.debugMesh) {
@@ -254,9 +255,9 @@ smash.SphereSystem2.prototype.addOctreeMesh = function(node) {
     var geom = new THREE.CubeGeometry(width, height, depth);
     geom.applyMatrix(
         new THREE.Matrix4().makeTranslation(
-            node.left + width/2,
-            node.top + height/2,
-            node.near + depth/2
+            node.left + width / 2,
+            node.top + height / 2,
+            node.near + depth / 2
         )
     );
 
@@ -273,7 +274,8 @@ smash.SphereSystem2.prototype.addOctreeMesh = function(node) {
 
 
 /**
- *
+ * @param {!smash.Octree} node
+ * @private
  */
 smash.SphereSystem2.prototype.collideFromOctree_ = function(node) {
   for (var i = 0; i < node.objects.length; i++) {
@@ -293,6 +295,11 @@ smash.SphereSystem2.prototype.collideFromOctree_ = function(node) {
   }
 };
 
+
+/**
+ * @param {!smash.Octree} node
+ * @private
+ */
 smash.SphereSystem2.prototype.stepOctree_ = function(node) {
   var removedSpheres = [];
   for (var i = 0; i < node.objects.length; i++) {

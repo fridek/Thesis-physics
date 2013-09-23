@@ -1,6 +1,6 @@
 /**
  * @fileoverview Octree space partitioning.
- * @author sebastian.poreba@gmail.com (Sebastian Poręba)
+ * @author sebastian.poreba@gmail.com (Sebastian Poreba)
  */
 
 #include "octree.h"
@@ -23,7 +23,8 @@ smash::Octree::Octree(float left, float right,
 
 smash::Octree::~Octree() {
   delete this->objects;
-  for (std::vector<smash::Octree*>::iterator it = this->childNodes->begin(); it != this->childNodes->end(); it++) {
+  for (std::vector<smash::Octree*>::iterator it = this->childNodes->begin();
+      it != this->childNodes->end(); it++) {
     delete *it;
   }
   delete this->childNodes;
@@ -38,17 +39,25 @@ void smash::Octree::split() {
   float middleZ = (this->near + this->far) / 2;
   int maxDepth = this->maxDepth - 1;
 
-  this->childNodes->push_back(new smash::Octree(this->left, middleX, this->top, middleY, this->near, middleZ, maxDepth));
-  this->childNodes->push_back(new smash::Octree(middleX, this->right, this->top, middleY, this->near, middleZ, maxDepth));
+  this->childNodes->push_back(new smash::Octree(this->left, middleX,
+      this->top, middleY, this->near, middleZ, maxDepth));
+  this->childNodes->push_back(new smash::Octree(middleX, this->right,
+      this->top, middleY, this->near, middleZ, maxDepth));
 
-  this->childNodes->push_back(new smash::Octree(this->left, middleX, middleY, this->bottom, this->near, middleZ, maxDepth));
-  this->childNodes->push_back(new smash::Octree(middleX, this->right, middleY, this->bottom, this->near, middleZ, maxDepth));
+  this->childNodes->push_back(new smash::Octree(this->left, middleX,
+      middleY, this->bottom, this->near, middleZ, maxDepth));
+  this->childNodes->push_back(new smash::Octree(middleX, this->right,
+      middleY, this->bottom, this->near, middleZ, maxDepth));
 
-  this->childNodes->push_back(new smash::Octree(this->left, middleX, this->top, middleY, middleZ, this->far, maxDepth));
-  this->childNodes->push_back(new smash::Octree(middleX, this->right, this->top, middleY, middleZ, this->far, maxDepth));
+  this->childNodes->push_back(new smash::Octree(this->left, middleX,
+      this->top, middleY, middleZ, this->far, maxDepth));
+  this->childNodes->push_back(new smash::Octree(middleX, this->right,
+      this->top, middleY, middleZ, this->far, maxDepth));
 
-  this->childNodes->push_back(new smash::Octree(this->left, middleX, middleY, this->bottom, middleZ, this->far, maxDepth));
-  this->childNodes->push_back(new smash::Octree(middleX, this->right, middleY, this->bottom, middleZ, this->far, maxDepth));
+  this->childNodes->push_back(new smash::Octree(this->left, middleX,
+      middleY, this->bottom, middleZ, this->far, maxDepth));
+  this->childNodes->push_back(new smash::Octree(middleX, this->right,
+      middleY, this->bottom, middleZ, this->far, maxDepth));
 };
 
 bool smash::Octree::hasAnyObjects() {
@@ -56,7 +65,8 @@ bool smash::Octree::hasAnyObjects() {
     return true;
   }
 
-  for (std::vector<smash::Octree*>::iterator it = this->childNodes->begin(); it != this->childNodes->end(); it++) {
+  for (std::vector<smash::Octree*>::iterator it = this->childNodes->begin();
+      it != this->childNodes->end(); it++) {
     if ((*it)->hasAnyObjects()) {
       return true;
     }
@@ -68,7 +78,8 @@ bool smash::Octree::hasAnyObjects() {
 int smash::Octree::getTotalObjectCount() {
   int count = this->objects->size();
 
-  for (std::vector<smash::Octree*>::iterator it = this->childNodes->begin(); it != this->childNodes->end(); it++) {
+  for (std::vector<smash::Octree*>::iterator it = this->childNodes->begin();
+      it != this->childNodes->end(); it++) {
     count += (*it)->getTotalObjectCount();
   }
   return count;
@@ -77,7 +88,8 @@ int smash::Octree::getTotalObjectCount() {
 
 int smash::Octree::getTotalTreeSize() {
   int count = this->childNodes->size();
-  for (std::vector<smash::Octree*>::iterator it = this->childNodes->begin(); it != this->childNodes->end(); it++) {
+  for (std::vector<smash::Octree*>::iterator it = this->childNodes->begin();
+      it != this->childNodes->end(); it++) {
     count += (*it)->getTotalTreeSize();
   }
   return count;
@@ -85,7 +97,8 @@ int smash::Octree::getTotalTreeSize() {
 
 
 
-std::vector<int>* smash::Octree::getAllOffsets(float left, float right, float top, float bottom, float near, float far) {
+std::vector<int>* smash::Octree::getAllOffsets(float left, float right,
+      float top, float bottom, float near, float far) {
   float middleX = (this->left + this->right) / 2;
   float middleY = (this->top + this->bottom) / 2;
   float middleZ = (this->near + this->far) / 2;
@@ -141,15 +154,6 @@ std::vector<int>* smash::Octree::getAllOffsets(float left, float right, float to
       allOffsets->push_back(n + 1);
     }
   }
-  /*
-  if (allOffsets->size() > 1) {
-    std::cout << "offsets ";
-    for (std::vector<int>::iterator it = allOffsets->begin(),
-        itEnd = allOffsets->end(); it != itEnd; it++) {
-          std::cout << *it << " ";
-        }
-        std::cout << std::endl;
-      }*/
   return allOffsets;
 };
 
@@ -164,7 +168,8 @@ bool smash::Octree::sphereLeft(smash::Sphere *sphere) {
 
 
 void smash::Octree::removeSphere(smash::Sphere *sphere) {
-  this->objects->erase(std::remove(this->objects->begin(), this->objects->end(), sphere));
+  this->objects->erase(std::remove(this->objects->begin(),
+      this->objects->end(), sphere));
 };
 
 
@@ -188,8 +193,10 @@ void smash::Octree::addSphere(smash::Sphere *sphere) {
     if (this->childNodes->size() == 0) {
       this->split();
     }
-    std::vector<int> *offsets = this->getAllOffsets(left, right, top, bottom, near, far);
-    for (std::vector<int>::iterator it = offsets->begin(); it != offsets->end(); it++) {
+    std::vector<int> *offsets = this->getAllOffsets(left, right, top,
+      bottom, near, far);
+    for (std::vector<int>::iterator it = offsets->begin();
+      it != offsets->end(); it++) {
       int offset = *it;
       if (offset > 8) {
         // weird offset, investigate

@@ -1,10 +1,8 @@
 
-% \documentclass[pdflatex,11pt]{aghdpl}
-\documentclass[en]{ujdpl}               % przy kompilacji programem latex
-% \documentclass[pdflatex,en]{aghdpl}  % praca w jezyku angielskim
+\documentclass[en]{ujdpl}
 
 \usepackage[polish]{babel}
-\usepackage[cp1250]{inputenc}
+\usepackage[utf8]{inputenc}
 \usepackage{ae}
 
 \usepackage[T1]{fontenc}
@@ -12,8 +10,7 @@
 
 \usepackage[justification=centering]{caption}
 
-\usepackage{hyperref} 
-\usepackage{url}
+\usepackage{hyperref}
 \usepackage{latexsym}
 \usepackage{textcomp}
 
@@ -100,30 +97,23 @@
 
 %---------------------------------------------------------------------------
 
-\author{Sebastian Porêba}
-\shortauthor{Sebastian Porêba}
+\author{Sebastian PorÄ™ba}
+\shortauthor{Sebastian PorÄ™ba}
 
-\titlePL{Porównanie silników fizyki 3D}
-\titleEN{Comparison of 3D physics engines}
+\title{Comparison of 3D physics engines}
 
-\shorttitlePL{Porównanie silników fizyki 3D} % skrócona 
-\shorttitleEN{Comparison of 3D physics engines}
+\shorttitle{Comparison of 3D physics engines}
 
-\thesistypePL{Praca magisterska}
-\thesistypeEN{Master of Science Thesis}
+\thesistype{Master of Science Thesis}
 
-\supervisorPL{dr hab. Pawe³ Wêgrzyn}
-\supervisorEN{Pawe³ Wêgrzyn Ph.D}
-
-\departmentPL{Instytut Informatyki Stosowanej}
-\departmentEN{Department of Applied Computer Science} 
+\supervisor{PaweÅ‚ WÄ™grzyn Ph.D}
+\consultant{Bartosz PorÄ™bski MSc}
 
 \date{2013}
 
-\facultyPL{Wydzia³ Fizyki, Astronomii i Informatyki Stosowanej}
-\facultyEN{Faculty of Phycics, Astronomy and Applied Computer Science}
+\faculty{Faculty of Phycics, Astronomy and Applied Computer Science}
 
-\acknowledgements{Serdecznie podziêkowania dla ...}
+\acknowledgements{I would like to thank my advisors PaweÅ‚ WÄ™grzyn and Bartek PorÄ™bski and people who advised and supported me during writing: Patrycja Bartyzel, Ibon Tolosana, Collin Hover}
 
 %---------------------------------------------------------------------------
 
@@ -149,7 +139,10 @@
 \include{rozdzialB}
 
 \clearpage
+\phantomsection
 \addcontentsline{toc}{chapter}{References}
+\nocite{*}
+\bibliographystyle{abbrv}
 \bibliography{bibliografia}
 
 \end{document}

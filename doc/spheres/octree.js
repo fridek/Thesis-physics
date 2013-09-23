@@ -1,6 +1,6 @@
 /**
  * @fileoverview Octree space partitioning.
- * @author sebastian.poreba@gmail.com (Sebastian Poręba)
+ * @author sebastian.poreba@gmail.com (Sebastian Poreba)
  */
 
 goog.provide('smash.Octree');
@@ -8,35 +8,65 @@ goog.provide('smash.Octree');
 goog.require('goog.array');
 
 
+
 /**
- * @param left
- * @param right
- * @param top
- * @param bottom
- * @param near
- * @param far
- * @param maxDepth
+ * @param {number} left
+ * @param {number} right
+ * @param {number} top
+ * @param {number} bottom
+ * @param {number} near
+ * @param {number} far
+ * @param {number} maxDepth
  * @constructor
  */
 smash.Octree = function(left, right, top, bottom, near, far, maxDepth) {
+
+  /**
+   * @type {number}
+   */
   this.maxDepth = maxDepth;
 
+  /**
+   * @type {Array.<!smash.Octree>}
+   */
   this.childNodes = [];
 
+  /**
+   * @type {number}
+   */
   this.left = left;
 
+  /**
+   * @type {number}
+   */
   this.right = right;
 
+  /**
+   * @type {number}
+   */
   this.top = top;
 
+  /**
+   * @type {number}
+   */
   this.bottom = bottom;
 
+  /**
+   * @type {number}
+   */
   this.near = near;
 
+  /**
+   * @type {number}
+   */
   this.far = far;
 
+  /**
+   * @type {Array.<!smash.Sphere>}
+   */
   this.objects = [];
 };
+
 
 /**
  *
@@ -47,18 +77,27 @@ smash.Octree.prototype.split = function() {
   var middleZ = (this.near + this.far) / 2;
   var maxDepth = this.maxDepth - 1;
 
-  this.childNodes[0] = new smash.Octree(this.left, middleX, this.top, middleY, this.near, middleZ, maxDepth);
-  this.childNodes[1] = new smash.Octree(middleX, this.right, this.top, middleY, this.near, middleZ, maxDepth);
+  this.childNodes[0] = new smash.Octree(this.left, middleX,
+      this.top, middleY, this.near, middleZ, maxDepth);
+  this.childNodes[1] = new smash.Octree(middleX, this.right,
+      this.top, middleY, this.near, middleZ, maxDepth);
 
-  this.childNodes[2] = new smash.Octree(this.left, middleX, middleY, this.bottom, this.near, middleZ, maxDepth);
-  this.childNodes[3] = new smash.Octree(middleX, this.right, middleY, this.bottom, this.near, middleZ, maxDepth);
+  this.childNodes[2] = new smash.Octree(this.left, middleX,
+      middleY, this.bottom, this.near, middleZ, maxDepth);
+  this.childNodes[3] = new smash.Octree(middleX, this.right,
+      middleY, this.bottom, this.near, middleZ, maxDepth);
 
-  this.childNodes[4] = new smash.Octree(this.left, middleX, this.top, middleY, middleZ, this.far, maxDepth);
-  this.childNodes[5] = new smash.Octree(middleX, this.right, this.top, middleY, middleZ, this.far, maxDepth);
+  this.childNodes[4] = new smash.Octree(this.left, middleX,
+      this.top, middleY, middleZ, this.far, maxDepth);
+  this.childNodes[5] = new smash.Octree(middleX, this.right,
+      this.top, middleY, middleZ, this.far, maxDepth);
 
-  this.childNodes[6] = new smash.Octree(this.left, middleX, middleY, this.bottom, middleZ, this.far, maxDepth);
-  this.childNodes[7] = new smash.Octree(middleX, this.right, middleY, this.bottom, middleZ, this.far, maxDepth);
+  this.childNodes[6] = new smash.Octree(this.left, middleX,
+      middleY, this.bottom, middleZ, this.far, maxDepth);
+  this.childNodes[7] = new smash.Octree(middleX, this.right,
+      middleY, this.bottom, middleZ, this.far, maxDepth);
 };
+
 
 /**
  *
@@ -67,22 +106,23 @@ smash.Octree.prototype.split = function() {
 smash.Octree.prototype.hasAnyObjects = function() {
   return this.objects.length > 0 ||
       this.childNodes.some(function(node) {
-    return node.hasAnyObjects();
-  });
+        return node.hasAnyObjects();
+      });
 };
 
 
 /**
  *
- * @param left
- * @param right
- * @param top
- * @param bottom
- * @param near
- * @param far
- * @return {Array}
+ * @param {number} left
+ * @param {number} right
+ * @param {number} top
+ * @param {number} bottom
+ * @param {number} near
+ * @param {number} far
+ * @return {Array.<number>}
  */
-smash.Octree.prototype.getAllOffsets = function(left, right, top, bottom, near, far) {
+smash.Octree.prototype.getAllOffsets = function(left, right, top, bottom,
+    near, far) {
   var middleX = (this.left + this.right) / 2;
   var middleY = (this.top + this.bottom) / 2;
   var middleZ = (this.near + this.far) / 2;
@@ -135,8 +175,7 @@ smash.Octree.prototype.getAllOffsets = function(left, right, top, bottom, near, 
 
 
 /**
- *
- * @param sphere
+ * @param {!smash.Sphere} sphere
  * @return {boolean}
  */
 smash.Octree.prototype.sphereLeft = function(sphere) {
@@ -149,11 +188,17 @@ smash.Octree.prototype.sphereLeft = function(sphere) {
 };
 
 
+/**
+ * @param {!smash.Sphere} sphere
+ */
 smash.Octree.prototype.removeSphere = function(sphere) {
   goog.array.remove(this.objects, sphere);
 };
 
 
+/**
+ * @param {!smash.Sphere} sphere
+ */
 smash.Octree.prototype.addSphere = function(sphere) {
   if (this.objects.indexOf(sphere) != -1) {
     return; // this happens when sphere is re-added from two
@@ -180,6 +225,10 @@ smash.Octree.prototype.addSphere = function(sphere) {
   }
 };
 
+
+/**
+ *
+ */
 smash.Octree.prototype.log = function() {
   window.console.log('On level ', this.maxDepth,
       ' octree node with', this.objects.length, 'objects');

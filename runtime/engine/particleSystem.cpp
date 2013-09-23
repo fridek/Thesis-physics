@@ -17,15 +17,19 @@ smash::ParticleSystem::~ParticleSystem() {
 };
 
 void smash::ParticleSystem::step() {
-  for (std::vector<smash::ParticleEmitter*>::iterator it = this->emitters->begin(); it != this->emitters->end(); it++) {
-    std::vector<smash::Particle*>* particleFromEmitters = (*it)->getNewParticles();
-    this->particles->insert(this->particles->end(), particleFromEmitters->begin(), particleFromEmitters->end());
+  for (std::vector<smash::ParticleEmitter*>::iterator it =
+      this->emitters->begin(); it != this->emitters->end(); it++) {
+    std::vector<smash::Particle*>* particleFromEmitters =
+      (*it)->getNewParticles();
+    this->particles->insert(this->particles->end(),
+      particleFromEmitters->begin(), particleFromEmitters->end());
     delete particleFromEmitters;
   }
 
   std::vector<smash::Particle*> newParticles;
 
-  for (std::vector<smash::Particle*>::iterator it = this->particles->begin(); it != this->particles->end(); it++) {
+  for (std::vector<smash::Particle*>::iterator it =
+      this->particles->begin(); it != this->particles->end(); it++) {
     smash::Particle* p = *it;
     p->step();
     if (p->positionX >= 0 &&

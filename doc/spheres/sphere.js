@@ -1,6 +1,6 @@
 /**
  * @fileoverview Sphere file.
- * @author sebastian.poreba@gmail.com (Sebastian Poręba)
+ * @author sebastian.poreba@gmail.com (Sebastian Poreba)
  */
 
 
@@ -56,7 +56,7 @@ smash.Sphere = function() {
 
 
 /**
- *
+ * @param {number} stepTime
  */
 smash.Sphere.prototype.step = function(stepTime) {
   this.positionX += this.velocityX * stepTime;

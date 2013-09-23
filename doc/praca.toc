@@ -3,7 +3,7 @@
 \contentsline {section}{\numberline {1.1}Influence on distribution process}{8}{section.1.1}
 \contentsline {section}{\numberline {1.2}Technology}{10}{section.1.2}
 \contentsline {chapter}{\numberline {2}Overview of JavaScript and V8 engine architecture}{11}{chapter.2}
-\contentsline {section}{\numberline {2.1}JIT compilation - tracking variable types}{12}{section.2.1}
+\contentsline {section}{\numberline {2.1}JIT compilation -- tracking variable types}{12}{section.2.1}
 \contentsline {section}{\numberline {2.2}Type interference}{14}{section.2.2}
 \contentsline {section}{\numberline {2.3}Hidden classes}{15}{section.2.3}
 \contentsline {section}{\numberline {2.4}Garbage collection}{17}{section.2.4}
@@ -28,4 +28,4 @@
 \contentsline {section}{\numberline {B.1}Math utilities}{43}{section.B.1}
 \contentsline {section}{\numberline {B.2}Particle system}{46}{section.B.2}
 \contentsline {section}{\numberline {B.3}Spheres collision detection}{60}{section.B.3}
-\contentsline {chapter}{References}{84}{lstnumber.B.18.145}
+\contentsline {chapter}{References}{84}{section*.29}

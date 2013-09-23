@@ -1,6 +1,6 @@
 /**
  * @fileoverview Sphere collision detection system.
- * @author sebastian.poreba@gmail.com (Sebastian Poręba)
+ * @author sebastian.poreba@gmail.com (Sebastian Poreba)
  */
 
 #include "sphereSystem.h"

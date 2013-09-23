@@ -1,13 +1,13 @@
 /**
  * @fileoverview Particle system.
- * @author sebastian.poreba@gmail.com (Sebastian Poręba)
+ * @author sebastian.poreba@gmail.com (Sebastian Poreba)
  */
 
 goog.provide('smash.ParticleSystem');
 
 
-goog.require('smash.Particle');
 goog.require('smash.flags');
+
 
 
 /**
@@ -64,6 +64,9 @@ smash.ParticleSystem.CANVAS_WIDTH = 1200;
 smash.ParticleSystem.CANVAS_HEIGHT = 400;
 
 
+/**
+ *
+ */
 smash.ParticleSystem.prototype.step = function() {
   if (smash.flags.DRAWING_ENABLED) {
     for (var i = 0; i < smash.ParticleSystem.CANVAS_WIDTH *

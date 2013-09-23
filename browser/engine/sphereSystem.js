@@ -1,6 +1,6 @@
 /**
  * @fileoverview Sphere collision detection system.
- * @author sebastian.poreba@gmail.com (Sebastian Poręba)
+ * @author sebastian.poreba@gmail.com (Sebastian Poreba)
  */
 
 goog.provide('smash.SphereSystem');
@@ -171,10 +171,10 @@ smash.SphereSystem.collide = function(sphere1, sphere2) {
   distanceY /= distanceLength;
   distanceZ /= distanceLength;
 
-  var a1 = smash.math.dot(sphere1.velocityX, sphere1.velocityY, sphere1.velocityZ,
-      distanceX, distanceY, distanceZ);
-  var a2 = smash.math.dot(sphere2.velocityX, sphere2.velocityY, sphere2.velocityZ,
-      distanceX, distanceY, distanceZ);
+  var a1 = smash.math.dot(sphere1.velocityX, sphere1.velocityY,
+      sphere1.velocityZ, distanceX, distanceY, distanceZ);
+  var a2 = smash.math.dot(sphere2.velocityX, sphere2.velocityY,
+      sphere2.velocityZ, distanceX, distanceY, distanceZ);
   var optimizedP = (2.0 * (a1 - a2)) / (sphere1.mass + sphere2.mass);
 
   sphere1.velocityX -= optimizedP * sphere2.mass * distanceX;

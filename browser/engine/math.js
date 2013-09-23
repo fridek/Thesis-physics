@@ -1,6 +1,6 @@
 /**
  * @fileoverview Math utils.
- * @author sebastian.poreba@gmail.com (Sebastian Poręba)
+ * @author sebastian.poreba@gmail.com (Sebastian Poreba)
  */
 
 goog.provide('smash.math');

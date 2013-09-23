@@ -19,13 +19,13 @@ Tested system works on two-dimensional Cartesian plane. For purpose of  performa
 Emitter supports following parameters:
 
 \begin{itemize}
-	\item position - initial position of created particles
-	\item angle - angle counting clockwise from vector [0, 1]
-	\item spread - parameter controlling random differences in initial angle of particles
-	\item velocity - initial velocity of particles, in pixels per frame
-	\item velocity spread - parameter controlling random differences in initial velocity of particles
-	\item lifespan - initial lifespan of particles
-	\item productionRate - amount of particles initialized in each frame
+	\item position -- initial position of created particles
+	\item angle -- angle counting clockwise from vector [0, 1]
+	\item spread -- parameter controlling random differences in initial angle of particles
+	\item velocity -- initial velocity of particles, in pixels per frame
+	\item velocity spread -- parameter controlling random differences in initial velocity of particles
+	\item lifespan -- initial lifespan of particles
+	\item productionRate -- amount of particles initialized in each frame
 \end{itemize}
 
 A Particle has similar properties:
@@ -33,7 +33,7 @@ A Particle has similar properties:
 	\item position
 	\item velocity
 	\item lifespan
-	\item age - counted in frames, when higher then lifespan particle is removed from system
+	\item age -- counted in frames, when higher then lifespan particle is removed from system
 \end{itemize}
 
 Source code of both implementations is attached in Appendix \ref{cha:sourcecode}.
@@ -55,9 +55,9 @@ Time measurement shows that JavaScript version is almost 8 times slower than nat
 
 Methods prefixed with ~ are unoptimized, the ones prefixed with * are JIT compiled. As seen in profiler log, most of the time is spent in unoptimised versions of verifyIfAlive and stepParticle methods of particle system step.
 
-\lstinputlisting[caption=Annotated part of source,label=listing:particles1stepannotated,language=JavaScript]{particles/particleSystemStep.js}
+\lstinputlisting[caption=Annotated part of source,label=listing:particles1stepannotated,language=JavaScript]{particles/particleSystemstep.js}
 
-The same methods are also used in optimised versions, where they take significantly less ticks to run. It's clear that presented code not only allocates and deallocates too much memory, but also fails to run in optimised mode. It's visible on chart obtained from the same tool - stripe labelled "code kind in execution" shows multiple kinds of code running and is interrupted often with garbage collection cycles.
+The same methods are also used in optimised versions, where they take significantly less ticks to run. It's clear that presented code not only allocates and deallocates too much memory, but also fails to run in optimised mode. It's visible on chart obtained from the same tool -- stripe labelled "code kind in execution" shows multiple kinds of code running and is interrupted often with garbage collection cycles.
 
 \begin{figure}[h!]
   \caption{Chart of time used in unoptimised verion of JavaScript}

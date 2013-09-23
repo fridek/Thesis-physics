@@ -5,12 +5,12 @@ Historically, JavaScript was considered untyped language, meaning that values ha
 
 This paper uses as an engine of choice V8 Crankshaft. Choice was made because it's the only engine available at the moment which provides direct command line access, enabling precise performance measurements of code parsing and execution, without browser context and overhead. Executable file of V8 (named d8) is compiled with consideration of target platform.
 
-\section{JIT compilation - tracking variable types}
+\section{JIT compilation -- tracking variable types}
 \label{sec:JIT}
 
 As mentioned before, initially JavaScript was treated as untyped language. With release of SpiderMonkey in Firefox 3.5 in 2009 situation has changed. First Just-In-Time compiler for JavaScript, TraceMonkey, was created. Based on works of Prof. Dr. Michael Franz on TraceTrees \footnote{http://www.michaelfranz.com/} JIT compiler was collecting all paths that interpreter took with specific types of variables. A path could split to different methods or if statements. Whenever part of code was executed often enough, path was marked as hot and compiler optimised it for given types. If single path was traversed with different set of types compiler could generate another version of optimised code. When path tuned out to be highly polymorphic optimised versions were removed and interpreter was used as a fallback.
 Initial reports shown speedups between 20x to 40x \footnote{http://arstechnica.com/information-technology/2008/08/firefox-to-get-massive-javascript-performance-boost/}.
-However, trace JIT turned out to be very complicated to maintain \footnote{https://hacks.mozilla.org/2010/03/improving-javascript-performance-with-jagermonkey/} and eventually was removed from Firefox in 2011.\footnote{http://blog.mozilla.org/nnethercote/2011/11/23/memshrink-progress-report-week-23/}. At the time SpiderMonkey was already equipped with JägerMonkey, JIT engine based on method calls. Instead of collecting complete traces, only method calls are counted. This gives easy track of function parameters and variables in scope.
+However, trace JIT turned out to be very complicated to maintain \footnote{https://hacks.mozilla.org/2010/03/improving-javascript-performance-with-jagermonkey/} and eventually was removed from Firefox in 2011.\footnote{http://blog.mozilla.org/nnethercote/2011/11/23/memshrink-progress-report-week-23/}. At the time SpiderMonkey was already equipped with JÃ¤gerMonkey, JIT engine based on method calls. Instead of collecting complete traces, only method calls are counted. This gives easy track of function parameters and variables in scope.
 
 \begin{figure}[h!]
   \caption{JIT compiler tracking method calls}
@@ -37,7 +37,7 @@ To track these changes two debug options for V8 are available: --trace-opt and -
 \section{Type interference}
 \label{sec:typeinterference}
 
-V8's method of optimising code before it's run relies on type inference. Based on context of variable it's type is guessed. Generated assembler has to support cache miss - whenever inferred type turns out to be incorrect, new type is assigned and another JIT compilation runs. Types of variables are organised in a tree, where Number object may store both Float or Integer, Integer may store SMI (small int), etc.
+V8's method of optimising code before it's run relies on type inference. Based on context of variable it's type is guessed. Generated assembler has to support cache miss -- whenever inferred type turns out to be incorrect, new type is assigned and another JIT compilation runs. Types of variables are organised in a tree, where Number object may store both Float or Integer, Integer may store SMI (small int), etc.
 
 \lstinputlisting[caption=Tree of types in JavaScript,label=listing:typestree]{types.txt}
 

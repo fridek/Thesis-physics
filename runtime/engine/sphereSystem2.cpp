@@ -1,6 +1,6 @@
 /**
  * @fileoverview Sphere collision detection system.
- * @author sebastian.poreba@gmail.com (Sebastian Poręba)
+ * @author sebastian.poreba@gmail.com (Sebastian Poreba)
  */
 
 #include "sphereSystem2.h"
@@ -39,7 +39,8 @@ smash::SphereSystem2::~SphereSystem2() {
  * @param {smash::Sphere*} sphere1
  * @param {smash::Sphere*} sphere2
  */
-void smash::SphereSystem2::collide(smash::Sphere* sphere1, smash::Sphere* sphere2) {
+void smash::SphereSystem2::collide(smash::Sphere* sphere1,
+      smash::Sphere* sphere2) {
   float distanceX = sphere1->positionX - sphere2->positionX;
   float distanceY = sphere1->positionY - sphere2->positionY;
   float distanceZ = sphere1->positionZ - sphere2->positionZ;
@@ -51,10 +52,10 @@ void smash::SphereSystem2::collide(smash::Sphere* sphere1, smash::Sphere* sphere
   distanceY /= distanceLength;
   distanceZ /= distanceLength;
 
-  float a1 = smash::math::dot(sphere1->velocityX, sphere1->velocityY, sphere1->velocityZ,
-      distanceX, distanceY, distanceZ);
-  float a2 = smash::math::dot(sphere2->velocityX, sphere2->velocityY, sphere2->velocityZ,
-      distanceX, distanceY, distanceZ);
+  float a1 = smash::math::dot(sphere1->velocityX, sphere1->velocityY,
+      sphere1->velocityZ, distanceX, distanceY, distanceZ);
+  float a2 = smash::math::dot(sphere2->velocityX, sphere2->velocityY,
+      sphere2->velocityZ, distanceX, distanceY, distanceZ);
   float optimizedP = (2.0 * (a1 - a2)) / (sphere1->mass + sphere2->mass);
 
   sphere1->velocityX -= optimizedP * sphere2->mass * distanceX;
@@ -82,8 +83,10 @@ void smash::SphereSystem2::applyFloor(smash::Sphere* sphere) {
 
 
 void smash::SphereSystem2::collideFromOctree(smash::Octree *node) {
-  for (std::vector<smash::Sphere*>::iterator it = node->objects->begin(); it != node->objects->end(); it++) {
-    for (std::vector<smash::Sphere*>::iterator it2 = node->objects->begin(); it2 != node->objects->end(); it2++) {
+  for (std::vector<smash::Sphere*>::iterator it = node->objects->begin();
+      it != node->objects->end(); it++) {
+    for (std::vector<smash::Sphere*>::iterator it2 = node->objects->begin();
+      it2 != node->objects->end(); it2++) {
       this->collisionChecks++;
       smash::Sphere* s = *it;
       smash::Sphere* s2 = *it2;
@@ -94,7 +97,8 @@ void smash::SphereSystem2::collideFromOctree(smash::Octree *node) {
       }
     }
   }
-  for (std::vector<smash::Octree*>::iterator it = node->childNodes->begin(); it != node->childNodes->end(); it++) {
+  for (std::vector<smash::Octree*>::iterator it = node->childNodes->begin();
+      it != node->childNodes->end(); it++) {
     this->collideFromOctree(*it);
   }
 };
@@ -102,7 +106,8 @@ void smash::SphereSystem2::collideFromOctree(smash::Octree *node) {
 void smash::SphereSystem2::stepOctree(smash::Octree *node) {
   std::vector<smash::Sphere*> removedSpheres;
   
-  for (std::vector<smash::Sphere*>::iterator it = node->objects->begin(); it != node->objects->end(); it++) {
+  for (std::vector<smash::Sphere*>::iterator it = node->objects->begin();
+      it != node->objects->end(); it++) {
     smash::Sphere* s = *it;
     if (node->sphereLeft(s)) {
       removedSpheres.push_back(s);
@@ -113,18 +118,21 @@ void smash::SphereSystem2::stepOctree(smash::Octree *node) {
     }
   }
 
-  for (std::vector<smash::Octree*>::iterator it = node->childNodes->begin(); it != node->childNodes->end(); it++) {
+  for (std::vector<smash::Octree*>::iterator it = node->childNodes->begin();
+      it != node->childNodes->end(); it++) {
     this->stepOctree(*it);
   }
 
   if (node != this->octreeRoot) {
-    for (std::vector<smash::Sphere*>::iterator it = removedSpheres.begin(); it != removedSpheres.end(); it++) {
+    for (std::vector<smash::Sphere*>::iterator it = removedSpheres.begin();
+        it != removedSpheres.end(); it++) {
       this->octreeRoot->addSphere(*it);
     }
   }
 
   if (!node->hasAnyObjects()) {
-    for (std::vector<smash::Octree*>::iterator it = node->childNodes->begin(); it != node->childNodes->end(); it++) {
+    for (std::vector<smash::Octree*>::iterator it = node->childNodes->begin();
+        it != node->childNodes->end(); it++) {
       delete *it;
     }
     node->childNodes->clear();
@@ -135,7 +143,8 @@ void smash::SphereSystem2::stepOctree(smash::Octree *node) {
 void smash::SphereSystem2::step() {
   this->stepOctree(this->octreeRoot);
   this->collideFromOctree(this->octreeRoot);
-  for (std::vector<smash::Sphere*>::iterator it = this->spheres->begin(); it != this->spheres->end(); it++) {
+  for (std::vector<smash::Sphere*>::iterator it = this->spheres->begin();
+      it != this->spheres->end(); it++) {
     smash::Sphere* s = *it;
     applyGravity(s);
     applyFloor(s);

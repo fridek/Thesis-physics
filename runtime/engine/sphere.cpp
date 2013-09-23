@@ -1,6 +1,6 @@
 /**
  * @fileoverview Sphere file.
- * @author sebastian.poreba@gmail.com (Sebastian Poręba)
+ * @author sebastian.poreba@gmail.com (Sebastian Poreba)
  */
 
 #include "sphere.h"

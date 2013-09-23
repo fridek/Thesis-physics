@@ -1,6 +1,6 @@
 /**
  * @fileoverview Particle test.
- * @author sebastian.poreba@gmail.com (Sebastian Poręba)
+ * @author sebastian.poreba@gmail.com (Sebastian Poreba)
  */
 
 goog.require('smash.ParticleEmitter');

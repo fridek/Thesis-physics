@@ -1,6 +1,6 @@
 /**
  * @fileoverview Octree space partitioning.
- * @author sebastian.poreba@gmail.com (Sebastian Poręba)
+ * @author sebastian.poreba@gmail.com (Sebastian Poreba)
  */
 
 #include "octree.h"

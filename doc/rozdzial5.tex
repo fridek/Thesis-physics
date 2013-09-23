@@ -2,7 +2,7 @@
 \label{cha:emscripten}
 
 JavaScript is often called an assembly language of the Web.\footnote{http://www.hanselman.com/blog/JavaScriptIsWebAssemblyLanguageAndThatsOK.aspx} One could argue that since only one language is supported by browsers it could be made a compilation target similar to assembler for CPU. This statement is flawed since eventually JavaScript is translated to assembly making it only an intermediate step. Probably resemblance to ByteCode in JVM, which is compilation target of multiple languages like Java, Scala and Clojure is more in place.
-Nevertheless, last years showed multiple projects aimed at converting code to JavaScript. Some introduce new syntax like CoffeeScript, Dart or TypeScript while still serving the same purpose - providing human readable code that is interpreted in browser on fly. Others, that are focus of this chapter, aim to convert existing projects to run in browser.
+Nevertheless, last years showed multiple projects aimed at converting code to JavaScript. Some introduce new syntax like CoffeeScript, Dart or TypeScript while still serving the same purpose -- providing human readable code that is interpreted in browser on fly. Others, that are focus of this chapter, aim to convert existing projects to run in browser.
 
 Several new projects are connected to make this happen. First steps in conversion between languages were made with LLVM project\footnote{http://llvm.org/} which currently is a collection of tools and compilers converting code to and from intermediate representation (LLVM IR). For C++ Clang\footnote{http://clang.llvm.org/} is a conversion tool.
 
@@ -17,11 +17,11 @@ Code in LLVM is suitable for further conversion to language like JavaScript. Thi
 
 \lstinputlisting[caption=Example of code using asm.js,label=listing:asmjs]{emscripten/asm.js}
 
-Project, built in cooperation with Mozilla Foundation, has its own engine for Firefox - OdinMonkey, designed to run faster for this limited and well-defined syntax.
+Project, built in cooperation with Mozilla Foundation, has its own engine for Firefox -- OdinMonkey, designed to run faster for this limited and well-defined syntax.
 
 Altogether these projects resulted in multiple libraries and games converted from native version to JavaScript.
 
-Proof-of-concept demo made in cooperation between Mozilla and Unreal is Epic Citadel HTML5 - Unreal Engine 3 technology demo\footnote{http://www.unrealengine.com/en/showcase/udk/epic\_citadel/}  instance running in browser.\footnote{http://www.unrealengine.com/html5/} Companies claim it took only four days to complete the conversion.
+Proof-of-concept demo made in cooperation between Mozilla and Unreal is Epic Citadel HTML5 -- Unreal Engine 3 technology demo\footnote{http://www.unrealengine.com/en/showcase/udk/epic\_citadel/}  instance running in browser.\footnote{http://www.unrealengine.com/html5/} Companies claim it took only four days to complete the conversion.
 
 \begin{figure}[h!]
   \caption{Epic Citadel screenshot}
@@ -30,7 +30,7 @@ Proof-of-concept demo made in cooperation between Mozilla and Unreal is Epic Cit
 	\includegraphics[width=16cm]{emscripten/epic-citadel.jpg}
 \end{figure}
 
-Another example of successful converted project is ammo.js\footnote{https://github.com/kripken/ammo.js/} - originating from Bullet physics engine.
+Another example of successful converted project is ammo.js\footnote{https://github.com/kripken/ammo.js/} -- originating from Bullet physics engine.
 TODO: Maybe extend this part a bit, cover more on how conversion was going and what were the issues.
 
 \begin{figure}[h!]
@@ -60,7 +60,7 @@ As shown in previous chapters, garbage collection calls are often a performance 
 \subsection{Efficient heap loads and stores}
 \label{sec:asmjsheap}
 
-Heaps are global arrays of statically typed arrays, in JavaScript implemented as objects listed in \ref{table:jsarrays}. Size of heap doesn't change during runtime - it has to be calculated during compilation and incorrect prediction or memory leaks may result in buffer overflow. Heaps are always passed as an argument to asm.js modules. Each module may reference part of the heap and use it as long as necessary.
+Heaps are global arrays of statically typed arrays, in JavaScript implemented as objects listed in \ref{table:jsarrays}. Size of heap doesn't change during runtime -- it has to be calculated during compilation and incorrect prediction or memory leaks may result in buffer overflow. Heaps are always passed as an argument to asm.js modules. Each module may reference part of the heap and use it as long as necessary.
 
 \begin{table}[h!]
 \caption{Statically typed arrays in JavaScript}
@@ -85,5 +85,5 @@ Float64Array & 8 & doublish \\ \hline
 
 These solutions remove some of performance bottlenecks described in previous chapters. Code suitable to run with asm.js is almost unreadable by programmer and resembles assembly code. Asm.js is not designed to be a language used by a programmer, it is mainly a target for compilation using converters like Emscripten. 
 
-Most of optimisation used by asm.js are consistent with code that is expected by V8 engine - variables and methods are monomorphic, garbage collection is close to zero. It's worth noting that code written by hand is almost always shorter that one generated by Emscripten. Partial solution for this is built-in Google Closure Compiler used on output of Emscripten and different levels of optimisation.
+Most of optimisation used by asm.js are consistent with code that is expected by V8 engine -- variables and methods are monomorphic, garbage collection is close to zero. It's worth noting that code written by hand is almost always shorter that one generated by Emscripten. Partial solution for this is built-in Google Closure Compiler used on output of Emscripten and different levels of optimisation.
 In tests mentioned in this work all solutions take 2 to 4kB compiled, while Emscripten produces over 450kB of code for each. This affects real life performance by lengthening at least transfer and parse time for code. Average parse time of 1kB of JS is believed to be up to 1ms\footnote{https://developers.google.com/speed/docs/best-practices/mobile}. Global average bandwidth was 3.1 Mbps in Q1 2013\footnote{http://www.akamai.com/dl/akamai/akamai\_soti\_q113.pdf} thus transfer of each kilobyte is around 2.5ms. In total, load time of tested code is approximately 1.5 second on average bandwidth and platform. In case of larger applications and games waiting time for load may be significantly larger and should be taken under consideration.
