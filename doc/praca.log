@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.9.22)  23 SEP 2013 23:04
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.9.22)  23 SEP 2013 23:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1040,13 +1040,8 @@ been already used, duplicate ignored
 l.122 \titlepages
                   [1
 
-]
-Underfull \hbox (badness 1342) in paragraph at lines 122--122
-[]\T1/aess/m/n/14.4 I wo-uld like to thank my ad-vi-sors
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
+]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
+ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.122 \titlepages
@@ -1557,7 +1552,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 148.
 Here is how much of TeX's memory you used:
  16085 strings out of 493392
  235478 string characters out of 6143119
- 575691 words of memory out of 5000000
+ 575586 words of memory out of 5000000
  16327 multiletter control sequences out of 15000+600000
  49078 words of font info for 109 fonts, out of 8000000 for 9000
  953 hyphenation exceptions out of 8191
@@ -1585,7 +1580,7 @@ amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pf
 b>
-Output written on praca.pdf (85 pages, 14616899 bytes).
+Output written on praca.pdf (85 pages, 14616513 bytes).
 PDF statistics:
  3873 PDF objects out of 4296 (max. 8388607)
  3696 compressed objects within 37 object streams

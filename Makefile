@@ -1,4 +1,4 @@
-GCCFLAGS=-O3 -static
+GCCFLAGS=-O3 -static -m32
 EMCCFLAGS=-O2 --closure 1
 
 buildparticlesjs1:
