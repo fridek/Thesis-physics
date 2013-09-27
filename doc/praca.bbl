@@ -1,97 +1,84 @@
 \begin{thebibliography}{10}
 
-\bibitem{smartphones}
-Gartner says worldwide pc, tablet and mobile phone combined shipments to reach
-  2.4 billion units in 2013.
-
-\bibitem{gta}
-Gta v dev costs over \$137 million, says analyst.
-
-\bibitem{spherescollision}
-Pool hall lessons: Fast, accurate collision detection between circles or
-  spheres.
-
-\bibitem{v8designdoc}
-V8 documentation.
-
 \bibitem{v8highperformance}
-M.~Ager.
-\newblock Google i/o 2009 -- v8: High performance javascript engine.
-\newblock 2009.
+M.~Ager, ``Google {I}/{O} 2009 -- {V}8: {H}igh {P}erformance {J}avascript
+  {E}ngine,'' 2009.
 
 \bibitem{socialgames2012}
-casualconnect.org.
-\newblock Social network games 2012 casual games sector report.
-\newblock 2013.
+casualconnect.org, ``{S}ocial {N}etwork {G}ames 2012 {C}asual {G}ames {S}ector
+  {R}eport,'' 2013.
 
 \bibitem{breakingjsspeedlimit}
-D.~Clifford.
-\newblock Google i/o 2012 -- breaking the javascript speed limit with v8.
-\newblock 2012.
+D.~Clifford, ``Google {I}/{O} 2012 -- {B}reaking the {J}avascript {S}peed
+  {L}imit with {V}8,'' 2012.
 
 \bibitem{atourofv8}
-J.~Conrod.
-\newblock A tour of v8: full compiler.
+J.~Conrod, ``A tour of {V}8: full compiler.''
+  \url{http://www.jayconrod.com/posts/51/a-tour-of-v8-full-compiler}.
 
 \bibitem{goodparts}
-D.~Crockford.
-\newblock {\em JavaScript: The Good Parts}.
+D.~Crockford, {\em JavaScript: {T}he {G}ood {P}arts}.
 \newblock O'Reilly, 2008.
 
 \bibitem{theraceforspeed}
-J.~Dalziel.
-\newblock The race for speed series.
+J.~Dalziel, ``The race for speed series.''
+  \url{http://creativejs.com/2013/06/the-race-for-speed-part-1-the-javascript-engine-family-tree/}.
 
 \bibitem{egorov}
-V.~Egorov.
-\newblock Series of articles on v8.
+V.~Egorov, ``Series of articles on {V}8.'' \url{http://mrale.ph/blog/}.
 
 \bibitem{understandingv8}
-V.~Egorov.
-\newblock Understanding v8.
-\newblock 2011.
+V.~Egorov, ``Understanding {V}8,'' 2011.
 
 \bibitem{realtimecollisiondetection}
-C.~Ericson.
-\newblock {\em Real-Time Collision Detection}.
+C.~Ericson, {\em Real-{T}ime {C}ollision {D}etection}.
 \newblock CRC Press, 2004.
 
 \bibitem{floitsch}
-F.~Loitsch.
-\newblock Optimizing fo v8 series.
+F.~Loitsch, ``Optimizing fo {V}8 series.'' \url{http://floitsch.blogspot.com/}.
 
 \bibitem{gamephysicsenginedev}
-I.~Millington.
-\newblock {\em Game physics engine development}.
+I.~Millington, {\em Game physics engine development}.
 \newblock CRC Press, 2010.
 
 \bibitem{asmjsresig}
-J.~Resig.
-\newblock Asm.js: The javascript compile target.
+J.~Resig, ``Asm.js: {T}he {J}avascript {C}ompile {T}arget.''
+  \url{http://ejohn.org/blog/asmjs-javascript-compile-target/}.
 
 \bibitem{fromconsoletochrome}
-L.~Thompson.
-\newblock Gdc 2012: From console to chrome.
-\newblock 2012.
+L.~Thompson, ``{G}{D}{C} 2012: {F}rom {C}onsole to {C}hrome,'' 2012.
 
 \bibitem{casualgamedesign}
-G.~Trefry.
-\newblock {\em Casual Game Design: Designing Play for the Gamer in ALL of Us}.
+G.~Trefry, {\em Casual {G}ame {D}esign: {D}esigning {P}lay for the {G}amer in
+  {A}LL of {U}s}.
 \newblock CRC Press, 2010.
 
 \bibitem{asmjsjsdc}
-V.~Vukicevic.
-\newblock Javascript developers conference taiwan 2013 -- high performance
-  games and more in javascript with asm.js.
-\newblock 2013.
+V.~Vukicevic, ``Javascript {D}evelopers {C}onference {T}aiwan 2013 -- {H}igh
+  performance games and more in {J}avascript with asm.js,'' 2013.
 
 \bibitem{andywingo}
-A.~Wingo.
-\newblock Series of articles on v8.
+A.~Wingo, ``Series of articles on {V}8.'' \url{http://wingolog.org/tags/v8}.
 
 \bibitem{highperformancejavascript}
-N.~C. Zakas.
-\newblock {\em High Performance JavaScript}.
+N.~C. Zakas, {\em High {P}erformance {J}avaScript}.
 \newblock O'Reilly, 2010.
+
+\bibitem{gta}
+``G{T}{A} {V} dev costs over \$137 million, says analyst.''
+  \url{http://www.gamesindustry.biz/articles/2013-02-01-gta-v-dev-costs-over-USD137-million-says-analyst}.
+
+\bibitem{smartphones}
+``Gartner {S}ays {W}orldwide {P}{C}, {T}ablet and {M}obile {P}hone {C}ombined
+  {S}hipments to {R}each 2.4 {B}illion {U}nits in 2013.''
+  \url{http://www.gartner.com/newsroom/id/2408515}.
+
+\bibitem{spherescollision}
+``Pool {H}all {L}essons: {F}ast, {A}ccurate {C}ollision {D}etection {B}etween
+  {C}ircles or {S}pheres.''
+  \url{http://www.gamasutra.com/view/feature/131424/pool\_hall\_lessons\_fast\_accurate\_.php}.
+
+\bibitem{v8designdoc}
+``V8 documentation.'' \url{https://developers.google.com/v8/design}.
 
 \end{thebibliography}

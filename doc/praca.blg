@@ -1,7 +1,6 @@
 This is BibTeX, Version 0.99d (TeX Live 2013)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: praca.aux
-The style file: abbrv.bst
 A level-1 auxiliary file: rozdzial1.aux
 A level-1 auxiliary file: rozdzial2.aux
 A level-1 auxiliary file: rozdzial3.aux
@@ -10,10 +9,7 @@ A level-1 auxiliary file: rozdzial5.aux
 A level-1 auxiliary file: rozdzial6.aux
 A level-1 auxiliary file: rozdzialA.aux
 A level-1 auxiliary file: rozdzialB.aux
-Illegal, another \bibstyle command---line 60 of file praca.aux
- : \bibstyle
- :          {abbrv}
-I'm skipping whatever remains of this command
+The style file: ieeetr.bst
 Database file #1: bibliografia.bib
 Warning--entry type for "atourofv8" isn't style-file defined
 --line 25 of file bibliografia.bib
@@ -35,10 +31,6 @@ Warning--entry type for "spherescollision" isn't style-file defined
 --line 158 of file bibliografia.bib
 Warning--entry type for "v8designdoc" isn't style-file defined
 --line 166 of file bibliografia.bib
-Warning--to sort, need author or key in gta
-Warning--to sort, need author or key in smartphones
-Warning--to sort, need author or key in spherescollision
-Warning--to sort, need author or key in v8designdoc
 Warning--empty booktitle in v8highperformance
 Warning--empty journal in socialgames2012
 Warning--empty booktitle in breakingjsspeedlimit
@@ -46,44 +38,44 @@ Warning--empty booktitle in understandingv8
 Warning--empty booktitle in fromconsoletochrome
 Warning--empty booktitle in asmjsjsdc
 You've used 21 entries,
-            2118 wiz_defined-function locations,
-            571 strings with 5256 characters,
-and the built_in function-call counts, 4194 in all, are:
-= -- 353
-> -- 123
+            1876 wiz_defined-function locations,
+            561 strings with 5780 characters,
+and the built_in function-call counts, 2744 in all, are:
+= -- 226
+> -- 72
 < -- 0
-+ -- 57
-- -- 34
-* -- 140
-:= -- 671
-add.period$ -- 49
++ -- 38
+- -- 17
+* -- 105
+:= -- 382
+add.period$ -- 26
 call.type$ -- 21
-change.case$ -- 75
+change.case$ -- 16
 chr.to.int$ -- 0
-cite$ -- 31
-duplicate$ -- 205
-empty$ -- 482
-format.name$ -- 34
-if$ -- 916
+cite$ -- 27
+duplicate$ -- 154
+empty$ -- 408
+format.name$ -- 17
+if$ -- 698
 int.to.chr$ -- 0
 int.to.str$ -- 21
 missing$ -- 16
-newline$ -- 94
-num.names$ -- 34
-pop$ -- 171
+newline$ -- 71
+num.names$ -- 17
+pop$ -- 135
 preamble$ -- 1
-purify$ -- 59
+purify$ -- 0
 quote$ -- 0
-skip$ -- 171
+skip$ -- 70
 stack$ -- 0
-substring$ -- 107
-swap$ -- 20
+substring$ -- 0
+swap$ -- 5
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 74
-warning$ -- 10
-while$ -- 34
+type$ -- 0
+warning$ -- 6
+while$ -- 17
 width$ -- 23
-write$ -- 168
-(There was 1 error message)
+write$ -- 155
+(There were 16 warnings)
