@@ -1,10 +1,10 @@
 \select@language {polish}
 \contentsline {chapter}{\numberline {1}Introduction}{4}{chapter.1}
-\contentsline {section}{\numberline {1.1}Influence on distribution process}{6}{section.1.1}
+\contentsline {section}{\numberline {1.1}Influence on the distribution process}{6}{section.1.1}
 \contentsline {section}{\numberline {1.2}Technology}{8}{section.1.2}
 \contentsline {chapter}{\numberline {2}Overview of JavaScript and V8 engine architecture}{9}{chapter.2}
 \contentsline {section}{\numberline {2.1}JIT compilation -- tracking variable types}{10}{section.2.1}
-\contentsline {section}{\numberline {2.2}Type interference}{12}{section.2.2}
+\contentsline {section}{\numberline {2.2}Type inference}{12}{section.2.2}
 \contentsline {section}{\numberline {2.3}Hidden classes}{13}{section.2.3}
 \contentsline {section}{\numberline {2.4}Garbage collection}{15}{section.2.4}
 \contentsline {chapter}{\numberline {3}Particle system}{16}{chapter.3}

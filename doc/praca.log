@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.9.22)  27 SEP 2013 14:57
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.9.22)  27 SEP 2013 23:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -914,27 +914,27 @@ LaTeX Warning: Label `listing:spherejs' multiply defined.
 ))
 \openout1 = `praca.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 120.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 120.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 119.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 119.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1005,7 +1005,7 @@ Package caption Info: listings package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box36
-Package hyperref Info: Link coloring OFF on input line 120.
+Package hyperref Info: Link coloring OFF on input line 119.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -1014,11 +1014,11 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count141
 )
-LaTeX Info: Redefining \ref on input line 120.
-LaTeX Info: Redefining \pageref on input line 120.
-LaTeX Info: Redefining \nameref on input line 120.
+LaTeX Info: Redefining \ref on input line 119.
+LaTeX Info: Redefining \pageref on input line 119.
+LaTeX Info: Redefining \nameref on input line 119.
 \c@lstlisting=\count142
-LaTeX Font Info:    Try loading font information for T1+aess on input line 122.
+LaTeX Font Info:    Try loading font information for T1+aess on input line 121.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/ae/t1aess.fd
@@ -1026,19 +1026,19 @@ File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
 )
 
 LaTeX Font Warning: Font shape `T1/aess/bx/sc' undefined
-(Font)              using `T1/aess/bx/n' instead on input line 122.
+(Font)              using `T1/aess/bx/n' instead on input line 121.
 
 
 LaTeX Font Warning: Font shape `T1/aer/bx/sc' undefined
-(Font)              using `T1/aer/bx/n' instead on input line 122.
+(Font)              using `T1/aer/bx/n' instead on input line 121.
 
-LaTeX Font Info:    Try loading font information for U+lasy on input line 122.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 121.
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ) [1
 
 {/usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
 
  []
 
@@ -1046,14 +1046,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.122 \titlepages
+l.121 \titlepages
                   [1
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.122 \titlepages
+l.121 \titlepages
                   [1
 
 ] (./praca.toc)
@@ -1090,9 +1090,6 @@ File: summary/isogenic.png Graphic file (type png)
 <use summary/isogenic.png>
 Package pdftex.def Info: summary/isogenic.png used on input line 40.
 (pdftex.def)             Requested size: 341.43306pt x 174.2568pt.
-
-Underfull \vbox (badness 4193) has occurred while \output is active []
-
  [6
 
  <./summary/impactjs.png (PNG copy)>]
@@ -1145,28 +1142,28 @@ LaTeX Font Warning: Font shape `T1/aett/bx/n' undefined
 File: point0.png Graphic file (type png)
 
 <use point0.png>
-Package pdftex.def Info: point0.png used on input line 57.
+Package pdftex.def Info: point0.png used on input line 55.
 (pdftex.def)             Requested size: 227.62204pt x 136.56639pt.
  <point1.png, id=209, 1003.75pt x 602.25pt>
 File: point1.png Graphic file (type png)
  <use point1.png>
-Package pdftex.def Info: point1.png used on input line 63.
+Package pdftex.def Info: point1.png used on input line 61.
 (pdftex.def)             Requested size: 227.62204pt x 136.56639pt.
 
 <point2.png, id=210, 1003.75pt x 602.25pt>
 File: point2.png Graphic file (type png)
  <use point2.png>
-Package pdftex.def Info: point2.png used on input line 69.
+Package pdftex.def Info: point2.png used on input line 67.
 (pdftex.def)             Requested size: 227.62204pt x 136.56639pt.
+
+<point_tree2.png, id=211, 1003.75pt x 803.0pt>
+File: point_tree2.png Graphic file (type png)
+ <use point_tree2.png>
+Package pdftex.def Info: point_tree2.png used on input line 76.
+(pdftex.def)             Requested size: 227.62204pt x 182.08852pt.
  [13
 
  <./point0.png (PNG copy)> <./point1.png (PNG copy)> <./point2.png (PNG copy)>]
-
-<point_tree2.png, id=218, 1003.75pt x 803.0pt>
-File: point_tree2.png Graphic file (type png)
- <use point_tree2.png>
-Package pdftex.def Info: point_tree2.png used on input line 78.
-(pdftex.def)             Requested size: 227.62204pt x 182.08852pt.
 
 (./migration.txt) [14 <./point_tree2.png (PNG copy)>] (./gc.txt)) [15
 
@@ -1191,11 +1188,11 @@ Package pdftex.def Info: particles.png used on input line 11.
 (./particles/particles1-profile.txt [18
 
 ]) (./particles/particleSystemstep.js
-[19]) <particles/particles1-profile.png, id=360, 1204.5pt x 602.25pt>
+[19]) <particles/particles1-profile.png, id=364, 1204.5pt x 602.25pt>
 File: particles/particles1-profile.png Graphic file (type png)
 
 <use particles/particles1-profile.png>
-Package pdftex.def Info: particles/particles1-profile.png used on input line 66
+Package pdftex.def Info: particles/particles1-profile.png used on input line 63
 .
 (pdftex.def)             Requested size: 455.24408pt x 227.62596pt.
  (./particles/particles1gc.txt [20 <./particles/particles1-profile.png>]) [21] 
@@ -1207,7 +1204,7 @@ Package pdftex.def Info: particles/particles1-profile.png used on input line 66
 File: particles/particles2-profile.png Graphic file (type png)
 
 <use particles/particles2-profile.png>
-Package pdftex.def Info: particles/particles2-profile.png used on input line 92
+Package pdftex.def Info: particles/particles2-profile.png used on input line 89
 .
 (pdftex.def)             Requested size: 455.24408pt x 227.62596pt.
  (./particles/particles2gc.txt)) [23 <./particles/particles2-profile.png>]
@@ -1235,7 +1232,7 @@ Package pdftex.def Info: octree/octree2.png used on input line 28.
 <octree/octree.png, id=497, 679.53876pt x 585.18625pt>
 File: octree/octree.png Graphic file (type png)
  <use octree/octree.png>
-Package pdftex.def Info: octree/octree.png used on input line 38.
+Package pdftex.def Info: octree/octree.png used on input line 37.
 (pdftex.def)             Requested size: 284.52756pt x 245.01756pt.
 
 
@@ -1248,7 +1245,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: spheres/bounce.jpg Graphic file (type jpg)
 
 <use spheres/bounce.jpg>
-Package pdftex.def Info: spheres/bounce.jpg used on input line 92.
+Package pdftex.def Info: spheres/bounce.jpg used on input line 91.
 (pdftex.def)             Requested size: 227.62204pt x 243.32631pt.
 
 
@@ -1257,35 +1254,35 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [26 <./octree/octree.png (PNG copy)>] [27 <./spheres/bounce.jpg>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 128.
+(hyperref)                removing `math shift' on input line 127.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 128.
+(hyperref)                removing `superscript' on input line 127.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 128.
+(hyperref)                removing `math shift' on input line 127.
 
 <spheres/spheres1-profile.png, id=521, 1204.5pt x 602.25pt>
 File: spheres/spheres1-profile.png Graphic file (type png)
 
 <use spheres/spheres1-profile.png>
-Package pdftex.def Info: spheres/spheres1-profile.png used on input line 137.
+Package pdftex.def Info: spheres/spheres1-profile.png used on input line 136.
 (pdftex.def)             Requested size: 455.24408pt x 227.62596pt.
 
 <spheres/time-total.png, id=522, 813.0375pt x 384.43625pt>
 File: spheres/time-total.png Graphic file (type png)
 
 <use spheres/time-total.png>
-Package pdftex.def Info: spheres/time-total.png used on input line 146.
+Package pdftex.def Info: spheres/time-total.png used on input line 145.
 (pdftex.def)             Requested size: 455.24408pt x 215.2535pt.
 
 <spheres/time-per-frame.png, id=523, 830.10126pt x 387.4475pt>
 File: spheres/time-per-frame.png Graphic file (type png)
 
 <use spheres/time-per-frame.png>
-Package pdftex.def Info: spheres/time-per-frame.png used on input line 152.
+Package pdftex.def Info: spheres/time-per-frame.png used on input line 151.
 (pdftex.def)             Requested size: 455.24408pt x 212.48193pt.
 
 
@@ -1299,21 +1296,21 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: spheres/render2.png Graphic file (type png)
 
 <use spheres/render2.png>
-Package pdftex.def Info: spheres/render2.png used on input line 162.
+Package pdftex.def Info: spheres/render2.png used on input line 161.
 (pdftex.def)             Requested size: 455.24408pt x 154.14201pt.
 
 <spheres/octree-collisions.png, id=538, 605.26125pt x 218.8175pt>
 File: spheres/octree-collisions.png Graphic file (type png)
 
 <use spheres/octree-collisions.png>
-Package pdftex.def Info: spheres/octree-collisions.png used on input line 172.
+Package pdftex.def Info: spheres/octree-collisions.png used on input line 171.
 (pdftex.def)             Requested size: 455.24408pt x 164.5835pt.
 
 <spheres/octree-time.png, id=540, 608.2725pt x 258.9675pt>
 File: spheres/octree-time.png Graphic file (type png)
 
 <use spheres/octree-time.png>
-Package pdftex.def Info: spheres/octree-time.png used on input line 181.
+Package pdftex.def Info: spheres/octree-time.png used on input line 180.
 (pdftex.def)             Requested size: 455.24408pt x 193.82207pt.
 
 
@@ -1339,7 +1336,7 @@ Package pdftex.def Info: emscripten/pipeline.jpg used on input line 13.
 
  <./emscripten/pipeline.jpg>]
 (./emscripten/asm.js)
-<emscripten/epic-citadel.jpg, id=572, 1928.20375pt x 1204.5pt>
+<emscripten/epic-citadel.jpg, id=571, 1928.20375pt x 1204.5pt>
 File: emscripten/epic-citadel.jpg Graphic file (type jpg)
 
 <use emscripten/epic-citadel.jpg>
@@ -1349,11 +1346,11 @@ Package pdftex.def Info: emscripten/epic-citadel.jpg used on input line 30.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<emscripten/ammojs.png, id=574, 1020.81375pt x 382.42876pt>
+<emscripten/ammojs.png, id=573, 1020.81375pt x 382.42876pt>
 File: emscripten/ammojs.png Graphic file (type png)
 
 <use emscripten/ammojs.png>
-Package pdftex.def Info: emscripten/ammojs.png used on input line 40.
+Package pdftex.def Info: emscripten/ammojs.png used on input line 39.
 (pdftex.def)             Requested size: 455.24408pt x 170.5508pt.
 
 
@@ -1410,14 +1407,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--37
 \T1/aer/m/n/10 2670QM, 4GB RAM,
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 [37
 
 
 
-] [38]) [39]
+]) [38] [39]
 \openout2 = `rozdzialA.aux'.
 
  (./rozdzialA.tex
@@ -1566,14 +1560,14 @@ T1/aett/m/n/10 http : / / ejohn . org / blog /
 
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 148.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 147.
  [85]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 148.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 147.
  (./praca.aux (./rozdzial1.aux) (./rozdzial2.aux) (./rozdzial3.aux)
 (./rozdzial4.aux) (./rozdzial5.aux) (./rozdzial6.aux) (./rozdzialA.aux)
 (./rozdzialB.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 148.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 148.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 147.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 147.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1581,16 +1575,16 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 148.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 147.
  ) 
 Here is how much of TeX's memory you used:
  16115 strings out of 493392
- 236005 string characters out of 6143119
- 575692 words of memory out of 5000000
+ 236000 string characters out of 6143119
+ 572689 words of memory out of 5000000
  16329 multiletter control sequences out of 15000+600000
  68925 words of font info for 129 fonts, out of 8000000 for 9000
  953 hyphenation exceptions out of 8191
- 40i,14n,63p,987b,2013s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,14n,63p,1004b,2013s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texl
@@ -1615,7 +1609,7 @@ msfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 ti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb>
-Output written on praca.pdf (86 pages, 14694900 bytes).
+Output written on praca.pdf (86 pages, 14696037 bytes).
 PDF statistics:
  3901 PDF objects out of 4296 (max. 8388607)
  3720 compressed objects within 38 object streams
