@@ -1,19 +1,19 @@
 \chapter{Emscripten}
 \label{cha:emscripten}
 
-JavaScript is often called an assembly language of the Web.\footnote{http://www.hanselman.com/blog/JavaScriptIsWebAssemblyLanguageAndThatsOK.aspx} One could argue that since only one language is supported by browsers it could be made a compilation target similar to an assembler for CPU. This statement is flawed, since eventually JavaScript is translated to assembly making it only an intermediate step. Probably, a resemblance to ByteCode in JVM, which is a compilation target of multiple languages like Java, Scala and Clojure is more in place.
+JavaScript is often called an assembly language of the Web.\cite{javascript-assembly-of-web} One could argue that since only one language is supported by browsers it could be made a compilation target similar to an assembler for CPU. This statement is flawed, since eventually JavaScript is translated to assembly making it only an intermediate step. Probably, a resemblance to ByteCode in JVM, which is a compilation target of multiple languages like Java, Scala and Clojure is more in place.
 Nevertheless, recent years have shown multiple projects aimed at converting code to JavaScript. Some introduce new syntax like CoffeeScript, Dart or TypeScript, while still serving the same purpose -- providing human readable code that is interpreted in browser on the fly. Others, which are the focus of this chapter, aim to convert existing projects to run in a browser.
 
-Several new projects are connected to make this happen. The first steps in conversion between languages were made with the LLVM project\footnote{http://llvm.org/} which currently is a collection of tools and compilers converting code to and from intermediate representation (LLVM IR). For C++ Clang\footnote{http://clang.llvm.org/} is a conversion tool.
+Several new projects are connected to make this happen. The first steps in conversion between languages were made with the LLVM project\cite{llvm} which currently is a collection of tools and compilers converting code to and from intermediate representation (LLVM IR). For C++ Clang\cite{clang} is a conversion tool.
 
 \begin{figure}[h!]
-  \caption{Pipeline of Emscripten conversion. Source: http://www.hanselman.com/blog/JavaScriptIsWebAssemblyLanguageAndThatsOK.aspx}
+  \caption{Pipeline of Emscripten conversion. Source: \cite{javascript-assembly-of-web}}
   \label{img:emscriptenpipeline}
   \centering
 	\includegraphics[width=8cm]{emscripten/pipeline.jpg}
 \end{figure}
 
-The code in LLVM is suitable for further conversion to language like JavaScript. This part is handled by the Emscripten\footnote{https://github.com/kripken/emscripten/wiki} project. Initially, the compilation target for Emscripten was plain JavaScript. With recent developments the asm.js\footnote{http://asmjs.org/spec/latest/} library was created. It provides syntax built on top of JavaScript, which is strongly typed and easily translatable to assembly language. Asm.js details are explained in section \ref{sec:asmjsoverview}.
+The code in LLVM is suitable for further conversion to language like JavaScript. This part is handled by the Emscripten\cite{emscripten} project. Initially, the compilation target for Emscripten was plain JavaScript. With recent developments the asm.js\cite{asmjs} library was created. It provides syntax built on top of JavaScript, which is strongly typed and easily translatable to assembly language. Asm.js details are explained in section \ref{sec:asmjsoverview}.
 
 \lstinputlisting[caption=Example of code using asm.js,label=listing:asmjs]{emscripten/asm.js}
 
@@ -21,7 +21,7 @@ The project, built in cooperation with Mozilla Foundation, has its own engine fo
 
 Altogether these projects resulted in multiple libraries and games converted from the native version to JavaScript.
 
-Proof-of-concept demo, made in cooperation between Mozilla and Unreal, is Epic Citadel HTML5 -- Unreal Engine 3 technology demo\footnote{http://www.unrealengine.com/en/showcase/udk/epic\_citadel/}  instance running in the browser.\footnote{http://www.unrealengine.com/html5/} The companies claim it took only four days to complete the conversion.
+Proof-of-concept demo, made in cooperation between Mozilla and Unreal, is Epic Citadel HTML5 -- Unreal Engine 3 technology demo\cite{epiccitadel}  instance running in the browser.\cite{epiccitadelhtml5} The companies claim it took only four days to complete the conversion.
 
 \begin{figure}[h!]
   \caption{Epic Citadel screenshot}
@@ -30,7 +30,7 @@ Proof-of-concept demo, made in cooperation between Mozilla and Unreal, is Epic C
 	\includegraphics[width=16cm]{emscripten/epic-citadel.jpg}
 \end{figure}
 
-Another example of a successfully converted project is ammo.js\footnote{https://github.com/kripken/ammo.js/} -- originating from the Bullet physics engine.
+Another example of a successfully converted project is ammo.js\cite{ammojs} -- originating from the Bullet physics engine.
 
 \begin{figure}[h!]
   \caption{Ammo.js demo colliding 500 boxes at 30fps, available at http://kripken.github.io/ammo.js/examples/new/ammo.html}
@@ -42,7 +42,7 @@ Another example of a successfully converted project is ammo.js\footnote{https://
 \section{Asm.js overview}
 \label{sec:asmjsoverview}
 
-Asm.js introduces some improvements targeted to fix performance problems of JavaScript. Ahead of time compilation enforces very specific rules on the coding style. Documentation\footnote{http://asmjs.org/spec/latest/} lists:
+Asm.js introduces some improvements targeted to fix performance problems of JavaScript. Ahead of time compilation enforces very specific rules on the coding style. Documentation\cite{asmjs} lists:
 
 \subsection{Unboxed representations of integers and floating-point numbers}
 \label{sec:asmjsunboxed}
@@ -85,4 +85,4 @@ Float64Array & 8 & doublish \\ \hline
 These solutions remove some of the performance bottlenecks described in previous chapters. The code suitable to run with asm.js is almost unreadable by the programmer, and resembles an assembly code. Asm.js is not designed to be a language used by a programmer, it is mainly a target for compilation using converters like Emscripten.
 
 Most optimisation used by asm.js is consistent with the code that is expected by V8 engine -- variables and methods are monomorphic, garbage collection is close to zero. It is worth noting that a code written by hand is almost always shorter than one generated by Emscripten. A partial solution to this is the built-in Google Closure Compiler, used on output of Emscripten and different levels of optimisation.
-In tests mentioned in this paper, all solutions take 2 to 4kB compiled, while Emscripten produces over 450kB of code for each. This affects real life performance by lengthening at least transfer and parse time for code. The average parse time of 1kB of JS is believed to be up to 1ms\footnote{https://developers.google.com/speed/docs/best-practices/mobile}. The global average bandwidth was 3.1 Mbps in Q1 2013\footnote{http://www.akamai.com/dl/akamai/akamai\_soti\_q113.pdf} thus transfer of each kilobyte is around 2.5ms. In total, the load time of the tested code is approximately 1.5 second on an average bandwidth and platform. In the case of larger applications and games, the load time may be significantly greater and should be taken into consideration.
+In tests mentioned in this paper, all solutions take 2 to 4kB compiled, while Emscripten produces over 450kB of code for each. This affects real life performance by lengthening at least transfer and parse time for code. The average parse time of 1kB of JS is believed to be up to 1ms\cite{best-practices-mobile}. The global average bandwidth was 3.1 Mbps in Q1 2013\cite{stateoftheinternet} thus transfer of each kilobyte is around 2.5ms. In total, the load time of the tested code is approximately 1.5 second on an average bandwidth and platform. In the case of larger applications and games, the load time may be significantly greater and should be taken into consideration.

@@ -1,5 +1,112 @@
 \begin{thebibliography}{10}
 
+\bibitem{gta}
+``G{T}{A} {V} dev costs over \$137 million, says analyst.''
+  \url{http://www.gamesindustry.biz/articles/2013-02-01-gta-v-dev-costs-over-USD137-million-says-analyst}.
+
+\bibitem{js13kgames}
+``js13k {H}{T}{M}{L}5 game development competition.''
+  \url{http://js13kgames.com/}.
+
+\bibitem{nodejs}
+``Node.js -- server side {J}ava{S}cript.'' \url{http://nodejs.org/}.
+
+\bibitem{coder}
+Google, ``Coder for raspberry pi.''
+  \url{http://googlecreativelab.github.io/coder/}.
+
+\bibitem{espruino}
+``Espruino -- hardware board running {J}ava{S}cript.''
+  \url{http://www.espruino.com/}.
+
+\bibitem{steam}
+``Steam store.'' \url{http://store.steampowered.com/}.
+
+\bibitem{exploitative-game-design}
+E.~McNeill, ``Exploitative {G}ame {D}esign: {B}eyond the {F}2{P} {D}ebate.''
+  \url{http://www.emcneill.com/exploitative-game-design-beyond-the-f2p-debate/}.
+
+\bibitem{phonegap}
+``Phonegap.'' \url{http://phonegap.com/}.
+
+\bibitem{impactjs}
+``Impact{J}{S} -- html5 game engine.'' \url{http://impactjs.com/}.
+
+\bibitem{turbulenz}
+``Turbulenz -- html5 game engine.'' \url{http://biz.turbulenz.com/turbulenz}.
+
+\bibitem{isogenicengine}
+``Isogenic -- html5 game engine.'' \url{http://www.isogenicengine.com/}.
+
+\bibitem{rome}
+``Rome -- 3 dreams of black.'' \url{http://www.ro.me/}.
+
+\bibitem{Franz94code-generationon-the-fly:}
+M.~S.~O. Franz, ``Code-{G}eneration {O}n-the-{F}ly: {A} {K}ey to {P}ortable
+  {S}oftware,'' 1994.
+
+\bibitem{firefox-to-get-massive-javascript-performance-boost}
+``Firefox to get massive javascript performance boost.''
+  \url{http://arstechnica.com/information-technology/2008/08/firefox-to-get-massive-javascript-performance-boost/}.
+
+\bibitem{improving-javascript-performance-with-jagermonkey}
+``Improving {J}ava{S}cript performance with {J}ager{M}onkey.''
+  \url{https://hacks.mozilla.org/2010/03/improving-javascript-performance-with-jagermonkey/}.
+
+\bibitem{trace-jit-removed-from-firefox}
+``Trace {J}{I}{T} removed from {F}irefox.''
+  \url{http://blog.mozilla.org/nnethercote/2011/11/23/memshrink-progress-report-week-23/}.
+
+\bibitem{cheneys-algorithm}
+``Cheney's\_algorithm.''
+  \url{http://en.wikipedia.org/wiki/Cheney's\_algorithm}.
+
+\bibitem{garbage-collection}
+``Garbage\_collection\_(computer\_science).''
+  \url{http://en.wikipedia.org/wiki/Garbage\_collection\_(computer\_science)}.
+
+\bibitem{v8-profile-plotter}
+``V8 profile log plotter.''
+  \url{http://v8.googlecode.com/svn/branches/bleeding\_edge/tools/profviz/profviz.html}.
+
+\bibitem{javascript-assembly-of-web}
+S.~Hanselman, ``Java{S}cript is {W}eb {A}ssembly {L}anguage and that's
+  {O}{K}..''
+  \url{http://www.hanselman.com/blog/JavaScriptIsWebAssemblyLanguageAndThatsOK.aspx}.
+
+\bibitem{llvm}
+``The {L}{L}{V}{M} {C}ompiler {I}nfrastructure.'' \url{http://llvm.org/}.
+
+\bibitem{clang}
+``clang: a {C} language family frontend for {L}{L}{V}{M}.''
+  \url{http://clang.llvm.org/}.
+
+\bibitem{emscripten}
+``Emscripten -- {L}{L}{V}{M} to {J}ava{S}cript compiler.''
+  \url{https://github.com/kripken/emscripten/wiki}.
+
+\bibitem{asmjs}
+``Asm.js specification draft.'' \url{http://asmjs.org/spec/latest/}.
+
+\bibitem{epiccitadel}
+``Epic {C}itadel -- {U}nreal {E}ngine 3 technology demo.''
+  \url{http://www.unrealengine.com/en/showcase/udk/epic\_citadel/}.
+
+\bibitem{epiccitadelhtml5}
+``Epic {C}itadel converted to {J}ava{S}cript.''
+  \url{http://www.unrealengine.com/html5/}.
+
+\bibitem{ammojs}
+``Ammo.js - physics engine for {J}ava{S}cript.''
+  \url{https://github.com/kripken/ammo.js/}.
+
+\bibitem{best-practices-mobile}
+``Optimize for mobile -- best practices.''
+  \url{https://developers.google.com/speed/docs/best-practices/mobile}.
+
+\bibitem{stateoftheinternet}
+Akamai, ``State of the {I}nternet,'' 2013.
+
 \bibitem{v8highperformance}
 M.~Ager, ``Google {I}/{O} 2009 -- {V}8: {H}igh {P}erformance {J}avascript
   {E}ngine,'' 2009.
@@ -63,10 +170,6 @@ A.~Wingo, ``Series of articles on {V}8.'' \url{http://wingolog.org/tags/v8}.
 \bibitem{highperformancejavascript}
 N.~C. Zakas, {\em High {P}erformance {J}avaScript}.
 \newblock O'Reilly, 2010.
-
-\bibitem{gta}
-``G{T}{A} {V} dev costs over \$137 million, says analyst.''
-  \url{http://www.gamesindustry.biz/articles/2013-02-01-gta-v-dev-costs-over-USD137-million-says-analyst}.
 
 \bibitem{smartphones}
 ``Gartner {S}ays {W}orldwide {P}{C}, {T}ablet and {M}obile {P}hone {C}ombined

@@ -46,7 +46,7 @@ The initially tested implementation has one very important property of a particl
 \lstinputlisting[caption=Time measurement of unoptimized particle system in JavaScript,label=listing:timejs1]{particles/timejs1.txt}
 \lstinputlisting[caption=Time measurement of unoptimized particle system in C++,label=listing:timecpp1]{particles/timecpp1.txt}
 
-Time measurement shows that the JavaScript version is almost 8 times slower than the native one. To analyse the situation --prof and --log-timer-events flags may be used. The output file v8.log is parsed using an available online tool.\footnote{http://v8.googlecode.com/svn/branches/bleeding\_edge/tools/profviz/profviz.html}
+Time measurement shows that the JavaScript version is almost 8 times slower than the native one. To analyse the situation --prof and --log-timer-events flags may be used. The output file v8.log is parsed using an available online tool.\cite{v8-profile-plotter}
 
 \lstinputlisting[caption=Profiler output for unoptimized particles,label=listing:particles1profile]{particles/particles1-profile.txt}
 

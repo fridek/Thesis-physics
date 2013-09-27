@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.9.22)  27 SEP 2013 23:42
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.9.22)  28 SEP 2013 00:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1077,29 +1077,33 @@ s a com-plete envi-ron-ment that ma-kes
 
 
 
-] [5] <summary/impactjs.png, id=108, 958.58125pt x 634.37pt>
+] <summary/impactjs.png, id=102, 958.58125pt x 634.37pt>
 File: summary/impactjs.png Graphic file (type png)
 
 <use summary/impactjs.png>
 Package pdftex.def Info: summary/impactjs.png used on input line 30.
 (pdftex.def)             Requested size: 341.43306pt x 225.9531pt.
 
-<summary/isogenic.png, id=112, 1355.0625pt x 691.58376pt>
+<summary/isogenic.png, id=106, 1355.0625pt x 691.58376pt>
 File: summary/isogenic.png Graphic file (type png)
 
 <use summary/isogenic.png>
 Package pdftex.def Info: summary/isogenic.png used on input line 40.
 (pdftex.def)             Requested size: 341.43306pt x 174.2568pt.
- [6
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[5
 
  <./summary/impactjs.png (PNG copy)>]
-<summary/rome.jpg, id=125, 943.525pt x 411.5375pt>
+<summary/rome.jpg, id=123, 943.525pt x 411.5375pt>
 File: summary/rome.jpg Graphic file (type jpg)
  <use summary/rome.jpg>
 Package pdftex.def Info: summary/rome.jpg used on input line 49.
 (pdftex.def)             Requested size: 341.43306pt x 148.92577pt.
 
-[7 <./summary/isogenic.png (PNG copy)> <./summary/rome.jpg>]) [8
+[6 <./summary/isogenic.png (PNG copy)> <./summary/rome.jpg>]) [7
 
 ]
 \openout2 = `rozdzial2.aux'.
@@ -1107,22 +1111,22 @@ Package pdftex.def Info: summary/rome.jpg used on input line 49.
 
 (./rozdzial2.tex
 Rozdzia\l  2.
-[9
+[8
 
 
 
-] <jit-1.jpg, id=148, 487.8225pt x 292.09125pt>
+] <jit-1.jpg, id=144, 487.8225pt x 292.09125pt>
 File: jit-1.jpg Graphic file (type jpg)
  <use jit-1.jpg>
 Package pdftex.def Info: jit-1.jpg used on input line 19.
 (pdftex.def)             Requested size: 227.62204pt x 136.29344pt.
 
-<jit-2.jpg, id=149, 480.79625pt x 288.07625pt>
+<jit-2.jpg, id=145, 480.79625pt x 288.07625pt>
 File: jit-2.jpg Graphic file (type jpg)
  <use jit-2.jpg>
 Package pdftex.def Info: jit-2.jpg used on input line 27.
 (pdftex.def)             Requested size: 227.62204pt x 136.38487pt.
- [10
+ [9
 
  <./jit-1.jpg> <./jit-2.jpg>]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
@@ -1136,36 +1140,36 @@ File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 LaTeX Font Warning: Font shape `T1/aett/bx/n' undefined
 (Font)              using `T1/aett/m/n' instead on input line 2.
 
-) [11] (./types.txt) [12
+) [10] (./types.txt) [11
 
-] <point0.png, id=208, 1003.75pt x 602.25pt>
+] <point0.png, id=203, 1003.75pt x 602.25pt>
 File: point0.png Graphic file (type png)
 
 <use point0.png>
 Package pdftex.def Info: point0.png used on input line 55.
 (pdftex.def)             Requested size: 227.62204pt x 136.56639pt.
- <point1.png, id=209, 1003.75pt x 602.25pt>
+ <point1.png, id=204, 1003.75pt x 602.25pt>
 File: point1.png Graphic file (type png)
  <use point1.png>
 Package pdftex.def Info: point1.png used on input line 61.
 (pdftex.def)             Requested size: 227.62204pt x 136.56639pt.
 
-<point2.png, id=210, 1003.75pt x 602.25pt>
+<point2.png, id=205, 1003.75pt x 602.25pt>
 File: point2.png Graphic file (type png)
  <use point2.png>
 Package pdftex.def Info: point2.png used on input line 67.
 (pdftex.def)             Requested size: 227.62204pt x 136.56639pt.
 
-<point_tree2.png, id=211, 1003.75pt x 803.0pt>
+<point_tree2.png, id=206, 1003.75pt x 803.0pt>
 File: point_tree2.png Graphic file (type png)
  <use point_tree2.png>
 Package pdftex.def Info: point_tree2.png used on input line 76.
 (pdftex.def)             Requested size: 227.62204pt x 182.08852pt.
- [13
+ [12
 
  <./point0.png (PNG copy)> <./point1.png (PNG copy)> <./point2.png (PNG copy)>]
 
-(./migration.txt) [14 <./point_tree2.png (PNG copy)>] (./gc.txt)) [15
+(./migration.txt) [13 <./point_tree2.png (PNG copy)>] (./gc.txt)) [14
 
 ]
 \openout2 = `rozdzial3.aux'.
@@ -1173,63 +1177,63 @@ Package pdftex.def Info: point_tree2.png used on input line 76.
 
 (./rozdzial3.tex
 Rozdzia\l  3.
-<particles.png, id=259, 531.9875pt x 338.26375pt>
+<particles.png, id=255, 531.9875pt x 338.26375pt>
 File: particles.png Graphic file (type png)
  <use particles.png>
 Package pdftex.def Info: particles.png used on input line 11.
 (pdftex.def)             Requested size: 455.24408pt x 289.4714pt.
- [16
+ [15
 
 
 
- <./particles.png>] [17
+ <./particles.png>] [16
 
 ] (./particles/timejs1.txt) (./particles/timecpp1.txt)
-(./particles/particles1-profile.txt [18
+(./particles/particles1-profile.txt [17
 
 ]) (./particles/particleSystemstep.js
-[19]) <particles/particles1-profile.png, id=364, 1204.5pt x 602.25pt>
+[18]) <particles/particles1-profile.png, id=362, 1204.5pt x 602.25pt>
 File: particles/particles1-profile.png Graphic file (type png)
 
 <use particles/particles1-profile.png>
 Package pdftex.def Info: particles/particles1-profile.png used on input line 63
 .
 (pdftex.def)             Requested size: 455.24408pt x 227.62596pt.
- (./particles/particles1gc.txt [20 <./particles/particles1-profile.png>]) [21] 
+ (./particles/particles1gc.txt [19 <./particles/particles1-profile.png>]) [20] 
 (./particles/timejs2.txt)
-(./particles/timecpp2.txt) (./particles/particles2-profile.txt [22
+(./particles/timecpp2.txt) (./particles/particles2-profile.txt [21
 
 ])
-<particles/particles2-profile.png, id=458, 1204.5pt x 602.25pt>
+<particles/particles2-profile.png, id=454, 1204.5pt x 602.25pt>
 File: particles/particles2-profile.png Graphic file (type png)
 
 <use particles/particles2-profile.png>
 Package pdftex.def Info: particles/particles2-profile.png used on input line 89
 .
 (pdftex.def)             Requested size: 455.24408pt x 227.62596pt.
- (./particles/particles2gc.txt)) [23 <./particles/particles2-profile.png>]
+ (./particles/particles2gc.txt)) [22 <./particles/particles2-profile.png>]
 \openout2 = `rozdzial4.aux'.
 
  (./rozdzial4.tex
 Rozdzia\l  4.
-<spheres/render.png, id=489, 814.04124pt x 505.89pt>
+<spheres/render.png, id=484, 814.04124pt x 505.89pt>
 File: spheres/render.png Graphic file (type png)
  <use spheres/render.png>
 Package pdftex.def Info: spheres/render.png used on input line 11.
 (pdftex.def)             Requested size: 455.24408pt x 282.91049pt.
 
-[24
+[23
 
 
 
  <./spheres/render.png (PNG copy)>]
-<octree/octree2.png, id=496, 401.5pt x 230.8625pt>
+<octree/octree2.png, id=490, 401.5pt x 230.8625pt>
 File: octree/octree2.png Graphic file (type png)
  <use octree/octree2.png>
 Package pdftex.def Info: octree/octree2.png used on input line 28.
 (pdftex.def)             Requested size: 284.52756pt x 163.61407pt.
 
-<octree/octree.png, id=497, 679.53876pt x 585.18625pt>
+<octree/octree.png, id=491, 679.53876pt x 585.18625pt>
 File: octree/octree.png Graphic file (type png)
  <use octree/octree.png>
 Package pdftex.def Info: octree/octree.png used on input line 37.
@@ -1238,10 +1242,10 @@ Package pdftex.def Info: octree/octree.png used on input line 37.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[25
+[24
 
  <./octree/octree2.png>]
-<spheres/bounce.jpg, id=509, 261.97874pt x 280.04625pt>
+<spheres/bounce.jpg, id=504, 261.97874pt x 280.04625pt>
 File: spheres/bounce.jpg Graphic file (type jpg)
 
 <use spheres/bounce.jpg>
@@ -1251,7 +1255,7 @@ Package pdftex.def Info: spheres/bounce.jpg used on input line 91.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[26 <./octree/octree.png (PNG copy)>] [27 <./spheres/bounce.jpg>]
+[25 <./octree/octree.png (PNG copy)>] [26 <./spheres/bounce.jpg>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 127.
@@ -1264,21 +1268,21 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 127.
 
-<spheres/spheres1-profile.png, id=521, 1204.5pt x 602.25pt>
+<spheres/spheres1-profile.png, id=517, 1204.5pt x 602.25pt>
 File: spheres/spheres1-profile.png Graphic file (type png)
 
 <use spheres/spheres1-profile.png>
 Package pdftex.def Info: spheres/spheres1-profile.png used on input line 136.
 (pdftex.def)             Requested size: 455.24408pt x 227.62596pt.
 
-<spheres/time-total.png, id=522, 813.0375pt x 384.43625pt>
+<spheres/time-total.png, id=518, 813.0375pt x 384.43625pt>
 File: spheres/time-total.png Graphic file (type png)
 
 <use spheres/time-total.png>
 Package pdftex.def Info: spheres/time-total.png used on input line 145.
 (pdftex.def)             Requested size: 455.24408pt x 215.2535pt.
 
-<spheres/time-per-frame.png, id=523, 830.10126pt x 387.4475pt>
+<spheres/time-per-frame.png, id=519, 830.10126pt x 387.4475pt>
 File: spheres/time-per-frame.png Graphic file (type png)
 
 <use spheres/time-per-frame.png>
@@ -1288,25 +1292,25 @@ Package pdftex.def Info: spheres/time-per-frame.png used on input line 151.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[28
+[27
 
  <./spheres/spheres1-profile.png> <./spheres/time-total.png (PNG copy)>]
-[29 <./spheres/time-per-frame.png (PNG copy)>]
-<spheres/render2.png, id=536, 1209.51875pt x 409.53pt>
+[28 <./spheres/time-per-frame.png (PNG copy)>]
+<spheres/render2.png, id=532, 1209.51875pt x 409.53pt>
 File: spheres/render2.png Graphic file (type png)
 
 <use spheres/render2.png>
 Package pdftex.def Info: spheres/render2.png used on input line 161.
 (pdftex.def)             Requested size: 455.24408pt x 154.14201pt.
 
-<spheres/octree-collisions.png, id=538, 605.26125pt x 218.8175pt>
+<spheres/octree-collisions.png, id=534, 605.26125pt x 218.8175pt>
 File: spheres/octree-collisions.png Graphic file (type png)
 
 <use spheres/octree-collisions.png>
 Package pdftex.def Info: spheres/octree-collisions.png used on input line 171.
 (pdftex.def)             Requested size: 455.24408pt x 164.5835pt.
 
-<spheres/octree-time.png, id=540, 608.2725pt x 258.9675pt>
+<spheres/octree-time.png, id=536, 608.2725pt x 258.9675pt>
 File: spheres/octree-time.png Graphic file (type png)
 
 <use spheres/octree-time.png>
@@ -1316,27 +1320,26 @@ Package pdftex.def Info: spheres/octree-time.png used on input line 180.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [30
+) [29
 
  <./spheres/render2.png (PNG copy)> <./spheres/octree-collisions.png (PNG copy)
->] [31 <./spheres/octree-time.png (PNG copy)>]
+>] [30 <./spheres/octree-time.png (PNG copy)>]
 \openout2 = `rozdzial5.aux'.
 
  (./rozdzial5.tex
 Rozdzia\l  5.
-<emscripten/pipeline.jpg, id=556, 301.125pt x 225.84375pt>
+<emscripten/pipeline.jpg, id=554, 301.125pt x 225.84375pt>
 File: emscripten/pipeline.jpg Graphic file (type jpg)
 
 <use emscripten/pipeline.jpg>
 Package pdftex.def Info: emscripten/pipeline.jpg used on input line 13.
 (pdftex.def)             Requested size: 227.62204pt x 170.72292pt.
- [32
+ (./emscripten/asm.js [31
 
 
 
- <./emscripten/pipeline.jpg>]
-(./emscripten/asm.js)
-<emscripten/epic-citadel.jpg, id=571, 1928.20375pt x 1204.5pt>
+ <./emscripten/pipeline.jpg>]) <emscripten/epic-citadel.jpg, id=572, 1928.20375
+pt x 1204.5pt>
 File: emscripten/epic-citadel.jpg Graphic file (type jpg)
 
 <use emscripten/epic-citadel.jpg>
@@ -1346,7 +1349,7 @@ Package pdftex.def Info: emscripten/epic-citadel.jpg used on input line 30.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<emscripten/ammojs.png, id=573, 1020.81375pt x 382.42876pt>
+<emscripten/ammojs.png, id=574, 1020.81375pt x 382.42876pt>
 File: emscripten/ammojs.png Graphic file (type png)
 
 <use emscripten/ammojs.png>
@@ -1356,13 +1359,10 @@ Package pdftex.def Info: emscripten/ammojs.png used on input line 39.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[33] [34 <./emscripten/epic-citadel.jpg> <./emscripten/ammojs.png (PNG copy)>]
+[32] [33 <./emscripten/epic-citadel.jpg> <./emscripten/ammojs.png (PNG copy)>]
+[34
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) [35
-
-] [36]
+]) [35]
 \openout2 = `rozdzial6.aux'.
 
  (./rozdzial6.tex
@@ -1407,16 +1407,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--37
 \T1/aer/m/n/10 2670QM, 4GB RAM,
  []
 
-[37
+[36
 
 
 
-]) [38] [39]
+]) [37] [38]
 \openout2 = `rozdzialA.aux'.
 
  (./rozdzialA.tex
 Dodatek A.
-) [40
+) [39
 
 
 
@@ -1434,7 +1434,7 @@ LaTeX Font Warning: Font shape `TS1/aett/m/n' undefined
 (Font)              using `TS1/cmr/m/n' instead
 (Font)              for symbol `textquotesingle' on input line 6.
 
-[41
+[40
 
 
 
@@ -1447,51 +1447,54 @@ File: lstlang1.sty 2004/09/05 1.3 listings language file
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 ) (./math.cpp
-[42]) [43] (./particles/particle.js
+[41]) [42] (./particles/particle.js
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [44
+ [43
 
 ])
-(./particles/particle.cpp [45]) (./particles/particleEmitter.js [46]
+(./particles/particle.cpp [44]) (./particles/particleEmitter.js [45]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [47])
-(./particles/particleEmitter.cpp [48]
+ [46])
+(./particles/particleEmitter.cpp [47]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [49])
-(./particles/particleSystem.js [50]
+ [48])
+(./particles/particleSystem.js [49]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [51])
-(./particles/particleSystem.cpp [52]) (./particles/particleSystem2.js [53]
+ [50])
+(./particles/particleSystem.cpp [51]) (./particles/particleSystem2.js [52]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [54])
+ [53])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [55]
-(./particles/particleSystem2.cpp [56]) [57] (./spheres/sphere.js
+ [54]
+(./particles/particleSystem2.cpp [55]) [56] (./spheres/sphere.js
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [58
+ [57
 
 ])
-(./spheres/sphere.cpp) (./spheres/sphereSystem.js [59]
+(./spheres/sphere.cpp) (./spheres/sphereSystem.js [58]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [59]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [60]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [61]
+ [61])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [62])
+ [62]
+(./spheres/sphereSystem.cpp [63]) (./spheres/octree.js [64]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [63]
-(./spheres/sphereSystem.cpp [64]) (./spheres/octree.js [65]
+ [65]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [66]
@@ -1500,18 +1503,18 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [67]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [68]
+ [68])
+(./spheres/octree.cpp [69]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [69])
-(./spheres/octree.cpp [70]
+ [70]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [71]
+ [71])
+(./spheres/sphereSystem2.js [72]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [72])
-(./spheres/sphereSystem2.js [73]
+ [73]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [74]
@@ -1526,40 +1529,67 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [77]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [78]
+ [78])
+(./spheres/sphereSystem2.cpp [79]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [79])
-(./spheres/sphereSystem2.cpp [80]
+ [80]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [81]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ [81]))
+[82] (./praca.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 49--51
+[]\T1/aer/m/n/10 ``Firefox to get mas-sive ja-va-script per-for-mance bo-ost.''
+ []$\T1/aett/m/n/10 http : / / arstechnica . com /
+ []
 
- [82]))
-[83] (./praca.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 16--18
+
+Overfull \hbox (6.48477pt too wide) in paragraph at lines 49--51
+\T1/aett/m/n/10 information-[]technology / 2008 / 08 / firefox-[]to-[]get-[]mas
+sive-[]javascript-[]performance-[]boost/$[]\T1/aer/m/n/10 . 
+ []
+
+
+Underfull \hbox (badness 6859) in paragraph at lines 57--59
+[]\T1/aer/m/n/10 ``Trace JIT re-mo-ved from Fi-re-fox.'' []$\T1/aett/m/n/10 htt
+p : / / blog . mozilla . org / nnethercote / 2011 / 11 / 23 /
+ []
+
+
+Underfull \hbox (badness 5504) in paragraph at lines 69--71
+[]\T1/aer/m/n/10 ``V8 pro-file log plot-ter.'' []$\T1/aett/m/n/10 http : / / v8
+ . googlecode . com / svn / branches / bleeding _ edge / tools /
+ []
+
+[83
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 104--106
+[]\T1/aer/m/n/10 ``Optimize for mo-bile -- best prac-ti-ces.'' []$\T1/aett/m/n/
+10 https : / / developers . google . com / speed / docs /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--125
 []\T1/aer/m/n/10 J. Con-rod, ``A tour of V8: full com-pi-ler.'' []$\T1/aett/m/n
 /10 http : / / www . jayconrod . com / posts / 51 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--26
+Underfull \hbox (badness 10000) in paragraph at lines 131--133
 []\T1/aer/m/n/10 J. Dal-ziel, ``The race for speed se-ries.'' []$\T1/aett/m/n/1
 0 http : / / creativejs . com / 2013 / 06 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--47
+Underfull \hbox (badness 10000) in paragraph at lines 152--154
 []\T1/aer/m/n/10 J. Re-sig, ``Asm.js: The Ja-va-script Com-pile Tar-get.'' []$\
 T1/aett/m/n/10 http : / / ejohn . org / blog /
  []
 
-[84
-
-
-
-])
+[84])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 147.
  [85]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 147.
@@ -1578,10 +1608,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 147.
  ) 
 Here is how much of TeX's memory you used:
- 16115 strings out of 493392
- 236000 string characters out of 6143119
- 572689 words of memory out of 5000000
- 16329 multiletter control sequences out of 15000+600000
+ 16141 strings out of 493392
+ 236717 string characters out of 6143119
+ 568720 words of memory out of 5000000
+ 16357 multiletter control sequences out of 15000+600000
  68925 words of font info for 129 fonts, out of 8000000 for 9000
  953 hyphenation exceptions out of 8191
  40i,14n,63p,1004b,2013s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1609,10 +1639,10 @@ msfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 ti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb>
-Output written on praca.pdf (86 pages, 14696037 bytes).
+Output written on praca.pdf (86 pages, 14694190 bytes).
 PDF statistics:
- 3901 PDF objects out of 4296 (max. 8388607)
- 3720 compressed objects within 38 object streams
- 2739 named destinations out of 2984 (max. 500000)
+ 3936 PDF objects out of 4296 (max. 8388607)
+ 3754 compressed objects within 38 object streams
+ 2737 named destinations out of 2984 (max. 500000)
  326 words of extra memory for PDF output out of 10000 (max. 10000000)
 
