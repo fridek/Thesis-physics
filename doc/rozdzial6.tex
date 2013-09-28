@@ -1,7 +1,7 @@
 \chapter{Summary}
 \label{cha:summary}
 
-All four tests were compiled and run times were measured on different platforms.
+All four tests were compiled and run times were measured on different platforms. Results obtained from Windows platform are significantly better than on Linux or Mac OS X. Reason for this is probably process of compilation of V8 itself, which by design is a 32-bit program. All tested operating systems are 64-bit. Results on Windows will be used as a baseline, since it is a platform most often used for gaming. It is expected that performance on all platforms will become similar once V8 switches to 64-bit.
 
 The unoptimised version of the particle system (see: \ref{sec:particlesinitial}) was designed to perform a lot of memory operations. In the tests it is visible that C++ handles this task best. The code generated using Emscripten benefits from static memory heap, which effectively works similar to the object pool introduced later, and runs approximately twice as long as C++. Plain JavaScript suffers greatly from memory allocation issues and an unoptimised code, resulting in 6 times slower execution than C++.
 
@@ -16,12 +16,13 @@ Optimised particles (see: \ref{sec:particlesobjectpool}) with an object pool and
    & C++ & JavaScript & Emscripten & C++ & JavaScript & Emscripten\\ \hline
    Fedora 19, Intel i7 2670QM, 4GB RAM, g++ 4.8.1 & 3.21s & 19.51s & 4.85s & 1.63s & 4.96s & 5.10s \\ \hline
    Windows 7, Intel i7 2670QM, 4GB RAM, g++ 4.7.3, Cygwin & 3.51s & 20.77s & 6.46s & 1.71s & 3.47s & 5.57s \\ \hline
+   Mac OS X 10.8.5, Intel i7 3720QM, 8GB RAM, XCode 5.0 & 1.83s & 16.91s & 4.16s & 1.22s & 2.35s & 4.23s \\hline
 \end{tabular}
 \end{table}
 
 The sphere collision test is putting a high load on CPU.
 
-In $O(n^2)$ version (see: \ref{sec:sphereinitial}) exactly 1 000 000 000 checks for object collisions are made. The overall execution time is surprisingly good for JavaScript with an overhead of approximately 15\% and 25\% for the Emscripten generated version. This is a result of focussing on pure mathematical operations that are quickly compiled by V8 and processed on unboxed numbers in asm.js.
+In $O(n^2)$ version (see: \ref{sec:sphereinitial}) exactly 1 000 000 000 checks for object collisions are made. The overall execution time is surprisingly good for JavaScript with an overhead of approximately 15\% and for the Emscripten generated version -- 25\%. This is a result of focusing on pure mathematical operations that are quickly compiled by V8 and processed on unboxed numbers in asm.js.
 
 Space partitioning using Octree greatly reduces the number of collisions (to less than 100 000) and execution time. To give meaningful results simulation time is increased from 1000 frames to 10000. Under these circumstances difference in run time changes to 20\% for Javascript and remains similarly around 25\% for Emscripten. This is the result of small memory operations related to Octree areas.
 
@@ -35,6 +36,7 @@ Space partitioning using Octree greatly reduces the number of collisions (to les
    Fedora 19, Intel i7 2670QM, 4GB RAM, g++ 4.8.1 & 4.96s & 9.02s & 12.35s & 
 3.44s & 14.14s & 11.20s \\ \hline
    Windows 7, Intel i7 2670QM, 4GB RAM, g++ 4.7.3, Cygwin & 9.52s & 10.81s & 11.82s & 14.10s & 16.95s & 17.79s \\\hline
+   Mac OS X 10.8.5, Intel i7 3720QM, 8GB RAM, XCode 5.0 & 5.05s & 8.62s & 13.88s & 6.67s & 14.34s & 17.23s \\hline
 \end{tabular}
 \end{table}
 
