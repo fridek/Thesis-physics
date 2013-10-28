@@ -1,0 +1,201 @@
+<!--
+Google IO 2012 HTML5 Slide Template
+
+Authors: Eric Bidelman <ebidel@gmail.com>
+         Luke Mahé <lukem@google.com>
+
+URL: https://code.google.com/p/io-2012-slides
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The comparsion of physics engines</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <!--This one seems to work all the time, but really small on ipad-->
+  <!--<meta name="viewport" content="initial-scale=0.4">-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="theme/css/default.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+  <slide class="title-slide segue nobackground">
+    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+    <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+    <hgroup class="auto-fadein">
+      <h1 data-config-title><!-- populated from slide_config.json --></h1>
+      <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+      <p data-config-presenter><!-- populated from slide_config.json --></p>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Motywacja projektu - rosnąca popularność gier przeglądarkowych</h2>
+    </hgroup>
+    <article class="bigger">
+      <ul class="build">
+        <li>Model dystrybucji</li>
+		<li>Łatwa integracja z innymi stronami internetowymi</li>
+		<li>Monetyzacja typu freemium - darmowa gra z płatną zawartością</li>
+        <li>Łatwiejszy proces programowania - API sieciowe i graficzne jest dużo łatwiejsze</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>"Studium wykonalności" silnika fizyki 3D</h2>
+    </hgroup>
+    <article class="bigger">
+      <ul class="build">
+        <li>Symulacja reprezentatywnych fragmentów silnika fizyki w C++, JavaScript i asm.js</li>
+		<li>Porównanie czasu renderowania 1000 klatek</li>
+		<li>Porównanie z pominięciem renderowania - sprawdzana wyłącznie sprawność obliczeniowa</li>
+      </ul>
+    </article>
+  </slide>
+
+    <slide>
+        <hgroup>
+            <h2>Symulacja cząsteczek (dym, ogień)</h2>
+        </hgroup>
+        <article>
+            <button id="demo1_start">Start</button>
+            <button id="demo1_stop">Stop</button>
+            <div id="demo1"></div>
+        </article>
+    </slide>
+    <slide>
+        <hgroup>
+            <h2>Zderzenia sfer</h2>
+        </hgroup>
+        <article>
+            <button id="demo2_start">Start</button>
+            <button id="demo2_stop">Stop</button>
+            <div id="demo2"></div>
+        </article>
+    </slide>
+    <slide>
+        <hgroup>
+            <h2>Zderzenia sfer - drzewa ósemkowe</h2>
+        </hgroup>
+        <article>
+            <button id="demo3_start">Start</button>
+            <button id="demo3_stop">Stop</button>
+            <div id="demo3"></div>
+        </article>
+    </slide>
+
+    <slide class="segue quote blue nobackground">
+        <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+        <hgroup class="auto-fadein">
+            <h2>Wyniki</h2>
+        </hgroup>
+    </slide>
+
+    <slide>
+        <hgroup>
+            <h2>Symulacja cząsteczek (dym, ogień)</h2>
+        </hgroup>
+        <article>
+            <img src="images/particles.png" style="width: 600px; margin: 50px auto;">
+        </article>
+    </slide>
+
+    <slide>
+        <hgroup>
+            <h2>Zderzenia sfer</h2>
+        </hgroup>
+        <article>
+            <img src="images/spheres.png" style="width: 600px; margin: 50px auto;">
+        </article>
+    </slide>
+
+    <slide>
+        <hgroup>
+            <h2>Czas obliczania klatki</h2>
+        </hgroup>
+        <article>
+            <img src="images/msperframe.png" style="width: 600px; margin: 50px auto;">
+        </article>
+    </slide>
+
+    <slide class="thank-you-slide segue nobackground">
+    <aside class="gdbar right"><img src="images/google_developers_icon_128.png"></aside>
+    <article class="flexbox vleft auto-fadein">
+      <h2>&lt;Dziękuję za uwagę&gt;</h2>
+    </article>
+    <p class="auto-fadein" data-config-contact>
+      <!-- populated from slide_config.json -->
+    </p>
+  </slide>
+
+  <slide class="backdrop"></slide>
+
+</slides>
+
+<script>
+(function() {
+    var ifrm = document.createElement("iframe");
+    ifrm.setAttribute("src", "");
+    ifrm.style.width = 1000+"px";
+    ifrm.style.height = 480+"px";
+
+    var demo1 = document.querySelector('#demo1');
+    var button1_start = document.querySelector('#demo1_start');
+    button1_start.addEventListener("click", function() {
+        window.console.log('demo1 start');
+        ifrm.setAttribute("src", "particles.html");
+        demo1.appendChild(ifrm);
+    });
+    var button1_stop = document.querySelector('#demo1_stop');
+    button1_stop.addEventListener("click", function() {
+        window.console.log('demo1 stop');
+        ifrm.setAttribute("src", "");
+        demo1.removeChild(ifrm);
+    });
+
+    var demo2 = document.querySelector('#demo2');
+    var button2_start = document.querySelector('#demo2_start');
+    button2_start.addEventListener("click", function() {
+        window.console.log('demo2 start');
+        ifrm.setAttribute("src", "spheres.html");
+        demo2.appendChild(ifrm);
+    });
+    var button2_stop = document.querySelector('#demo2_stop');
+    button2_stop.addEventListener("click", function() {
+        window.console.log('demo2 stop');
+        ifrm.setAttribute("src", "");
+        demo2.removeChild(ifrm);
+    });
+
+    var demo3 = document.querySelector('#demo3');
+    var button3_start = document.querySelector('#demo3_start');
+    button3_start.addEventListener("click", function() {
+        window.console.log('demo3 start');
+        ifrm.setAttribute("src", "spheres_octree.html");
+        demo3.appendChild(ifrm);
+    });
+    var button3_stop = document.querySelector('#demo3_stop');
+    button3_stop.addEventListener("click", function() {
+        window.console.log('demo3 stop');
+        ifrm.setAttribute("src", "");
+        demo3.removeChild(ifrm);
+    });
+})();
+</script>
+
+<!--[if IE]>
+  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+  <script>CFInstall.check({mode: 'overlay'});</script>
+<![endif]-->
+</body>
+</html>
