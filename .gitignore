@@ -10,3 +10,16 @@ v8.log
 *.aux
 *.tex.undo
 *.bak
+doc/*.dvi
+doc/*.log
+doc/*.bak
+doc/*.aux
+doc/*.bbl
+doc/*.blg
+doc/*.idx
+doc/*.ps
+doc/*.eps
+doc/*.toc
+doc/*.out
+doc/*~
+.idea

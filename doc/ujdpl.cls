@@ -42,7 +42,6 @@
 % 
 % \pagestyle{fancy}
 
-\bibliographystyle{abbrv}
 \linespread{1.3}
 \renewcommand{\labelitemi}{--}
 
@@ -69,6 +68,8 @@
 \begin{flushright}
 \begin{minipage}[!h]{6cm} 
 \large{\scshape Promotor:}\\ \@supervisor
+\end{minipage}
+\begin{minipage}[!h]{6cm}
 \large{\scshape Konsultant:}\\ \@consultant
 \end{minipage}
 \end{flushright}
